@@ -37,4 +37,9 @@ Some pages contain placeholder tokens that must be filled before publishing:
   (`tools/docker-compose.yml`) and mirrored with wget (`tools/mirror-local.sh`).
 - `tools/postprocess.py`, `tools/localize.py` and `tools/linkcheck.py` make every site self-contained
   and working under a sub-path; missing assets were filled from the backup.
+- ecticard2018, ecticard2020, ecticon2020 and ecticon2021 had no usable backup (blank WordPress,
+  no database) and their servers are gone, so they were rebuilt from the Internet Archive
+  Wayback Machine (`tools/wayback.py`). Wayback kept the pages and PDFs but not the theme CSS or
+  most images, so these four sites show as plain, unstyled pages.
+  เว็บสี่เว็บนี้กู้จาก Wayback Machine ได้เฉพาะเนื้อหาและ PDF ไม่มี CSS/รูป จึงแสดงเป็นหน้าเรียบๆ
 - `tools/landing.py` generates `site/index.html`.

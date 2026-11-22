@@ -16,3 +16,6 @@ configuration.php
 
 # icasymp2026 "submission" is a public info page, not author data
 !site/icasymp2026/submission/index.html
+
+# ecticon2021 pretty URLs live in a *directory* called index.php (static HTML only)
+!site/ecticon2021/index.php/
