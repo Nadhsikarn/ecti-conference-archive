@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/default/files/boldy_favicon.png" type="image/x-icon" />
+    <title>Page not found | ECTI-CON 2013</title>
+    <link type="text/css" rel="stylesheet" media="all" href="/modules/node/node.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/defaults.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/system/system-menus.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/modules/user/user.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/cck/theme/content-module.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/views/css/views.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/boldy/css/style.css?f" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/boldy/css/nivo-slider.css?f" />
+<link type="text/css" rel="stylesheet" media="print" href="/sites/all/themes/boldy/css/print.css?f" />
+    <script type="text/javascript" src="/misc/jquery.js?f"></script>
+<script type="text/javascript" src="/misc/drupal.js?f"></script>
+<script type="text/javascript" src="/sites/all/themes/boldy/js/jquery.autofill.js?f"></script>
+<script type="text/javascript" src="/sites/all/themes/boldy/js/custom.js?f"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lt IE 7]>
+    <link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/boldy/css/fix-ie.css" />    <![endif]-->
+  </head>
+  <body class="not-front not-logged-in no-sidebars page-sites-all-themes-boldy-images-bk-dotted-thick-png section-sites">
+    <div id="mainWrapper"> <!-- BEGIN MAINWRAPPER -->
+      <div id="wrapper"> <!-- BEGIN WRAPPER -->
+        <div id="header"> <!-- BEGIN HEADER -->
+          <div id="logo"><p class="page-title"><a href="/" title=""><img src="http://www.ecti2013.org/sites/default/files/ecti2013-logo.png" alt="" /></a><a href="/" title=""></a></p></div>          <!-- BEGIN MAIN MENU -->
+          <div id="mainMenu">
+                                                                                      </div>
+          <!-- END MAIN MENU -->
+                    <div id="topSocial"> <!-- BEGIN TOP SOCIAL LINKS -->
+            <div style="float:right;">Available via IEEE Xplore:<br/><a href="http://ieeexplore.ieee.org" target="_blank"><img src="http://www.ecti2013.org/sites/default/files/logo_xplore.gif" style="width:200px;height:40px;"></a></div>
+          </div> <!-- END TOP SOCIAL LINKS -->
+        </div> <!-- END HEADER -->
+        <div id="content"> <!-- BEGIN CONTENT -->
+                    <div id="colLeft"> <!-- Begin #colLeft -->
+                                    <h1>Page not found</h1>                                                                              <div id="content-area" class="clear-block">
+              The requested page could not be found.            </div>
+                                </div> <!-- End #colLeft -->
+        </div> <!-- END CONTENT -->
+      </div> <!-- END WRAPPER -->
+      <div id="footer"> <!-- BEGIN FOOTER -->
+                    <div id="footerWidgets">
+          <div id="footerWidgetsInner">
+  <div id="block-system-0" class="clear-block block block-system">
+
+  
+  <div class="content"><a href="http://drupal.org"><img src="/misc/powered-blue-80x15.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+                      <div id="copyright"> <!-- BEGIN COPYRIGHT -->
+  Hosted by Department of Electrical Engineering and Department of Computer Engineering, Faculty of Engineering, Chulalongkorn University, THAILAND              </div> <!-- END COPYRIGHT -->
+          </div>
+        </div>
+      </div> <!-- END FOOTER -->
+    </div> <!-- END MAINWRAPPER -->
+  </body>
+</html>

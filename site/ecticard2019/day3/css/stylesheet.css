@@ -1,0 +1,497 @@
+
+
+/* CSS
+--------------------------------------------------*/
+body {
+	color: #000000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,form,fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+/* Links
+--------------------------------------------------*/
+a {
+	text-decoration: underline;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+a img {
+	border: none;
+}
+
+/* IDs
+--------------------------------------------------*/
+#wrapper {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logohead {
+	background: #FFFFFF;
+	text-align: left;
+	margin-top: 10px;
+}
+
+#logofooter {
+	background: #FFFFFF;
+	text-align: left;
+	margin-top: 10px;
+}
+
+#pagehead {
+	background: transparent;
+	color: #000000;
+	margin-bottom: -20px;
+	position: relative;
+	z-index: 2;
+	font-family: "Verdana", Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+#pagehead a {
+	color: #000000;
+}
+
+#pagehead p {
+	line-height: 13pt;
+}
+
+#subhead {
+	position: relative;
+	z-index: 1;
+	height: 1px;
+}
+
+html > body #subhead {
+	height: auto;
+}
+
+#mainbox {
+	margin-top: -20px;
+}
+
+#pagefoot {
+	background: transparent;
+	color: #000000;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	font-family: "Verdana", Helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+#pagefoot strong, #pagehead strong {
+	font-size: 11pt;
+}
+
+#pagefoot a {
+	color: #000000;
+}
+
+#mainimage {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+
+#mainimage img {
+	margin-bottom: 10px;
+	background: #FFFFFF;
+	padding: 5px;
+}
+
+#altmainimage {
+	padding: 10px 0 10px 0;
+	margin: 0 0 10px 0;
+	width: 740px;
+	overflow: auto;
+	text-align: center;
+}
+
+/* Classes
+--------------------------------------------------*/
+.low {
+	display: none;
+}
+
+.smalltext {
+	font-size: 8pt;
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;
+}
+
+.clearer {
+	clear: both;
+	line-height: 0;
+}
+
+.left {
+	float: left;
+	clear: right;
+	background: transparent;
+}
+
+.right {
+	float: right;
+	background: transparent;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.sep {
+	line-height: 0px;
+	height: 1px;
+	border: none;
+	background: #a2c0df;
+	color: #a2c0df;
+	margin: 0;
+	padding: 0;
+}
+
+.seppad {
+	line-height: 0px;
+	height: 1px;
+	border: none;
+	background: #a2c0df;
+	color: #a2c0df;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+
+.metatitle {
+	margin-bottom: 10px;
+}
+
+.metatitle1 {
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+}
+
+.metatitle1 a {
+	text-decoration: none;
+}
+
+.metatitle1 a:hover {
+	color: #7ba9c4;
+}
+
+.metatitle2 {
+	font-size: 70%;
+	font-style: italic;
+	margin-left: 10px;
+	margin-top: 0.5em;
+	float: left;
+}
+
+.metatitle3 {
+	float: right;
+}
+
+.metaitem {
+	margin-bottom: 4px;
+}
+
+.thumbcontainer {
+	padding: 5px;
+	background: #FFFFFF;
+	height: auto;
+	display: table-cell;
+}
+
+.thumbmeta {
+	margin-top: 5px;
+	text-align: left;
+	font-size: 7pt;
+	line-height: 12pt;
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;
+}
+
+.metabox {
+	background: #FFFFFF;
+	padding: 7px;
+	text-align: left;
+	font-size: 10pt;
+	line-height: 12pt;
+	margin: 0 auto;
+	height: 1px;
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;
+}
+
+html > body .metabox {
+	height: auto;
+}
+
+.paginate {
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+	text-align: center;
+	background: #FFCE5B
+  }
+
+  .paginate a {
+  padding: 2px 6px;
+  line-height: 24px;
+  border: solid 1px #DDDDDD;
+	background: #FFFFFF;
+	text-decoration: none;
+	color: #000000;
+  }
+
+  .paginate .this-page {
+  padding: 2px 6px;
+  line-height: 24px;
+  border-color: #999999;
+  font-weight: bold;
+  font-size: 8pt;
+	vertical-align: top;
+	background: #FFCE5B;
+}
+
+.paginate a:hover {
+	color: #000000;
+	background: #FFEEC5;
+	border-color: #003366;
+	text-decoration: none;
+}
+
+.imagenav {
+	color: #000000;
+	padding: 5px 10px 5px 10px;
+	margin: 0 auto;
+	font-size: 8pt;
+	font-family: "Verdana", Helvetica, sans-serif;
+}
+
+.imagenav a {
+	color: #000000;
+}
+
+.headimage {
+	position: relative;
+	top: -8px;
+	left: -6px;
+}
+
+html > body .headimage {
+	position: relative;
+	top: -12px;
+	left: -8px;
+}
+
+.slide {
+	background: #FFEEC5;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+.nav {
+	background: #FFEEC5;
+	padding: 7px;
+}
+
+.pageh1 {
+	font-size: 16pt;
+	font-weight: bolder;
+	padding: 0px 0 0px 9px;
+	text-align: center;
+	color: #E89C00;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+/* Headings
+--------------------------------------------------*/
+h1 {
+	font-size: 16pt;
+	font-weight: bolder;
+	margin: 10px 0 10px 0;
+	padding: 5px 0 5px 0;
+	text-align: center;
+	color: #E89C00;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+/* Images
+--------------------------------------------------*/
+/* Tables
+--------------------------------------------------*/
+caption {
+	display: none;
+}
+
+table{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+td {
+	padding: 0;
+	margin: 0;
+}
+
+td.thumbtable {
+	padding: 5px;
+	text-align: center;
+}
+
+.infor {
+	text-align: left;
+	padding: 0;
+}
+
+.xsnazzy h1, .xsnazzy p {
+	margin: 0 10px;
+}
+
+#pagehead .xsnazzy p, #pagefoot .xsnazzy p {
+	line-height: 15pt;
+	background: transparent;
+}
+
+.xsnazzy {
+	background: transparent;
+	margin-top: 10px;
+}
+
+.xtop, .xbottom {
+	display: block;
+	background: transparent;
+	font-size: 1px;
+}
+
+.xb1, .xb2, .xb3, .xb4 {
+	display: block;
+	overflow: hidden;
+}
+
+.xb1, .xb2, .xb3 {
+	height: 1px;
+}
+
+.xb2, .xb3, .xb4 {
+	background: #FFCE5B;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+#subhead .xb2, #subhead .xb3, #subhead .xb4 {
+	background: #FFF8D6;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+#pagehead .xb2, #pagehead .xb3, #pagehead .xb4 {
+	background: #FFEEC5;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+#pagefoot .xb2, #pagefoot .xb3, #pagefoot .xb4 {
+	background: #FFEEC5;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+}
+
+.xb1 {
+	margin: 0 5px;
+	background: #FFFFFF;
+}
+
+.xb2 {
+	margin: 0 3px;
+	border-width: 0 2px;
+}
+
+.xb3 {
+	margin: 0 2px;
+}
+
+.xb4 {
+	height: 2px;
+	margin: 0 1px;
+}
+
+.xboxcontent {
+	display: block;
+	background: #FFCE5B;
+	border: 0 solid #FFFFFF;
+	border-width: 0 1px;
+}
+
+#mainbox .xboxcontent {
+	padding: 10px 0 10px 0;
+}
+
+#pagehead .xboxcontent {
+	display: block;
+	background: #FFEEC5;
+	border: 0 solid #FFFFFF;
+	border-width: 0 1px;
+}
+
+#pagefoot .xboxcontent {
+	display: block;
+	background: #FFEEC5;
+	border: 0 solid #FFFFFF;
+	border-width: 0 1px;
+}
+
+#subhead .xboxcontent {
+	display: block;
+	background: #FFF8D6;
+	border: 0 solid #FFFFFF;
+	border-width: 0 1px;
+	padding: 20px 0 0 0;
+}
+
+#subhead .xsnazzy h1 {
+	margin: 0 10px;
+	font-size: 16pt;
+	padding: 0;
+	color: #E89C00;
+	text-align: left;
+}
+
+#subhead .xsnazzy pageh1 {
+	margin: 0 10px;
+	font-size: 16pt;
+	padding: 0;
+	color: #E89C00;
+	text-align: left;
+}
+
+#subhead .smalltext {
+	margin-left: 10px;
+	padding-bottom: 5px;
+}
+
+#pagefoot .xboxcontent p.left {
+	background: #FFEEC5;
+}
+

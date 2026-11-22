@@ -1,0 +1,56 @@
+services:
+  mysql:
+    image: mysql:5.7
+    platform: linux/amd64
+    command: ["--skip-grant-tables", "--skip-networking=0", "--innodb-buffer-pool-size=256M"]
+    volumes:
+      - ../work/docker-volumes/mysql:/var/lib/mysql
+    ports:
+      - "127.0.0.1:3307:3306"
+  wp-icasymp2025:
+    image: wordpress:php8.2-apache
+    depends_on: [mysql]
+    ports:
+      - "127.0.0.1:18081:80"
+    volumes:
+      - ../work/volume/icasymp2025:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_NAME: icasymp2025
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: ""
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME','http://localhost:18081');
+        define('WP_SITEURL','http://localhost:18081');
+  wp-icasymp2023:
+    image: wordpress:php8.2-apache
+    depends_on: [mysql]
+    profiles: [icasymp2023]
+    ports:
+      - "127.0.0.1:18082:80"
+    volumes:
+      - ../work/volume/icasymp2023:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_NAME: icasymp2023
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: ""
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME','http://localhost:18082');
+        define('WP_SITEURL','http://localhost:18082');
+  wp-icasymp2026:
+    image: wordpress:php8.2-apache
+    depends_on: [mysql]
+    profiles: [icasymp2026]
+    ports:
+      - "127.0.0.1:18083:80"
+    volumes:
+      - ../work/volume/icasymp2026:/var/www/html
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_NAME: icasymp2026
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: ""
+      WORDPRESS_CONFIG_EXTRA: |
+        define('WP_HOME','http://localhost:18083');
+        define('WP_SITEURL','http://localhost:18083');

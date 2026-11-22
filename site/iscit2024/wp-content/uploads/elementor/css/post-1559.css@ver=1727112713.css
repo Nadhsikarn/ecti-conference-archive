@@ -1,0 +1,30 @@
+.elementor-1559 .elementor-element.elementor-element-04e89ae{--display:flex;--min-height:12vh;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--justify-content:center;--align-items:center;--background-transition:0.3s;--margin-block-start:0vw;--margin-block-end:0vw;--margin-inline-start:0vw;--margin-inline-end:0vw;}.elementor-1559 .elementor-element.elementor-element-04e89ae:not(.elementor-motion-effects-element-type-background), .elementor-1559 .elementor-element.elementor-element-04e89ae > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-image:url("../../2024/01/ข้อความในย่อหน้าของคุณ-1922-x-680-px-2.png");background-position:center center;background-repeat:no-repeat;background-size:cover;}.elementor-1559 .elementor-element.elementor-element-04e89ae, .elementor-1559 .elementor-element.elementor-element-04e89ae::before{--border-transition:0.3s;}.elementor-1559 .elementor-element.elementor-element-9fdfb42{text-align:center;z-index:1;}.elementor-1559 .elementor-element.elementor-element-9fdfb42 .elementor-heading-title{color:#FFFFFF;}.elementor-1559 .elementor-element.elementor-element-9fdfb42 > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;}.elementor-1559 .elementor-element.elementor-element-fb37da6{--display:flex;--min-height:100vh;--background-transition:0.3s;}.elementor-1559 .elementor-element.elementor-element-55899ea .elementor-button .elementor-align-icon-right{margin-left:12px;}.elementor-1559 .elementor-element.elementor-element-55899ea .elementor-button .elementor-align-icon-left{margin-right:12px;}.elementor-1559 .elementor-element.elementor-element-0db3b84{--display:flex;--min-height:100vh;--background-transition:0.3s;}.elementor-1559 .elementor-element.elementor-element-a39ec69{--display:flex;--background-transition:0.3s;}:root{--page-title-display:none;}@media(min-width:768px){.elementor-1559 .elementor-element.elementor-element-fb37da6{--content-width:90%;}.elementor-1559 .elementor-element.elementor-element-0db3b84{--content-width:90%;}.elementor-1559 .elementor-element.elementor-element-a39ec69{--content-width:90%;}}@media(max-width:767px){.elementor-1559 .elementor-element.elementor-element-04e89ae{--margin-block-start:4vw;--margin-block-end:0vw;--margin-inline-start:0vw;--margin-inline-end:0vw;}}/* Start custom CSS for container, class: .elementor-element-04e89ae */.elementor-1559 .elementor-element.elementor-element-04e89ae:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.elementor-1559 .elementor-element.elementor-element-04e89ae .elementor-container{
+    z-index: 1;
+}/* End custom CSS */
+/* Start custom CSS for html, class: .elementor-element-ccc6047 */.elementor-1559 .elementor-element.elementor-element-ccc6047 {
+    height: 100vh;
+    /*display: none;*/
+}
+
+content {
+    height: 100vh;
+}/* End custom CSS */
+/* Start custom CSS for html, class: .elementor-element-0187d7c */.elementor-1559 .elementor-element.elementor-element-0187d7c {
+    height: 100vh;
+    /*display: none;*/
+}
+
+content {
+    height: 100vh;
+}/* End custom CSS */

@@ -1,0 +1,9 @@
+body, td  {
+	color : Black;
+	font-size : 10pt;
+	font-family : "Verdana, Tahoma, Geneva, Arial, Helvetica";
+}
+sub, sup {
+	font-size : 9pt;
+	font-family : "Verdana, Tahoma, Geneva, Arial, Helvetica";
+}

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta name="designer" content="Juergen Koller - http://www.lernvid.com" />
+<meta name="licence" content="Creative Commons 3.0" />
+<link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<!--- ADD CSS Files -->
+
+
+
+	<link href="templates/allrounder-j1.6/css/template.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/joomla.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/lvdropdown.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/typo.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/modules.css" rel="stylesheet" type="text/css" media="all" />
+	
+<!--- Older Browser CSS -->
+<!--[if IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+
+<!--- ADD JavaScript Files -->
+
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/lv-dropdown.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-tooltip.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-caption.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.corner.packed.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/reflection.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/effects.js"></script>
+
+
+<!-- Layout parameters -->
+	<style type="text/css">
+
+	/* Template layout parameters */
+	
+
+	#wrapper {
+		margin-top:10px;
+	}
+	#foot_container {
+		margin-bottom:0px;
+	}
+	#topmenu ul.menu, #topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		background-image: url('templates/allrounder-j1.6/images/dropdown-smooth.png');
+	}
+	#topmenu ul.menu li.parent a, #topmenu ul.menu li.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-smooth.png');
+	}
+	#topmenu ul.menu li.parent a:hover, #topmenu ul.menu li.parent span.separator:hover, 
+	#topmenu ul.menu li#current.parent a, #topmenu ul.menu li#current.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-hover-smooth.png');
+	}
+			.contentheading {
+			background-image: url('images/aa5.png');
+		}
+			
+</style>
+<!-- Define fonts -->
+	<style type="text/css">
+
+	/* Template fonts */
+	
+	body {
+		font-size:14px;
+
+					font-family:Arial, Helvetica, Sans-Serif;
+						line-height:1.3em;
+	}
+
+</style>
+<!-- ADD own template colors -->
+	<style type="text/css">
+
+	/* Template colors */
+
+	body {
+		background-color: #FCFCFC;
+		color: #555555;
+	}
+	span#copy a {
+		color: #555555;
+	}
+	a, a:link, a:visited, a:active, a:focus {
+		color: #ED3D3D;
+	}
+
+	#wrapper, #foot_container {
+		background-color: #FCFCFC;
+		border: 1px solid #D2D1D1;
+	}
+
+	
+	#header {
+		background-color: #FFFFFF;
+		border-top:1px solid #F7F7F7;
+		border-left:1px solid #F7F7F7;	
+		border-right:1px solid #F7F7F7;	
+	}
+	.heckl, .heckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#footer {
+		background-color: #1B7EC9;
+		border:1px solid #1F90E6;
+		border-bottom:2px solid #1F90E6;
+	}
+	.feckl, .feckr {  
+		border-bottom: 10px solid #114E7D;
+	}
+	#footer a#gotop {
+		color: #C7ECF7;
+	}
+	#footermodule1234, #footermodule1234 a, #footermodule1234 ul.menu, #footermodule5, #footermodule5 a {
+		color: #C7ECF7;
+	}
+	#subfoot {
+		background-color: #15619C;
+		border-top:1px solid #FFFFFF;
+		border-bottom:1px solid #114E7D;
+	}
+	.copytext {
+		color: #B7D9E3;
+	}
+
+	#maincontent {
+		background-color: #D4D4D4;
+		border: 3px double #F5F5F5;
+	}
+	
+	.item-page, .item, .leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5 {
+		background-color:#FFFFFF;
+		border: 1px solid #F7F7F7;
+	}
+
+	.contentheading, .contentheading a {
+		color: #4F4F4F !important;
+	}
+	div.item-separator {
+		border-bottom:3px double #FFFFFF !important;
+	}
+
+	#wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3	 {
+		background-color: #3D60BA;
+		border-top:	1px solid #12558A;
+		color: #FFFFFF;
+	}
+	#wrapper #leftcol h3.moduleh3	 {
+		border-left: 1px solid #1873BA;
+		border-right: 1px solid #1873BA;
+	}
+	#wrapper #rightcol h3.moduleh3	 {
+		border-right: 1px solid #1873BA;
+		border-left: 1px solid #1873BA;
+	}
+	.h3eckl, .h3eckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#leftcol .module div.lvround-inner, #leftcol .module_menu div.lvround-inner, #leftcol .module_text div.lvround-inner, 
+	#rightcol .module div.lvround-inner, #rightcol .module_menu div.lvround-inner, #rightcol .module_text div.lvround-inner {
+		background-color: #F7F7F7;
+		border: 1px solid #FFFFFF;
+		color: #505050;
+	}
+	#subhead {
+		background-color: #F7F7F7;
+		border: 1px solid #F0F0F0;
+	}
+	.breadcrumbs, .breadcrumbs span {
+		color: #555555;
+	}
+	#leftcol .module div div, #leftcol .module_menu div div, #leftcol .module_text div div, 
+	#rightcol .module div div, #rightcol .module_menu div div, #rightcol .module_text div div {
+		border: 1px solid #E0E0E0;
+	}
+
+	/**** Global Modules ****/
+
+	div.module {
+		color:#505050;
+		background-color:#FFFFFF;
+		border:1px solid #DDDDDD;
+	}
+	div.module h3.moduleh3 {
+		background-color:#EFEFEF;
+		border:1px solid #DDDDDD;
+	}
+
+
+	.input, .inputbox {
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.input:hover, .inputbox:hover {
+		color: #555555;
+		background-color: #F9F9F9;
+	}
+
+	input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+		color: #555;
+		background-color: #efefef;
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	input.button:hover, button.button:hover, button.validate:hover, .pagenav, ul.pagenav li a:hover {
+		color: #000000;
+		background-color: #FFFFFF;
+	}
+
+	/**** Mainmenu with suffix: _menu ****/
+	
+	.module_menu ul.menu li a, .module_menu ul.menu li span.separator {
+		color: #333333;
+		border-bottom:1px dotted #CCCCCC;
+	}
+	.module_menu ul.menu li a:hover, .module_menu ul.menu li a:active, .module_menu ul.menu li a:focus {
+		color: #000000!important;
+	}
+	.module_menu ul.menu li.current a {
+		color: #000000;
+	}
+	.module_menu ul.menu li.current ul li a {
+		color: #000000;
+	}
+
+	/**** Default Tooltips ****/
+
+	.easy-tooltip-default {
+		border: 1px solid #A6A7AB; 
+		background-color: #F2F3F5; 
+		color: #800000;
+	}
+
+
+</style>
+<!-- ADD own dropdown-menu colors -->
+	<style type="text/css">
+
+	/* Dropdown menu colors */
+
+	#topmenu ul.menu {
+		background-color:#062022 !important;
+		border-top:3px double #FFFFFF !important;
+		border-bottom:3px double #FFFFFF !important;
+	}
+	#topmenu ul.menu li {
+		border-right:1px solid #555555 !important;
+	}
+	#topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #222222 !important;
+		border-left:1px solid #000000 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#CCCCCC;
+		background-color:#222222;
+	}
+	#topmenu ul.menu a:hover {
+		color:#FFFFFF;
+	}
+	
+	/** LEVEL 2 **/
+	#topmenu ul.menu ul {
+		border:2px solid #000000 !important;
+		background-color:#222222;
+	}
+	#topmenu ul.menu li ul li a, #topmenu ul.menu li ul li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #333333 !important;
+		border-left:1px solid #333333 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#999999;
+	}
+	#topmenu ul.menu li ul li a:hover {
+		color:#FFFFFF;
+	}
+	#topmenu ul.menu li li {
+		background-color:#171717;
+	}
+	#topmenu ul.menu li li:hover {
+		background-color:#212121;
+	}
+
+</style>
+	<style type="text/css">
+
+	/* Ribbons off */
+	
+	#header, #footer, #wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3 {
+		margin:0;
+	}
+	#header {
+		padding:0;
+}
+	.heckl, .heckr, .feckl, .feckr, .h3eckl, .h3eckr {  
+		display:none;
+	}
+
+</style>
+
+
+
+<!-- math the width of the 3 columns -->
+<style type="text/css">
+	#leftcol {width: 20%;}
+	#rightcol {width: 20%;}
+	#content_outmiddle {width: 58%;}
+	#content_outright {width: 79%;}
+	#content_outleft {width: 79%;}
+</style>
+
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Travel Information</title>
+  <link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+ 
+</head>
+<body>
+			<div id="wrapper" style="max-width:1180px;">
+							
+		
+			<div id="header_container">
+				
+				<div id="header">
+								
+								
+					<div id="logo">
+										
+							<a class="imglogo" href="http://ecticon2014.ecticon.org/index.php"><img alt="Logo" src="templates/allrounder-j1.6/images/logo/bb17.png"/></a>
+																													</div>	
+								
+					<span class="heckl">&nbsp;</span>
+					<span class="heckr">&nbsp;</span>
+				</div>
+						
+				
+		
+									</div>
+				<div id="container">
+							
+		
+							<div id="leftcol">
+		             	<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Main Menu</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-435"><a href="index.html" ><img src="images/ico1.png" alt="Home" /><span class="image-title">Home</span> </a></li><li class="item-471"><a href="site-map-3.html" ><img src="images/ico1.png" alt="Committee" /><span class="image-title">Committee</span> </a></li><li class="item-476"><a href="keynote-speakers.html" ><img src="images/ico1.png" alt="Keynote Speakers" /><span class="image-title">Keynote Speakers</span> </a></li><li class="item-501"><a href="ecti-workshop.html" ><img src="images/ico1.png" alt="ECTI Workshop" /><span class="image-title">ECTI Workshop</span> </a></li><li class="item-495"><a href="sponsors.html" ><img src="images/ico1.png" alt="Sponsors" /><span class="image-title">Sponsors</span> </a></li><li class="item-473"><a href="site-map-5.html" ><img src="images/ico1.png" alt="Paper Submission" /><span class="image-title">Paper Submission</span> </a></li><li class="item-498"><a href="site-map-7.html" ><img src="images/ico1.png" alt="Special Sessions" /><span class="image-title">Special Sessions</span> </a></li><li class="item-469"><a href="site-map-2.html" ><img src="images/ico1.png" alt="Call For Papers (Closed)" /><span class="image-title">Call For Papers (Closed)</span> </a></li><li class="item-494"><a href="for-special-session-proposals.html" ><img src="images/ico1.png" alt="Call For Special Session Proposals (Closed)" /><span class="image-title">Call For Special Session Proposals (Closed)</span> </a></li><li class="item-472"><a href="site-map-4.html" ><img src="images/ico1.png" alt="Important Dates" /><span class="image-title">Important Dates</span> </a></li><li class="item-496"><a href="student-travel-grants.html" ><img src="images/ico1.png" alt="Student travel grants" /><span class="image-title">Student travel grants</span> </a></li><li class="item-475"><a href="schedule.html" ><img src="images/ico1.png" alt="Schedule" /><span class="image-title">Schedule</span> </a></li><li class="item-474"><a href="registration.html" ><img src="images/ico1.png" alt="Registration &amp; Camera Ready Paper Submission" /><span class="image-title">Registration &amp; Camera Ready Paper Submission</span> </a></li><li class="item-477"><a href="venue-and-accommodation.html" ><img src="images/ico1.png" alt="Venue" /><span class="image-title">Venue</span> </a></li><li class="item-479"><a href="contact.html" ><img src="images/ico1.png" alt="Contact Us" /><span class="image-title">Contact Us</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Travel</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-481"><a href="golf-info.html" ><img src="images/golf2.png" alt="Golf Information" /><span class="image-title">Golf Information</span> </a></li><li class="item-482"><a href="conference-tours.html" ><img src="images/tour1.png" alt="Conference Tours" /><span class="image-title">Conference Tours</span> </a></li><li class="item-483 current active"><a href="travel-information.html" ><img src="images/info3.png" alt="Travel Information" /><span class="image-title">Travel Information</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+					
+		    <div id="content_outmiddle">
+					
+		
+				<div id="maincontent">
+					
+<div id="system-message-container">
+</div>						
+					<div class="item-page">
+
+	<h2 class="contentheading">
+			Travel Information		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="travel-information.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-j1.6/images/system/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="http://ecticon2014.ecticon.org/index.php/component/mailto/?tmpl=component&amp;template=allrounder-j1.6&amp;link=ec9ada89fd700b6ccb0ee721ac3eb6a8659fbc06" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="templates/allrounder-j1.6/images/system/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/EctiCon2014" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"> </div>
+<p style="text-align: center;"> </p>
+<p style="margin: 0in 0in 6pt; text-align: center; line-height: 115%; background-position: initial initial; background-repeat: initial initial;" align="center"><span style="text-decoration: underline;"><strong><span style="font-size: 13pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">Travel Information</span></strong></span></p>
+<p style="margin: 0in 0in 6pt; text-align: center; line-height: 115%; background-position: initial initial; background-repeat: initial initial;" align="center"><strong><span style="font-size: 13pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0;"> </span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span style="text-decoration: underline;"><strong><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">General information about Nakhon Ratchasima (Korat)</span></strong></span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">See information about </span><a href="http://en.wikipedia.org/wiki/Nakhon_Ratchasima_Province" target="_blank"><span style="font-size: 11pt; line-height: 115%; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">Nakhon_Ratchasima_Province</span></span><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;"><br /></span></a></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 11pt; line-height: 115%; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';"> </span></span></p>
+<p><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;"><span style="text-decoration: underline;"><strong style="font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.3em;"><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">Visas and Travel Documents</span></strong></span></span></p>
+<p><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;"><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: #333333; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">International delegates please check if you need to apply for Visa or prepare documents to enter Thailand.</span></span></span><span style="line-height: 1.3em;"> </span></p>
+<p class="MsoNormal"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">If you require a conference invitation letter for your journey, please request it by emailing 
+ <script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy44925 = 's&#101;cr&#101;t&#97;ry' + '&#64;';
+ addy44925 = addy44925 + '&#101;ct&#105;c&#111;n2014' + '&#46;' + '&#111;rg';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy44925 + '\'>');
+ document.write(addy44925);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script> providing your name as on passport and paper title.</span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-family: Arial, sans-serif; font-size: 13px; line-height: 14px;"> </span><strong style="line-height: 1.3em;"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;"><span style="color: #0070c0; font-size: 11pt; line-height: 115%;"> </span></span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="text-decoration: underline;"><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Travel to Nakhon Ratchasima</span></strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif;"> <strong>(Korat)</strong></span></span></span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><strong><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><img src="images/icons/car2.jpg" border="0" width="30" height="27" /> By car:</span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">There are three routes to take from Bangkok to Nakhon Ratchasima.</span></p>
+<ul>
+<li><strong style="text-indent: -0.25in; line-height: 1.3em;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;">First Route:</span></strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;"> Take Highway No. 1 (Phahonyothin) passing Don Muang Airport, Wang Noi and Nong Khae till you arrive at the Saraburi interchange. At Saraburi, turn right on Highway No. 2 (Mittraphap Highway) which finally leads to Nakhon Ratchasima. The total distance of this route is 259 km.</span></li>
+<li><strong style="text-indent: -0.25in; line-height: 1.3em;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;">Second Route:</span></strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;"> This alternative route is a little longer in distance but passes some interesting places. Take Highway No. 304 via Min Buri, Chachoengsao, Phanom Sarakham, Kabin Buri, Wang Nam Khiao and Pak Thong Chai to Nakhon Ratchasima. The total distance is 273 km.</span></li>
+<li><strong style="text-indent: -0.25in; line-height: 1.3em;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;">Third Route:</span></strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;"> Take Highway No. 305 passing Thanyaburi, Ongkharak to Nakhon Nayok. From Nakhon Nayok, turn right onto Highway No. 33 to Kabin Buri and then turn left on Highway No. 304 passing Wang Nam Khiao and Pak Thong Chai to Nakhon Ratchasima.</span></li>
+</ul>
+<p><span style="color: #000000; font-family: Arial, sans-serif; font-size: small;"><span style="line-height: 14px;"> </span></span></p>
+<p class="MsoNormal" style="margin: 0in 0in 6pt 0.25in; text-indent: -0.25in; background-position: initial initial; background-repeat: initial initial;"><strong style="line-height: 13px; text-indent: 0px;"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><img src="images/icons/bus4.jpg" border="0" width="27" height="30" style="border: 0;" /> By bus:</span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: black;">Buses between Bangkok and Korat are served by Mo Chit Northern/Northeastern Bus Terminal (Mo Chit 2 Bus Terminal), and depart every 30 minutes for the 3 ½ hour journey: buses leave Bangkok for Korat several times an hour 24 hours a day. Go to the top floor of the terminal building and buy your ticket at window 40, 49, 50, 52 or 53. The price is 220 baht, one-way from Bangkok to Nakhon Ratchasima. The buses follow 'First Route' described above.</span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">There are two main bus stations in Korat. The new bus station is the larger of the two and is just to the north of the city centre, beyond Big C on the Korat to Khon Kaen stretch of Mittraphap Road. The old bus station is within the city centre on Burin Road between Suranaree Road and Mittraphap.</span></p>
+<ul>
+<li><strong style="line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Window 40 and 49</span></strong><span class="apple-converted-space" style="line-height: 115%;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"> </span></span><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: black;">-<span class="apple-converted-space"> </span><em>Ratchasima Tour</em>. Direct 24-hour service. Window 40 for the old bus station and window 49 for the new bus station.</span></li>
+<li><strong style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">Window 50</span></strong><span class="apple-converted-space" style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;"> </span></span><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">-<span class="apple-converted-space"> </span><em><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Suranaree Air</span></em><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">. </span></span><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Tickets for services to either station are sold at the same window. Confusingly, there are two windows #50 at Mo Chit (50 and 50</span><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Angsana New','serif'; mso-ascii-font-family: Arial; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-font-family: Arial; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;" lang="TH">ก). </span><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">The one you need is on the left of the two.</span></li>
+<li><strong style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%; color: black;"><span style="font-size: 10pt; line-height: 115%;">Windows 52 and 53</span></strong><span class="apple-converted-space" style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%; color: black;"><span style="font-size: 10pt; line-height: 115%;"> </span></span><span style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%; color: black;">-<span class="apple-converted-space"> </span><em>Air Korat Pattana</em>. Window 52 for buses to the new bus station and window 53 for buses to the old bus station. For more details and pictures see the following </span><a href="http://stuckinthailand.com/korat/from-bangkok-to-nakhon-ratchasima-korat-by-bus" target="_blank" style="line-height: 1.3em;"><span style="text-indent: -0.25in; font-size: 11pt; line-height: 115%; font-family: Calibri, sans-serif;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">stuckinthailand.com/from-bangkok-to-korat</span></span></a></li>
+</ul>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">For a description of how to<span class="apple-converted-space"> </span></span><span class="ilad"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">travel from</span></span><span class="apple-converted-space"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;"> </span></span><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">Nakhon Ratchasima to Bangkok see the following </span><a href="http://stuckinthailand.com/korat/travel-in-thailand-from-nakhon-ratchasima-korat-to-bangkok-by-bus" target="_blank" style="line-height: 115%;"><span style="font-size: 11.0pt; mso-bidi-font-size: 14.0pt; line-height: 115%; font-family: 'Calibri','sans-serif'; mso-ascii-theme-font: minor-latin; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-hansi-theme-font: minor-latin; mso-bidi-font-family: 'Cordia New'; mso-bidi-theme-font: minor-bidi; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">stuckinthailand.com/travel-from-korat-to-bangkok</span></span></a></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"> </span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><strong><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><img src="images/icons/train4.jpg" border="0" width="27" height="32" style="border: 0;" /> By train:</span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Trains leave from Bangkok Railway Station (Huam Lamphong) daily and can take anything from 4 to 6 hours depending on what type of train you catch. Fares are very reasonable for the 264 km journey. The 1st class fare (express train only) is 230 baht, while the 2nd class and 3rd class fares are 115 baht and 50 baht respectively. </span></span><span style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;">Visit </span><span style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;"><a href="http://www.railway.co.th/home/Default.asp?lenguage=Eng" target="_blank" style="font-family: Calibri, sans-serif; font-size: 11pt; line-height: 115%;">www.railway.co.th</a> </span><span style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;">or call 1690 for more up-to-date schedules and fares.</span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;"> </span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="text-decoration: underline;"><span style="color: black; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%; text-decoration: underline;"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">Getting Around Nakhon Ratchasima</span></strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;"> <strong>(Korat)</strong></span></span></span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><strong><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><img src="images/icons/taxi2.jpg" border="0" width="30" height="26" /> By taxi:</span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Meter-taxis are a fairly new introduction to the Korat roads. They are blue and yellow in colour and scarce in number. If you are lucky enough to see one for hire on the street then you can hail it as you would a Bangkok taxi. It is 30 baht for the first kilometre and 4 baht a kilometre after that. You can call 66(0)-4434-2255 for one but if you do that then the meter won't be used but a fixed fee will be charged for your journey. Furthermore, you can't book one in advance as you can with a minicab. You just have to call when you want one and hope that one is available.</span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"> </span></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><strong><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"><img src="images/icons/tuk2.jpg" border="0" width="30" height="25" /> By tuk-tuk:</span></strong></p>
+<p style="margin: 0in 0in 6pt; line-height: 115%; text-align: left;" align="center"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: black;">The three-wheeled buzzboxes are plentiful in the city. They congregate in large numbers outside shopping centres, department stores, the two bus stations and train station. And individuals will be </span><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">dotted along all the busy roads, the fares for both of which should be agreed upon before setting out.</span></p>
+<h3 style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span class="mw-headline"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;"> </span></span></h3>
+<h3 style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span class="mw-headline"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;"><img src="images/icons/moto2.jpg" border="0" width="30" height="27" /> By motorbike taxi:</span></span></h3>
+<p><span class="mw-headline"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Wherever you find tuk-tuks you will find motorbike taxis. Their fares are generally two-thirds to three-quarters those of tuk-tuks (i.e., a 60 baht tuk-tuk fare will be 40 baht on a motorbike, etc). Safety is obviously a concern for a lot of travellers when it comes to motorcycle taxis. Only you can decide if you want to risk it or not but the rider should at least provide a helmet.</span></span></p>
+<h3 style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span class="mw-headline"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;"> </span></span></h3>
+<h3 style="margin: 0in 0in 6pt; line-height: 115%; background-position: initial initial; background-repeat: initial initial;"><span class="mw-headline"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;"><img src="images/icons/sam2.jpg" border="0" width="30" height="25" /> By cycle rickshaw (samlor)</span></span><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;">:</span></h3>
+<p><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">The traditional pedal powered samlor ( literally, three wheels ) is a large tricycle with room for - at a squeeze - two passengers who sit on a covered, padded seat behind the rider. These days there are far more tuk-tuks and motorcycle taxis than Samlors but you can still find them dotted along most major roads. They come into their own during the Yamo festival ( end of March/start of April ) when Ratchadamnoen Road is closed and pedestrianized every evening and Samlors are the only form of transport allowed. You will notice that all samlor operators are elderly men so do not get them to take you halfway across the city! A kilometre or so is a more appropriate distance and it will only cost you 20 Baht.</span></p>
+<p class="MsoNormal" style="margin-bottom: 6.0pt;"><span style="color: #f68426; font-family: Arial, sans-serif; font-size: 11pt; line-height: 17px; font-weight: bold;"> </span></p>
+<h3 style="margin: 0in 0in 6pt; line-height: 14px;"><span class="mw-headline"><span style="font-size: 11pt; line-height: 17px; font-family: Arial, sans-serif; color: #f68426;"><img src="images/icons/songthaew2.jpg" border="0" width="30" height="20" /> By </span><strong><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: #f68426; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">songthaew</span></strong><span style="font-size: 11pt; line-height: 17px; font-family: Arial, sans-serif; color: #f68426;">:</span></span></h3>
+<p><span class="mw-headline"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">A Songthaew is a pick-up truck which has been converted into a small short-hop bus. Passengers step into the back of the truck and sit on parallel benches. When you want to get off just press the buzzer and hand your fare through the passenger window to the driver.</span></span></p>
+<p><span class="mw-headline"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Each Songthaew follows a fixed route and there are around 20 different routes which cover most roads in the city. The vehicles come in a variety of colours and numbers - each denoting a different route. Most have their route number prominently displayed on a board above the window. Some start as early as 5 am and run as late as 11 pm but generally speaking it is rare to see one before 7 am and very rare to see one much after 9 pm. For more information,<span style="color: black;"> visit </span></span></span><a href="http://www.thailand-delights.com/page1622.html" target="_blank"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">www.thailand-delights</span></a></p>
+<p class="MsoNormal" style="margin-bottom: 6.0pt;"><strong><span style="mso-bidi-font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #f68426;"> </span></strong></p>
+<p class="MsoNormal" style="margin-bottom: 6.0pt;"> </p>
+	
+</div>
+
+				</div>
+				<div class="clr"></div>
+				<span class="shadow-left">&nbsp;</span>
+				<span class="shadow-right">&nbsp;</span>
+					
+		
+			</div>
+							<div id="rightcol">
+		             	<div class="module-outer_menu ct_menu_horizontal">
+					<h3 class="moduleh3"><strong>Web Link</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module_menu ct_menu_horizontal">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-487"><a href="http://www.ecti-thailand.org/" target="_blank" ><img src="images/link.png" alt="ECTI Association" /><span class="image-title">ECTI Association</span> </a></li><li class="item-489"><a href="http://web.sut.ac.th/2012/" target="_blank" ><img src="images/link.png" alt="Suranaree Univ. of Tech." /><span class="image-title">Suranaree Univ. of Tech.</span> </a></li><li class="item-490"><a href="http://eng.sut.ac.th/tce/" target="_blank" ><img src="images/link.png" alt="School of Telecom Eng. " /><span class="image-title">School of Telecom Eng. </span> </a></li><li class="item-488"><a href="http://eng.sut.ac.th/neweng/index.php?page=home" target="_blank" ><img src="images/link.png" alt="Institute of Eng. (SUT)" /><span class="image-title">Institute of Eng. (SUT)</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Facebook Fanpage</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div id="kafbfanbox" class="kafbfanbox "><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="https://www.facebook.com/EctiCon2014" width="225" height="550" show_faces="true" stream="true" header="false" force_wall="true"" ></fb:like-box><div style="clear:left"><small><a href="http://www.khawaib.co.uk/joomla/downloads/item/12-facebook-fanbox.html">KA Facebook Fanbox 1.1</a></small></div><noscript>JavaScript must be enabled in order to use KA Facebook Fanbox. <a href="%22/%22">Refresh Page.</a></noscript></div>					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+				
+			<div class="clr"></div>
+		</div>
+			
+		
+		
+		<div class="clr"></div>
+	</div>
+			<div id="foot_container" style="max-width:1180px;">
+					
+		
+		
+							
+	
+			
+			<div id="subfoot">
+								
+					<div class="copytext">&copy; ECTI-CON 2014</div>
+							</div>
+					
+	
+		<div class="clr"></div>
+			<div id="footer">
+				<div class="footer-inner">
+					<span class="feckl">&nbsp;</span>
+					<span class="feckr">&nbsp;</span>
+					<div id="scroll_up"> <a href="http://ecticon2014.ecticon.org/index.php#" class="lv-tooltip" id="gotop" title="Scroll to top">&uarr;&uarr;&uarr;</a></div>
+										</div>
+				<div class="footer-bottom">
+								  		<span id="copy"><a href="http://www.lernvid.com" title="Joomla Templates" target="_blank">Template designed by LernVid.com</a></span>
+				</div>
+			</div>		
+		<div class="clr"></div>
+	</div>	
+		
+</body>
+</html>

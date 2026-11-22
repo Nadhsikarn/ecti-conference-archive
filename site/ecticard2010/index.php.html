@@ -1,0 +1,1288 @@
+<html > 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ 
+<title>ECTI-CARD 2010  |  The 2nd ECTI-Conference on Application Research and Development</title> 
+ 
+		<meta name="layout" content="main" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta http-equiv="imagetoolbar" content="no" /> 
+		<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js" /></script>	
+		<script type="text/javascript"  src="http://code.jquery.com/jquery-1.4.2.min.js"/></script> 
+		<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.2.pack.js" /></script> 
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.1.js" /></script> 
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.1.css" media="screen" /> 
+		
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+			$(window).load(function(){
+			// alert("jQuery Event Onload");	//script
+		       }); //end window load
+			$("a#example1").fancybox({
+				'titleShow'		: false
+			});
+ 
+			$("a#example2").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+ 
+			$("a#example3").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'
+			});
+ 
+			$("a#example4").fancybox();
+ 
+			$("a#example5").fancybox({
+				'titlePosition'	: 'inside'
+			});
+ 
+			$("a#example6").fancybox({
+				'titlePosition'	: 'over'
+			});
+ 
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+ 
+			/*
+			*   Examples - various
+			*/
+ 
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+ 
+			$("#various2").fancybox();
+ 
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '110%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+ 
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script> 
+<style type="text/css"> 
+.kikclass.a {
+	outline: none;	
+}
+ 
+.kikclass{
+	border: 1px solid #BBB;
+	padding: 2px;	
+	margin: 10px 10px 10px 0;
+	vertical-align: top;
+}
+ 
+</style> 
+    
+	
+<style type="text/css"> 
+<!--
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 89px;
+	top: -200px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 16px;
+	top: 286px;
+}
+#Layer3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:2;
+	left: 19px;
+	top: 631px;
+}
+#Layer4 {
+	position:absolute;
+	width:49px;
+	height:4px;
+	z-index:3;
+	left: 802px;
+	top: 286px;
+}
+body {
+	
+	background-color: #FFFFFF;
+}
+ 
+.style1 {	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #565553;
+}
+.style2 {font-size: 3px}
+.style5 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #dd8758; }
+.style6 {font-family: Arial, Arial, Arial, Arial;  font-size: 12px;}
+.style7 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 3px; color: #dd8758; }
+.style8 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #CCCCCC; }
+ 
+.style13 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.style14 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; }
+.style15 {font-size: 11px}
+.style22 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #E6E6E6;
+}
+.style23 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 12px; color: #565553; }
+.style29 {
+	font-family: Arial;
+	color: #606060;
+	font-size: 13px
+}
+.style291 {
+	font-family: Arial;
+	color: #606060;
+	text-align: center;
+	font-size: 13px;
+	
+}
+.style292 {
+	font-family: Arial;
+	color: red;
+	font-weight: bold; 
+	font-size: 13px;
+	
+}
+.style30 {
+	font-family: Arial;
+	color: #606060;
+	font-size: 16px;
+	font-weight: bold;
+}
+ 
+.style34 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #606060; font-size: 13px; }
+.style37 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #606060;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+.style39 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #E36D35; font-size: 14px;}
+.style41 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #E36D35; font-weight: bold; font-size: 14px;}
+a:link {
+	color: #0099CC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099CC;
+}
+a:hover {
+	text-decoration: none;
+	color: #9EC46F;
+	font-weight: bold;
+}
+a:active {
+	text-decoration: none;
+	color: #F6CB26;
+}
+/* MESSAGES AND ERRORS */
+ 
+.message {
+    background: #f3f8fc url(http://ecticard2010.ecticard.org/..images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px;
+    font-weight: bold;
+    font-family: Arial;
+	font-size: 13px
+}
+ 
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-family: Arial;
+	font-size: 13px
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;	
+}
+div.errors li {
+	background: url(http://ecticard2010.ecticard.org/..images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+ 
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+ 
+ 
+-->
+</style> 
+ 
+ 
+<script type="text/javascript"> 
+function detectBrowser()
+{
+var browser=navigator.appName;
+var version=parseFloat(navigator.appVersion);
+var x = document.getElementById('table_detect')
+var y = document.getElementById('table_detect1')
+if (browser=="Netscape"&& (version>=4))
+  {
+  
+	x.width=197;
+	y.width = 858;
+  }
+else if(browser=="Microsoft Internet Explorer" && (version>=4))
+  {
+ 	 x.width=190;
+  	y.width = 20;
+  }
+}
+ 
+ 
+</script> 
+ 
+ 
+</head> 
+ 
+<body background="images/bg.jpg" onload="detectBrowser()"> 
+<div align="center"> 
+  <table id="Table_01" width="858"  height="216" border="0" cellpadding="0" cellspacing="0"> 
+    <tr> 
+      <td align="left" colspan="2" > 
+    
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="804" height="245"> 
+          <param name="movie" value="images/ectiheadflash.swf" /> 
+          <param name="quality" value="high" /> 
+	  
+          <embed src="images/ectiheadflash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="804" height="245"></embed></object></td> 
+ 
+      <td> 
+      </td> 
+    </tr> 
+    <tr> 
+    	 <td width="12%" valign="top"><img src="images/bar_ecti_01.jpg" width="648" height="42" /></td> 
+      <td align="left" width="10%"> 
+      <a href="index.php@page=news.html" ><img src="images/bar_ecti_02.jpg" width="156"  border="0"/></a></td> 
+    </tr> 
+   
+    </table> 
+    
+   
+    
+    
+  <table class="table_detect1" width="858"  cellpadding="0" cellspacing="0" background="images/main_navigation_bg.jpg"> 
+  
+    <tr> 
+      <td ><img src="images/content_01.gif" width="183" height="5" alt="" /></td> 
+      <td ><img src="images/content_02.gif" width="14" height="5" alt="" /></td> 
+      <td><img src="images/content_03.gif" width="591" height="5" alt="" /></td> 
+      <td><img src="images/content_04.gif" width="70" height="5" alt="" /></td> 
+    </tr> 
+    <tr> 
+      <td colspan="2" valign="top"><table class="table_detect"  width="197" height="305"  cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+          <td><img src="images/MainNavigation_02.gif"  height="35" alt="" /></td> 
+          <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="52" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_04.gif" width="27" height="17" alt="" /></td> 
+          <td><img src="images/MainNavigation_05.gif"  height="17" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_06.gif" width="27" height="93" alt="" /></td> 
+          <td rowspan="4" bgcolor="#FFFFFF" valign="top"><table width="150" border="0"> 
+            <tr> 
+              <td><br><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><br><span class="style5"><a href="index.php.html">Home</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=callForPaper.html">Call for Paper</a></span></td> 
+            </tr> 
+            
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+             <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=evaluation.html">Evaluation</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=dates.html">Important Dates</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="index.php@page=committee.html">Organizing Committee</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="http://ecticard2010.ecticard.org/submission" target="_blank">Online Paper Submission</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="index.php@page=registration.html">Registration (Transfer)</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=venue.html">Conference Venue</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+            
+           
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=travel.html">Travel Information</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+                        <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=sponsor.html">Sponsors</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+                <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=contact.html">Contact Us</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+              
+            </tr> 
+            
+            </table> 
+         </td> 
+          <td rowspan="5" background="images/MainNavigation_08.gif">&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td background="images/MainNavigation_09.gif"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> 
+              <p>&nbsp;</p></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+          <td><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+        </tr> 
+        </table> 
+        <table id="Table_01" width="197" height="5" border="0" cellpadding="0" cellspacing="0"> 
+          <tr> 
+            <td colspan="3" background="images/main_navigation_bg.jpg"> 
+            
+            <table id="Table_01" width="197" height="305" border="0" cellpadding="0" cellspacing="0"> 
+              <tr> 
+                <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+              <td><img src="images/MainNavigation_02.gif" width="153" height="35" alt="" /></td> 
+              <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="52" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_04.gif" width="27" height="17" alt="" /></td> 
+              <td><img src="images/hostByMUT.png" alt="" width="147" height="16" align="right" /></td> 
+            </tr> 
+           
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_06.gif" width="27" height="93" alt="" /></td> 
+              <td rowspan="4" bgcolor="#FFFFFF" align="center"><p align="center"> 
+              <img src="images/MUTlogo.png" width="122" height="122" /></p> 
+             		<span class="style5"><a href="http://www.mut.ac.th">www.mut.ac.th</a></span> 
+                 </td> 
+              <td rowspan="5" background="images/MainNavigation_08.gif"></td> 
+            </tr> 
+              <tr> 
+                <td background="images/MainNavigation_09.gif"> 
+                  <br /> 
+                 </td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+              <td ><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+            </tr> 
+            
+            
+            <!-- Pattaya  Start Here --> 
+            
+             <tr> 
+                <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+              <td><img src="images/MainNavigation_02.gif" width="153" height="35" alt="" /></td> 
+              <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="20" alt="" /></td> 
+            </tr> 
+              
+           
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_06.gif" width="27" height="20" alt="" /></td> 
+              <td rowspan="4" bgcolor="#FFFFFF" align="center"><p align="center"> 
+          <!--  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="138" height="138">
+          <param name="movie" value="images/pattayaFlash.swf" />
+          <param name="quality" value="high" />
+          <embed src="images/pattayaFlash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="138" height="138"></embed>
+      </object> 
+      --> 
+                 </td> 
+              <td rowspan="5" background="images/MainNavigation_08.gif"></td> 
+            </tr> 
+              <tr> 
+                <td background="images/MainNavigation_09.gif"> 
+                  <br /> 
+                 </td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+              <td ><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+            </tr> 
+            
+            <!-- Pattaya Stop Here --> 
+            
+            
+              </table> 
+            
+           </td> 
+        </tr> 
+      </table>    </td> 
+      <td valign="top" background="images/content_07.gif"> 
+      <br> 
+      
+      <blockquote> 
+        <p align="left"> 
+				<html>
+    <head>
+		<meta name="layout" content="main" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+		<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js" />	
+		<script type="text/javascript"  src="http://code.jquery.com/jquery-1.4.2.min.js"/>
+		<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.2.pack.js" />
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.1.js" />
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.1.css" media="screen" />
+		
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+			$(window).load(function(){
+			// alert("jQuery Event Onload");	//script
+		       }); //end window load
+			$("a#example1").fancybox({
+				'titleShow'		: false
+			});
+
+			$("a#example2").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example4").fancybox();
+
+			$("a#example5").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example6").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '110%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+<style type="text/css">
+.kikclass.a {
+	outline: none;	
+}
+
+.kikclass{
+	border: 1px solid #BBB;
+	padding: 2px;	
+	margin: 10px 10px 10px 0;
+	vertical-align: top;
+}
+
+</style>
+    </head>
+   <body>
+
+    
+    
+    <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          <tr>
+            <td><img src="images/headColumn_01.gif" width="10" height="8" alt="" /></td>
+            <td bgcolor="#E5E5E5"><img src="images/headColumn_02.gif" width="480" height="8" alt="" /></td>
+            <td><img src="images/headColumn_03.gif" width="10" height="8" alt="" /></td>
+          </tr>
+          <tr>
+            <td bgcolor="#E5E5E5">&nbsp;</td>
+            <td width="480" bgcolor="#E5E5E5">
+            <div align="justify">
+            <span class="style6">
+            &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#3591;&#3634;&#3609;&#3611;&#3619;&#3632;&#3594;&#3640;&#3617;&#3623;&#3636;&#3594;&#3634;&#3585;&#3634;&#3619; ECTI-CARD 2010 &#3592;&#3633;&#3604;&#3650;&#3604;&#3618;&#3588;&#3603;&#3632;&#3623;&#3636;&#3607;&#3618;&#3634;&#3585;&#3634;&#3619;&#3649;&#3621;&#3632;&#3648;&#3607;&#3588;&#3650;&#3609;&#3650;&#3621;&#3618;&#3637;&#3626;&#3634;&#3619;&#3626;&#3609;&#3648;&#3607;&#3624; 
+              &#3617;&#3627;&#3634;&#3623;&#3636;&#3607;&#3618;&#3634;&#3621;&#3633;&#3618;&#3648;&#3607;&#3588;&#3650;&#3609;&#3650;&#3621;&#3618;&#3637;&#3617;&#3627;&#3634;&#3609;&#3588;&#3619; &#3619;&#3656;&#3623;&#3617;&#3585;&#3633;&#3610; &#3626;&#3617;&#3634;&#3588;&#3617;&#3623;&#3636;&#3594;&#3634;&#3585;&#3634;&#3619;&#3652;&#3615;&#3615;&#3657;&#3634; &#3629;&#3636;&#3648;&#3621;&#3588;&#3607;&#3619;&#3629;&#3609;&#3636;&#3588;&#3626;&#3660; 
+              &#3650;&#3607;&#3619;&#3588;&#3617;&#3609;&#3634;&#3588;&#3617;&#3649;&#3621;&#3632;&#3626;&#3634;&#3619;&#3626;&#3609;&#3648;&#3607;&#3624; &#3611;&#3619;&#3632;&#3648;&#3607;&#3624;&#3652;&#3607;&#3618; &#3617;&#3637;&#3592;&#3640;&#3604;&#3617;&#3640;&#3656;&#3591;&#3627;&#3617;&#3634;&#3618;&#3627;&#3621;&#3633;&#3585;&#3648;&#3614;&#3639;&#3656;&#3629;&#3619;&#3623;&#3610;&#3619;&#3623;&#3617;&#3612;&#3621;&#3591;&#3634;&#3609;&#3623;&#3636;&#3592;&#3633;&#3618;
+              &#3649;&#3621;&#3632;&#3614;&#3633;&#3602;&#3609;&#3634;&#3648;&#3594;&#3636;&#3591;&#3611;&#3619;&#3632;&#3618;&#3640;&#3585;&#3605;&#3660; &#3609;&#3623;&#3633;&#3605;&#3585;&#3619;&#3619;&#3617; &#3649;&#3621;&#3632;&#3626;&#3636;&#3656;&#3591;&#3611;&#3619;&#3632;&#3604;&#3636;&#3625;&#3600;&#3660; &#3650;&#3604;&#3618;&#3651;&#3594;&#3657;&#3588;&#3629;&#3617;&#3614;&#3636;&#3623;&#3648;&#3605;&#3629;&#3619;&#3660; &#3619;&#3632;&#3610;&#3610;&#3613;&#3633;&#3591;&#3605;&#3633;&#3623;
+              &#3627;&#3619;&#3639;&#3629;&#3619;&#3632;&#3610;&#3610;&#3626;&#3634;&#3619;&#3626;&#3609;&#3648;&#3607;&#3624; &#3626;&#3635;&#3627;&#3619;&#3633;&#3610;&#3609;&#3633;&#3585;&#3623;&#3636;&#3592;&#3633;&#3618; &#3612;&#3641;&#3657;&#3614;&#3633;&#3602;&#3609;&#3634;&#3649;&#3621;&#3632;&#3612;&#3641;&#3657;&#3651;&#3594;&#3657;&#3591;&#3634;&#3609; &#3627;&#3619;&#3639;&#3629;&#3627;&#3609;&#3656;&#3623;&#3618;&#3591;&#3634;&#3609;&#3607;&#3637;&#3656;&#3592;&#3632;&#3609;&#3635;&#3591;&#3634;&#3609;&#3607;&#3637;&#3656;
+              &#3605;&#3637;&#3614;&#3636;&#3617;&#3614;&#3660;&#3652;&#3611;&#3614;&#3633;&#3602;&#3609;&#3634;&#3605;&#3656;&#3629;&#3618;&#3629;&#3604; &#3627;&#3619;&#3639;&#3629;&#3614;&#3633;&#3602;&#3609;&#3634;&#3626;&#3641;&#3656;&#3612;&#3621;&#3636;&#3605;&#3616;&#3633;&#3603;&#3601;&#3660;&#3648;&#3594;&#3636;&#3591;&#3614;&#3634;&#3603;&#3636;&#3594;&#3618;&#3660; &#3610;&#3607;&#3588;&#3623;&#3634;&#3617;&#3607;&#3637;&#3656;&#3652;&#3604;&#3657;&#3619;&#3633;&#3610;&#3588;&#3633;&#3604;&#3648;&#3621;&#3639;&#3629;&#3585;
+              &#3592;&#3632;&#3606;&#3641;&#3585;&#3605;&#3637;&#3614;&#3636;&#3617;&#3614;&#3660;&#3651;&#3609; Proceeding of ECTI-CARD 2010 &#3585;&#3634;&#3619;&#3588;&#3633;&#3604;&#3648;&#3621;&#3639;&#3629;&#3585;&#3592;&#3632;&#3614;&#3636;&#3592;&#3634;&#3619;&#3603;&#3634;&#3592;&#3634;&#3585;&#3588;&#3640;&#3603;&#3616;&#3634;&#3614;&#3588;&#3623;&#3634;&#3617;&#3626;&#3617;&#3610;&#3641;&#3619;&#3603;&#3660; &#3611;&#3619;&#3632;&#3626;&#3636;&#3607;&#3608;&#3636;&#3616;&#3634;&#3614; &#3649;&#3621;&#3632;&#3585;&#3634;&#3619;&#3609;&#3635;&#3652;&#3611;&#3651;&#3594;&#3657;&#3591;&#3634;&#3609;&#3592;&#3619;&#3636;&#3591;&#3586;&#3629;&#3591;&#3591;&#3634;&#3609;&#3607;&#3637;&#3656;&#3609;&#3635;&#3648;&#3626;&#3609;&#3629;
+              </span>
+              </div></td>
+            <td bgcolor="#E5E5E5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td><img src="images/headColumn_07.gif" width="10" height="9" alt="" /></td>
+            <td bgcolor="#E5E5E5"><img src="images/headColumn_08.gif" width="480" height="9" alt="" /></td>
+            <td><img src="images/headColumn_09.gif" width="10" height="9" alt="" /></td>
+          </tr>
+          <tr>
+          <td colspan="3">
+          <br>
+          </td>
+          </tr>
+        </table>
+         <table id="Table_01" width="500" height="271" border="0" cellpadding="0" cellspacing="0" align="center">
+              <tr>
+                <td><img src="images/content_pic_01.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_02.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_03.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_04.gif" width="125" height="68" alt="" /></td>
+              </tr>
+              <tr>
+                <td><img src="images/content_pic_05.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_06.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_07.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_08.gif" width="125" height="68" alt="" /></td>
+              </tr>
+              <tr>
+                <td><img src="images/content_pic_09.gif" width="125" height="67" alt="" /></td>
+                <td><img src="images/content_pic_10.gif" width="125" height="67" alt="" /></td>
+                <td><img src="images/content_pic_11.gif" width="125" height="67" alt="" /></td>
+                <td><img src="images/content_pic_12.gif" width="125" height="67" alt="" /></td>
+              </tr>
+              <tr>
+                <td><img src="images/content_pic_13.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_14.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_15.gif" width="125" height="68" alt="" /></td>
+                <td><img src="images/content_pic_16.jpg" width="125" height="68" alt="" /></td>
+              </tr>
+            </table>
+         <p align="center"><img src="images/columnLine.png" width="502" height="2" /><br />
+              <br />
+        </p>
+        
+        
+        
+        
+        
+        <div id="content">
+	
+
+	<p>
+		<div align="center"><span class="style37"><br/>
+		ภาพบรรยากาศภายในงานประชุมวิชาการ ECTI-2010<br> 
+                ระหว่างวันที่ 10 - 12 พฤษภาคม 2553<br>
+                	โรงแรมจอมเทียนปาล์มบีช พัทยา จังหวัด ชลบุรี<br>
+			
+
+		<a rel="example_group" href="http://ecticard2010.ecticard.org/example/IMG_2358.JPG" title="ทีมงานทุกท่าน พร้อมลุย! "><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2358.JPG" /></a>
+
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1415.jpg" title="เตรียมตัวสร้างงานยิ่งใหญ่ด้วยกัน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1415.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1453.JPG" title="สถานที่พร้อม อาหาพร้อม น้ำพร้อม คนก็พร้อมเช่นกัน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1453.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1457.JPG" title="กระเป๋า สำหรับผู้เข้าร่วมประชุมทุกๆท่าน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1457.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1458.JPG" title="พ่องานของเรา	 "><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1458.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1459.JPG" title="ใกล้เวลาเปิดเข้ามาแล้ว"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1459.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1509.JPG" title="บรรยากาศด้านบนเวที"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1509.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1514.JPG" title="ทีมลงทะเบียนพร้อมต้อนรับทุกท่าน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1514.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1531.JPG" title="ดร.ศุภกร พิธีกรในงาน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1531.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1542.JPG" title="ดร.โมไนย กล่าวเปิดงาน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1542.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1549.JPG" title="ดร.ศุภกร พร้อมทำหน้าที่"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1549.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1553.JPG" title="ผู้เข้าร่วมประชุม"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1553.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1559.JPG" title="ดร.โมไนย และ รศ.ดร.วีระศักดิ์"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1559.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1569.JPG" title="ดร.สุเจตน์ กับการบรรยายในหัวข้อพิเศษ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1569.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1570.JPG" title="ตั้งใจ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1570.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1606.JPG" title="และ  ... ตั้งใจ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1606.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1616.JPG" title="มอบของที่ระลึก"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1616.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1712.JPG" title="ผู้นำเสนอบทความ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1712.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1791.JPG" title="ทีมงานลงทะเบียนสุดสวย อิอิ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1791.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1812.JPG" title="เตรียมพร้อมนำเสนอบทความ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1812.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1834.JPG" title="สบาย สบาย"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1834.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1869.JPG" title="งานช่วงกลางคืน"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1869.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_1896.JPG" title="รับประทานอาหารพร้อมเพรียง"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_1896.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_2023.JPG" title="ตั้งชื่อน้องล่วงหน้าว่าน้อง ECTI ดีไหมนะ?"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2023.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_2128.JPG" title="นำเสนอบทความ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2128.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_2304.JPG" title="นำเสนอบมความ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2304.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_2313.JPG" title="ทีมงาน กับ Proceeding"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2313.JPG" /></a>
+		<a rel="example_group"  href="http://ecticard2010.ecticard.org/example/IMG_2329.JPG" title="นำเสนอบทความ"><img class="kikclass"  alt="" src="http://ecticard2010.ecticard.org/example/S_IMG_2329.JPG" /></a>
+		
+	</p>
+
+	
+</div>
+<div><p>&nbsp;</p></div>
+        
+    <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+      
+        
+        
+        </table>
+        
+        
+         <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          <tr>
+             
+                <td colspan="4"><div align="center"><span class="style29"><br>
+                <a href="file/02conferenceprogram_v1.pdf" target="_blank">
+               [ คลิ๊กที่นี่เพื่อดาวน์โหลดกำหนดการ]
+                </a>
+                <br/></span></div></td>
+              </tr>
+              <tr>
+          
+             
+                <td colspan="4"><div align="center"><span class="style37"><br/>
+                กำหนดการงานประชุม ECTI - CARD 2010<br> 
+                ระหว่างวันที่ 10 - 12 พฤษภาคม 2553<br>
+                	โรงแรมจอมเทียนปาล์มบีช พัทยา จังหวัด ชลบุรี<br>
+			</span></div></td>
+              </tr>
+              <tr>
+              <td colspan="4"><div align="center"><span class="style41"><br/>
+              วันจันทร์ที่ 10 พฤษภาคม 2553
+			</span></div></td>
+              </tr>
+        </table>
+         <table width="500"  border="1" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          
+              <tr>
+                <td width="70"><span class="style291"><strong><center>เวลา</center></strong> </span></td>
+                <td colspan="2"><span class="style291"><strong><center>กำหนดการ</center></strong> </span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">08.30-09.00 </span></td>
+                <td colspan="2"><span class="style291"><center>ลงทะเบียน</center></span></td>
+              </tr>
+               
+                <tr>
+                <td><span class="style29">09.00-09.20 </span></td>
+                <td colspan="2"><span class="style291"><center>พิธีเปิดการประชุมวิชาการ ECTI-CARD2010 <br>โดย ศ.ดร.โมไนย ไกรฤกษ์ นายกสมาคม ECTI ณ ห้องประชุม Marine </center></span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">09.20-10.20 </span></td>
+                <td colspan="2"><span class="style291"><center>ปาฐกถาพิเศษหัวข้อเรื่อง<b> "การสร้างนวัตกรรมแบบครบวงจร"</b> 
+                	<br>โดย รศ.ดร. สุเจตน์ จันทรังษ์ อธิการบดี มหาวิทยาลัยเทคโนโลยีมหานคร <br>ณ ห้องประชุม Marine<br>
+                	 <a href="http://ecticard2010.ecticard.org/${createLink(controller:'page',&#32;action:'keynote" target="_blank">
+                	 [ ประวัติผู้บรรยาย ]
+                	 </a>
+                	</center></span></td>
+              </tr>
+               
+              
+           <tr>
+           <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารว่าง</center></span>
+           </td>
+           </tr>
+           
+             <tr>
+                <td><span class="style29"><b>10.40-12.00</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การสื่อสาร การสนับสนุนผู้ใช้ตามบ้าน เครือข่ายสังคม เครือข่ายไร้สาย (1) </span><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">เทคโนโลยีชีวภาพ การแพทย์ วิทยาศาสตร์กายภาพ วิทยาศาสตร์การกีฬา (1)<br></span><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">10.40-11.00</span></td>
+                <td valign="top"><span class="style29" >An Application of Indoor Location Tracking in Museum using IEEE802.11 </span></td>
+                <td valign="top"><span class="style29">โปรแกรมบริหารระบบสารสนเทศคลินิกทันตกรรม - DCMS</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">11.00-11.20</span></td>
+                <td valign="top"><span class="style29">Multiple Cell Wireless LAN Load Monitoring and Recommendation System</span></td>
+                <td valign="top"><span class="style29">Command System Design of Speaker Dependent Isolated Word Recognition for Stroke Patients</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">11.20-11.40</span></td>
+                <td valign="top"><span class="style29">การพิจารณาข้อมูลข้ามเลเยอร์สื่อสารเพื่อลดผลกระทบของสัญญาณรบกวนในเครือข่ายแลนไร้สาย</span></td>
+                <td valign="top"><span class="style29">A Design and implementation of bioimpedance measurement for evaluating biological tissue properties</span></td>
+              </tr>
+        	 <tr>
+                <td><span class="style29">11.40-12.00</span></td>
+                <td valign="top"><span class="style29">ต้นแบบระบบสมองกลฝังตัวสำหรับการลาดตระเวนทางทหาร</span></td>
+                <td valign="top"><span class="style29">การใช้สัญญาณไฟฟ้ากล้ามเนื้อควบคุมรีโมทหลายหน้าที่</span></td>
+              </tr>
+               <tr>
+           <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารกลางวัน</center></span>
+           </td>
+           </tr>
+            <tr>
+                <td><span class="style29"><b>13.30-15.00</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การสื่อสาร การสนับสนุนผู้ใช้ตามบ้าน เครือข่ายสังคม เครือข่ายไร้สาย (2) </span><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">เทคโนโลยีชีวภาพ การแพทย์ วิทยาศาสตร์กายภาพ วิทยาศาสตร์การกีฬา (2)</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+            <tr>
+                <td><span class="style29">13.00-13.20</span></td>
+                <td valign="top"><span class="style29">การออกแบบและสร้างระบบสื่อสารสำหรับตรวจวัดและแสดงผลข้อมูลความแก่ของทุเรียนในสวน</span></td>
+                <td valign="top"><span class="style29">การพัฒนากระบวนการแม็ชชิงเพิชยูทด้วย FPGA สำหรับแยกสัญญาณเสียงหัวใจ</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">13.20-13.40</span></td>
+                <td valign="top"><span class="style29">การสร้างฮาร์ดแวร์เอฟพีจีเอซึ่งใช้พื้นที่น้อยเพื่อสร้างสัญญาณไซน์และโคไซน์ ด้วยการประยุกต์ใช้พิคโคเบลศ</span></td>
+                <td valign="top"><span class="style29">ระบบวิเคราะห์ประเภทผิวหน้า</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">13.40-14.00</span></td>
+                <td valign="top"><span class="style29">Social Network Community: Change Garbages into Treasures</span></td>
+                <td valign="top"><span class="style29">Development of an Electronic Stethoscope Prototype</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29"></span></td>
+                <td valign="top"><span class="style29"></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การประหยัดพลังงาน การจัดการพลังงาน บ้านอัตโนมัติ</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">14.00-14.20</span></td>
+                <td valign="top"><span class="style29">การแจ้งเตือนปัญหาในระบบเครือข่ายแบบบูรณาการ</span></td>
+                <td valign="top"><span class="style29">ตู้ปลาอัจฉริยะ Intelligent Multi Function Aquarium</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">14.20-14.40</span></td>
+                <td valign="top"><span class="style29">การปรับปรุงประสิทธิภาพระบบระบุตำแหน่งวัตถุภายในอาคาร ในระบบเครือข่ายเซ็นเซอร์ไร้สายด้วยวิธีการปรับระดับความแรงของกำลังส่ง</span></td>
+                <td valign="top"><span class="style29">มูลค่าความเสียหายของผู้ใช้ไฟจากเหตุการณ์ไฟฟ้าขัดข้องของนิคมอุตสาหกรรมในประเทศไทยด้วยวิธีการแบบถดถอยหลายตัวแปร</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">14.40-15.00</span></td>
+                <td valign="top"><span class="style29">ระบบระบุตำแหน่งและแจ้งเตือนผู้ป่วยนอกระหว่างรอพบแพทย์ด้วยเครือข่ายเซนเซอร์ไร้สาย</span></td>
+                <td valign="top"><span class="style29">การพัฒนาเว็บแอพพลิเคชั่นในระบบควบคุมอัตโนมัติ</span></td>
+              </tr>
+               <tr>
+           <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารว่าง</center></span>
+           </td>
+           </tr>
+             <tr>
+                <td><span class="style29"><b>15.20-18.20</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การสื่อสาร การสนับสนุนผู้ใช้ตามบ้าน เครือข่ายสังคม เครือข่ายไร้สาย (3) </span><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การกู้ภัย ระบบเตือนภัย และการพยากรณ์</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">15.20-15.40</span></td>
+                <td valign="top"><span class="style29">การประยุกต์ใช้ Dreambox เพื่อควบคุมอุปกรณ์เครื่องใช้ไฟฟ้า</span></td>
+                <td valign="top"><span class="style29">Adaptive Auditory Warning System</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29"></span></td>
+                <td valign="top"><span class="style29"></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">เกษตรกรรม อุตสาหกรรมการเกษตร</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">15.40-16.00</span></td>
+                <td valign="top"><span class="style29">ระบบสารสนเทศทางภูมิศาสตร์เพื่อบริหารจัดการผู้พิการ</span></td>
+                <td valign="top"><span class="style29">ระบบเครือข่ายเซ็นเซอร์ไร้สายและการต่ออุปกรณ์เสริมเพื่อใช้ในสวนยางพารา</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.00-16.20</span></td>
+                <td valign="top"><span class="style29">การจัดกลุ่มสัญลักษณ์แบบปรับชดเชย สำหรับการสื่อสารเคลื่อนที่บนช่องสัญญาณที่มีการจางหายเรย์ลีแบบเลือกความถี่</span></td>
+                <td valign="top"><span class="style29">ระบบวิเคราะห์และคัดแยกเมล็ดพันธุ์ข้าว</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.20-16.40</span></td>
+                <td valign="top"><span class="style29">ระบบการทำมัลติคาสต์แบบทรานสแพเรนท์บนเครือข่ายไร้สาย</span></td>
+                <td valign="top"><span class="style29">Mobile MPLS : Performance and Analysis for a Low Lose Mobile MPLS</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.40-17.00</span></td>
+                <td valign="top"><span class="style29">ไวร์เลสแอกเซสพอยต์ที่รองรับการควบคุมการเข้าใช้งานและการประกันคุณภาพการส่งข้อมูล</span></td>
+                <td valign="top"><span class="style29">การปรับปรุงประสิทธิภาพการเจาะรหัสลับร่วมของการรักษาความมั่นคงด้วย WEP</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.00-17.20</span></td>
+                <td valign="top"><span class="style29">ระบบบริการให้ข้อมูลท่องเที่ยวผ่านweb-service composition</span></td>
+                <td valign="top"><span class="style29">XBee Wireless Sensor Networks for Temperature Monitoring</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.20-17.40</span></td>
+                <td valign="top"><span class="style29">Wireless LAN Management Systems</span></td>
+                <td valign="top"><span class="style29">Wireless Mesh Networking with Xbee</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.40-18.00</span></td>
+                <td valign="top"><span class="style29">Performance analysis of IEEE 802.11 MAC</span></td>
+                <td valign="top"><span class="style29">การพัฒนาเครื่องวัดการใช้กระแสไฟฟ้าด้วยระบบส่งข้อมูลแบบไร้สาย</span></td>
+              </tr>
+                 <tr>
+                <td><span class="style29">18.00-18.20</span></td>
+                <td valign="top"><span class="style29"></span></td>
+                <td valign="top"><span class="style29">การตรวจจับลูกระนาดบนถนนโดยใช้ข้อมูลความเร็วของรถยนต์</span></td>
+              </tr>
+                
+               
+        </table>
+        <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          <tr>
+              <td ><div align="center"><span class="style41"><br/>
+              วันอังคารที่ 11 พฤษภาคม 2553
+			</span></div></td>
+              </tr>
+        </table>
+      <table width="500"  border="1" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          
+              <tr>
+                <td width="70"><span class="style291"><strong><center>เวลา</center></strong> </span></td>
+                <td colspan="2"><span class="style291"><strong><center>กำหนดการ</center></strong> </span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">07.30-08.00 </span></td>
+                <td colspan="2"><span class="style291"><center>ลงทะเบียน</center></span></td>
+              </tr>
+               <tr>
+                <td><span class="style29"><b>0800-10.20</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การเรียนการสอนทางไกล ศึกษาบันเทิง คอมพิวเตอร์แอนนิเมชั่น (1)</span> <br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ระบบความปลอดภัย การควบคุมการเข้าถึง การยืนยันตัวตน ระบบตรวจจับ (1)</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">08.00-08.20</span></td>
+                <td valign="top"><span class="style29">ระบบสารสนเทศด้านกิจกรรมนักศึกษา มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ</span></td>
+                <td valign="top"><span class="style29">โปรโตคอลชำระค่าบริการระหว่างโดเมนผ่านตัวแทน (Agent-Based Inter-Domain Bill Payment Protocol) </span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">08.20-08.40</span></td>
+                <td valign="top"><span class="style29">ฟาร์มสร้างภาพบนระบบร็อคคลัสเตอร์ด้วยเบลนเดอร์</span></td>
+                <td valign="top"><span class="style29">Secured Online Backup using Message Digesting</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">08.40-09.00</span></td>
+                <td valign="top"><span class="style29">AI by Minimax algorithm for Scrabble game</span></td>
+                <td valign="top"><span class="style29">เครื่องมือสร้างและจัดการสัญญามัลติมีเดียแบบปลอดภัย:Secured Multimedia Contract Tools</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">09.00-09.20</span></td>
+                <td valign="top"><span class="style29">สภาวะแวดล้อมการฝึกแบบเบ็ดเสร็จสำหรับการเขียนโปรแกรมขั้นแนะนำ</span></td>
+                <td valign="top"><span class="style29">อุปกรณ์ Token USB Security ประยุกต์จาก Open Source Hardware: Arduino</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">09.20-09.40</span></td>
+                <td valign="top"><span class="style29">"ระบบเช็คชื่อและรายงานผลแบบเวลาจริงผ่านเครือข่ายไร้สาย</span></td>
+                <td valign="top"><span class="style29">ระบบตรวจจับคนเดินถนนในเวลากลางคืนจากภาพวิดีทัศน์ในโหมดถ่ายภาพในที่มืด</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">09.40-10.00</span></td>
+                <td valign="top"><span class="style29">ระบบการเรียนรู้ประวัติศาสตร์ผ่านระบบ 4 มิติแบบออนไลน์: กรณีศึกษาสถาปัตยกรรมปราสาทพิมาย</span></td>
+                <td valign="top"><span class="style29">ระบบประตูเฝ้าระวังอัจฉริยะ Smart Gate</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">10.00-10.20</span></td>
+                <td valign="top"><span class="style29">Applying Information Technology to Achievement Evaluation via Web-Based instruction under Multicultural Society</span></td>
+                <td valign="top"><span class="style29">HCU Computer Laboratory Management System (HCU-CLMS)</span></td>
+              </tr>
+               <tr>
+           <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารว่าง</center></span>
+           </td>
+           </tr>
+            <tr>
+                <td><span class="style29"><b>10.40-12.00</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การเรียนการสอนทางไกล ศึกษาบันเทิง คอมพิวเตอร์แอนนิเมชั่น (2)</span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ระบบความปลอดภัย การควบคุมการเข้าถึง การยืนยันตัวตน ระบบตรวจจับ (2)</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">10.40-11.00</span></td>
+                <td valign="top"><span class="style29">ระบบตรวจข้อสอบปรนัยต้นทุนต่ำ</span></td>
+                <td valign="top"><span class="style29">ระบบสมองกลฝังตัวแบบประหยัดสำหรับพาร์ทิเคิลฟิลเตอร์เพื่อประมาณทิศทางอย่างต่อเนื่องด้วยเข็มทิศดิจิตอล</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">11.00-11.20</span></td>
+                <td valign="top"><span class="style29">การพัฒนาวีดิทัศน์แอนิเมชั่นสามมิติ เรื่องระบบหมุนเวียนเลือด กลุ่มสาระการเรียนรู้วิทยาศาสตร์ สำหรับนักเรียนช่วงชั้นที่ 3</span></td>
+                <td valign="top"><span class="style29">ระบบดูแลเด็กเล็กออนไลน์ด้วยเทคโนโลยีสื่อสารไร้สาย</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">11.20-11.40</span></td>
+                <td valign="top"><span class="style29">Development of Thai–3D Thai Sign Language Machine Translation System</span></td>
+                <td valign="top"><span class="style29">A VOIP anti-Spam System based on Audio Turing Test Server</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">11.40-12.00</span></td>
+                <td valign="top"><span class="style29">ระบบจดจำตัวอักษรสำหรับสำหรับการแปลตัวสะกดภาษามือไทย</span></td>
+                <td valign="top"><span class="style29">พัฒนาระบบฐานข้อมูลในโปรแกรมการจัดตารางสอบโครงงานวิศวกรรม Online Schedule Management Data Base System</span></td>
+              </tr>
+               <tr>
+           <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารกลางวัน</center></span>
+           </td>
+           </tr>
+            <tr>
+                <td><span class="style29"><b>13.30-15.00</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การขนส่ง การควบคุมจราจร การจัดการอุตสาหกรรม (1)</span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ระบบความปลอดภัย การควบคุมการเข้าถึง การยืนยันตัวตน ระบบตรวจจับ (3)</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">13.00-13.20</span></td>
+                <td valign="top"><span class="style29">เครื่องตรวจสอบความขาวของเม็ดพลาสติกในงานอุตสาหกรรม</span></td>
+                <td valign="top"><span class="style29">J-ARP: Light-weight ARP Spoof Protection Software</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">13.20-13.40</span></td>
+                <td valign="top"><span class="style29">The development of decision support system for oil transportation</span></td>
+                <td valign="top"><span class="style29">Server Help Checking and Recovery System (SHCRS)</span></td>
+              </tr>
+              
+               <tr>
+                <td><span class="style29">13.40-14.00</span></td>
+                <td valign="top"><span class="style29">Vehicular Warning System using IEEE802.11</span></td>
+                <td valign="top"><span class="style29">Real Time Hand Marker Tracking as a User Input Device</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29"></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การสื่อสาร การสนับสนุนผู้ใช้ตามบ้าน เครือข่ายสังคม เครือข่ายไร้สาย (4)
+                </span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td valign="top"><span class="style29"></span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">14.00-14.20</span></td>
+                <td valign="top"><span class="style29">การศึกษาการพัฒนา Wireless Router ให้เป็นเซิร์ฟเวอร์ VoIP</span></td>
+                <td valign="top"><span class="style29">Stage Lighting Control Program using DMX-512 Communication</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">14.20-14.40</span></td>
+                <td valign="top"><span class="style29">ชุดสาธิตการดักจับสัญญาณเชิงแสงจากเส้นใยนำแสงผ่านอีเทอร์เนต</span></td>
+                <td valign="top"><span class="style29">Accessible Phone and Emergency-Call System for Person with Disabilities (PWDs)</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">14.40-15.00</span></td>
+                <td valign="top"><span class="style29">Development of A Practical Server Resource Monitoring System</span></td>
+                <td valign="top"><span class="style29">การประยุกต์ใช้โครงข่ายเซ็นเซอร์ไร้สายในการติดตามเด็กพลัดหลง</span></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารว่าง</center></span>
+           </td>
+           </tr>
+            <tr>
+                <td><span class="style29"><b>15.20-18.20</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">การขนส่ง การควบคุมจราจร การจัดการอุตสาหกรรม (2)</span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ระบบความปลอดภัย การควบคุมการเข้าถึง การยืนยันตัวตน ระบบตรวจจับ (4)</span><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">15.20-15.40</span></td>
+                <td valign="top"><span class="style29">การประยุกต์ใช้แผนที่ออนไลน์ในการพัฒนาระบบการจัดเส้นทางสำหรับยานพาหนะ: กรณีศึกษารถให้บริการรับ-ส่งพนักงาน</span></td>
+                <td valign="top"><span class="style29">Single Point Two-Factor Authentication on Web Applications by Web Service and J2ME</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">15.40-16.00</span></td>
+                <td valign="top"><span class="style29">การพัฒนาโปรแกรมคอมพิวเตอร์ เพื่อจัดลำดับการเดินทางสำหรับรถขนส่งสินค้า โดยใช้โปรแกรมตารางคำนวณอย่างง่าย</span></td>
+                <td valign="top"><span class="style29">ระบบป้องกันการปลอมแปลงโพรโทคอลเออาร์พีแบบพลวัตในเครือข่ายเอสเอ็มอีจริง</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.00-16.20</span></td>
+                <td valign="top"><span class="style29">การประยุกต์ใช้โปรแกรม Vericut ในการจำลองการทำงานของเครื่องกัดCNCห้าแกน</span></td>
+                <td valign="top"><span class="style29">ระบบเน็ตเวิร์คป้องกันตนเอง</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.20-16.40</span></td>
+                <td valign="top"><span class="style29">Laboratory Management System.</span></td>
+                <td valign="top"><span class="style29">การรักษาความปลอดภัยของการชำระเงินในปริมาณสูงภายใต้สภาพแวดล้อมกลาง (Securing Bulk Payment Transactions in Centralized Environment)</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">16.40-17.00</span></td>
+                <td valign="top"><span class="style29">Knowledge Center” – Knowledge management website</span></td>
+                <td valign="top"><span class="style29">An Efficient K-means Clustering Method and its Application on Size</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.00-17.20</span></td>
+                <td valign="top"><span class="style29">ส่วนต่อยอดระบบค้นหาเอกสารภาษาไทยบนโปรแกรมบริหารจัดการเอกสาร Alfresco</span></td>
+                <td valign="top"><span class="style29">Study of Experiment Result of Scattering Light to Compare with BRDF Model on Surface of Hard Disk Drive Component</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.20-17.40</span></td>
+                <td valign="top"><span class="style29">ระบบบริหารจัดการโปรเจคภายในองค์กรด้วยโอเพ่นซอร์ส Redmine (Organizational Project Management System using Open Source Software : Redmine)</span></td>
+                <td valign="top"><span class="style29">การสร้างบทเรียนคอมพิวเตอร์การสอน วิชา การประมวลผลข้อมูล</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">17.40-18.00</span></td>
+                <td valign="top"><span class="style29">General Word Segmentation for Lao Language using Conditional Random Field (CRF)</span></td>
+                <td valign="top"><span class="style29">การสร้างบทเรียนคอมพิวเตอร์การสอน วิชา การใช้โปรแกรมสื่อประสม</span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">18.00-18.20</span></td>
+                <td valign="top"><span class="style29">Design and Development of An Event Log Server for Microsoft Windows</span></td>
+                <td valign="top"><span class="style29">การสร้างบทเรียนคอมพิวเตอร์การสอน วิชา การบัญชีชั้นสูง 1</span></td>
+              </tr>
+             
+     </table>
+      <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          <tr>
+              <td ><div align="center"><span class="style41"><br/>
+              วันพุธที่ 12 พฤษภาคม 2553
+			</span></div></td>
+              </tr>
+        </table>
+      <table width="500"  border="1" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+          
+              <tr>
+                <td width="70"><span class="style291"><strong><center>เวลา</center></strong> </span></td>
+                <td colspan="2"><span class="style291"><strong><center>กำหนดการ</center></strong> </span></td>
+              </tr>
+                <tr>
+                <td><span class="style29">08.30-09.00 </span></td>
+                <td colspan="2"><span class="style291"><center>ลงทะเบียน</center></span></td>
+              </tr>
+                <tr>
+                <td><span class="style29"><b>08.00-10.20</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ธุรกิจ การธนาคาร การท่องเที่ยว การโรงแรม (1)</span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">อื่นๆ ที่เกี่ยวข้อง (1)</span><br><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+                 <tr>
+                <td><span class="style29">08.00-08.20</span></td>
+                <td valign="top"><span class="style29">การใช้ RFID สำหรับช่วยบริหารงานในองค์กร</span></td>
+                <td valign="top"><span class="style29">การประเมินมูลค่าความเสียหายจากเหตุการณ์ไฟฟ้าขัดข้องในพื้นที่นิคมอุตสาหกรรมนวนครด้วยโครงข่ายประสาทเทียมแบบฟัซซี่</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">08.20-08.40</span></td>
+                <td valign="top"><span class="style29">Revenue Taxpayer Auditing Support System</span></td>
+                <td valign="top"><span class="style29">วงจรขับมอเตอร์อัจฉริยะสำหรับการประยุกต์ด้านอุตสาหกรรมและหุ่นยนต์ Intelligent Motor Drive for Industrial & Robotic Applications</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">08.40-09.00</span></td>
+                <td valign="top"><span class="style29">ระบบประมวลผลภาพแบบ ภ.ง.ด.1 เพื่อจัดเก็บข้อมูล</span></td>
+                <td valign="top"><span class="style29">ระบบวิเคราะห์โรคข้าวด้วยการประมวลผลภาพ</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">09.00-09.20</span></td>
+                <td valign="top"><span class="style29">RFID สำหรับพิพิธภัณฑ์สัตว์น้ำจังหวัดหนองคาย</span></td>
+                <td valign="top"><span class="style29">บริการเสริม Joomla! CMS เพื่องานส่งการบ้านผ่านเว็บไซต์</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">09.20-09.40</span></td>
+                <td valign="top"><span class="style29">ระบบสนับสนุนการตัดสินใจเพื่อเลือกช่วงเวลาโฆษณาในสื่อโทรทัศน์</span></td>
+                <td valign="top"><span class="style29">ระบบการกระจายภาพหน้าจอบนเครือข่ายท้องถิ่น</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">09.40-10.00</span></td>
+                <td valign="top"><span class="style29">การประยุกต์ใช้บาร์โค้ดเเสดงข้อมูลในพิพิธภัณฑ์ด้วยสื่อมัลติมีเดียบนโทรศัพท์เคลื่อนที่</span></td>
+                <td valign="top"><span class="style29">ระบบการแนะนำภายใน osCommerce</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">10.00-10.20</span></td>
+                <td valign="top"><span class="style29">Queue Alert and Management System</span></td>
+                <td valign="top"><span class="style29">การสร้างภาพทางการแพทย์ 3 มิติ ด้วย VTK และ Visual C++ 2008</span></td>
+              </tr>
+              <tr>
+                <td colspan="3" bgcolor="lightgray">
+           <span class="style29"><center>พักรับประทานอาหารว่าง</center></span>
+           </td>
+           </tr>
+            <tr>
+                <td><span class="style29"><b>10.40-11.20</b></span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">ธุรกิจ การธนาคาร การท่องเที่ยว การโรงแรม (2)</span><br><span class="style292">[ห้องประชุม Oriental Palm 1]</span></td>
+                <td bgcolor="lightblue" valign="top"><span class="style29">อื่นๆ ที่เกี่ยวข้อง (2)</span><br><br><span class="style292">[ห้องประชุม Oriental Palm 2]</span></td>
+              </tr>
+              <tr>
+                <td><span class="style29">10.40-11.00</span></td>
+                <td valign="top"><span class="style29">เว็บไซต์หางานด้านไอทีด้วยภาษากรูวี่บนเกรลส์เฟรมเวิร์ค Information Technology Jobs Matching By Groovy on Grails</span></td>
+                <td valign="top"><span class="style29">ระบบสารสนเทศภูมิศาสตร์ธุรกิจอสังหาริมทรัพย์โดยใช้กูเกิ้ลแมพ / Web-based Real Estate Business using Google Maps</span></td>
+              </tr>
+               <tr>
+                <td><span class="style29">11.00-11.20</span></td>
+                <td valign="top"><span class="style29">ระบบสกัดความรู้แบบอัตโนมัติจากคำวิจารณ์ของนักท่องเที่ยว</span></td>
+                <td valign="top"><span class="style29">Service and Complaint Management Center</span></td>
+              </tr>
+      </table>
+            
+         
+         
+            
+   <!--  <g:javascript>window.open("www.google.co.th",null,"height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");</g:javascript>
+     
+    <g:setProvider library="jquery"/>
+    <jq:jquery> your delayed-action javascript here </jq:jquery>
+	 -->  
+
+	
+    </body>
+</html>
+        </p>
+          
+        </blockquote></td>
+      <td background="images/content_08.gif"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><img src="images/main_navigation_bottom.gif" width="197" height="160" /></td>
+      <td background="images/content_11.gif">&nbsp;</td>
+      <td><img src="images/content_14.gif" alt="" width="70" height="160" align="bottom" /></td>
+    </tr>
+    </table>
+  <table id="Table_01" width="858" height="118" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><img src="images/bottom_edit_01.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_02.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_03.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_04.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_05.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_06.gif" width="42" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_07.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_08.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_09.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_10.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_11.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_12.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_13.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_14.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_15.gif" width="42" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_16.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_17.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_18.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_19.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_20.gif" width="43" height="118" alt="" /></td>
+    </tr>
+  </table>
+  <table width="858" border="0">
+    <tr>
+      <td width="10"><p class="style14 style15">&nbsp;</p>    </td>
+      <td width="445" class="style22">Contact address : woraphon@mut.ac.th, http://www.ecticard2010.org<br />
+        For general inquiry, please contact General Co-chair,...  <br />
+      For program inquiry, please contact Technical Program chair,...  </td>
+      <td width="28"><div align="center"><span class="style13"><img src="images/sponsorLine.png" width="2" height="38" /></span></div></td>
+      <td width="340"><img src="images/sponsoMUTlogo.png" width="40" height="39" />&nbsp; <img src="images/sponsoISTlogo.png" width="39" height="39" />&nbsp; 
+      <img src="images/sponsoIEEElogo.png" width="96" height="39" />&nbsp; <img src="images/sponsoECTIlogo.png" width="64" height="36" /> </td>
+    </tr>
+    </table>
+</div>
+<p align="center" class="style13"><br />
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10787282-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+# never publish
+logs/
+*.pem
+*.key
+*.sql
+*.sql.gz
+*.wpress
+wp-config*.php
+configuration.php
+**/submission/**
+**/user_files/**
+**/updraft/**
+**/ai1wm-backups/**
+*.php
+.DS_Store
+
+# icasymp2026 "submission" is a public info page, not author data
+!site/icasymp2026/submission/index.html

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta name="designer" content="Juergen Koller - http://www.lernvid.com" />
+<meta name="licence" content="Creative Commons 3.0" />
+<link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<!--- ADD CSS Files -->
+
+
+
+	<link href="templates/allrounder-j1.6/css/template.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/joomla.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/lvdropdown.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/typo.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/modules.css" rel="stylesheet" type="text/css" media="all" />
+	
+<!--- Older Browser CSS -->
+<!--[if IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+
+<!--- ADD JavaScript Files -->
+
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/lv-dropdown.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-tooltip.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-caption.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.corner.packed.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/reflection.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/effects.js"></script>
+
+
+<!-- Layout parameters -->
+	<style type="text/css">
+
+	/* Template layout parameters */
+	
+
+	#wrapper {
+		margin-top:10px;
+	}
+	#foot_container {
+		margin-bottom:0px;
+	}
+	#topmenu ul.menu, #topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		background-image: url('templates/allrounder-j1.6/images/dropdown-smooth.png');
+	}
+	#topmenu ul.menu li.parent a, #topmenu ul.menu li.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-smooth.png');
+	}
+	#topmenu ul.menu li.parent a:hover, #topmenu ul.menu li.parent span.separator:hover, 
+	#topmenu ul.menu li#current.parent a, #topmenu ul.menu li#current.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-hover-smooth.png');
+	}
+			.contentheading {
+			background-image: url('images/aa5.png');
+		}
+			
+</style>
+<!-- Define fonts -->
+	<style type="text/css">
+
+	/* Template fonts */
+	
+	body {
+		font-size:14px;
+
+					font-family:Arial, Helvetica, Sans-Serif;
+						line-height:1.3em;
+	}
+
+</style>
+<!-- ADD own template colors -->
+	<style type="text/css">
+
+	/* Template colors */
+
+	body {
+		background-color: #FCFCFC;
+		color: #555555;
+	}
+	span#copy a {
+		color: #555555;
+	}
+	a, a:link, a:visited, a:active, a:focus {
+		color: #ED3D3D;
+	}
+
+	#wrapper, #foot_container {
+		background-color: #FCFCFC;
+		border: 1px solid #D2D1D1;
+	}
+
+	
+	#header {
+		background-color: #FFFFFF;
+		border-top:1px solid #F7F7F7;
+		border-left:1px solid #F7F7F7;	
+		border-right:1px solid #F7F7F7;	
+	}
+	.heckl, .heckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#footer {
+		background-color: #1B7EC9;
+		border:1px solid #1F90E6;
+		border-bottom:2px solid #1F90E6;
+	}
+	.feckl, .feckr {  
+		border-bottom: 10px solid #114E7D;
+	}
+	#footer a#gotop {
+		color: #C7ECF7;
+	}
+	#footermodule1234, #footermodule1234 a, #footermodule1234 ul.menu, #footermodule5, #footermodule5 a {
+		color: #C7ECF7;
+	}
+	#subfoot {
+		background-color: #15619C;
+		border-top:1px solid #FFFFFF;
+		border-bottom:1px solid #114E7D;
+	}
+	.copytext {
+		color: #B7D9E3;
+	}
+
+	#maincontent {
+		background-color: #D4D4D4;
+		border: 3px double #F5F5F5;
+	}
+	
+	.item-page, .item, .leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5 {
+		background-color:#FFFFFF;
+		border: 1px solid #F7F7F7;
+	}
+
+	.contentheading, .contentheading a {
+		color: #4F4F4F !important;
+	}
+	div.item-separator {
+		border-bottom:3px double #FFFFFF !important;
+	}
+
+	#wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3	 {
+		background-color: #3D60BA;
+		border-top:	1px solid #12558A;
+		color: #FFFFFF;
+	}
+	#wrapper #leftcol h3.moduleh3	 {
+		border-left: 1px solid #1873BA;
+		border-right: 1px solid #1873BA;
+	}
+	#wrapper #rightcol h3.moduleh3	 {
+		border-right: 1px solid #1873BA;
+		border-left: 1px solid #1873BA;
+	}
+	.h3eckl, .h3eckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#leftcol .module div.lvround-inner, #leftcol .module_menu div.lvround-inner, #leftcol .module_text div.lvround-inner, 
+	#rightcol .module div.lvround-inner, #rightcol .module_menu div.lvround-inner, #rightcol .module_text div.lvround-inner {
+		background-color: #F7F7F7;
+		border: 1px solid #FFFFFF;
+		color: #505050;
+	}
+	#subhead {
+		background-color: #F7F7F7;
+		border: 1px solid #F0F0F0;
+	}
+	.breadcrumbs, .breadcrumbs span {
+		color: #555555;
+	}
+	#leftcol .module div div, #leftcol .module_menu div div, #leftcol .module_text div div, 
+	#rightcol .module div div, #rightcol .module_menu div div, #rightcol .module_text div div {
+		border: 1px solid #E0E0E0;
+	}
+
+	/**** Global Modules ****/
+
+	div.module {
+		color:#505050;
+		background-color:#FFFFFF;
+		border:1px solid #DDDDDD;
+	}
+	div.module h3.moduleh3 {
+		background-color:#EFEFEF;
+		border:1px solid #DDDDDD;
+	}
+
+
+	.input, .inputbox {
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.input:hover, .inputbox:hover {
+		color: #555555;
+		background-color: #F9F9F9;
+	}
+
+	input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+		color: #555;
+		background-color: #efefef;
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	input.button:hover, button.button:hover, button.validate:hover, .pagenav, ul.pagenav li a:hover {
+		color: #000000;
+		background-color: #FFFFFF;
+	}
+
+	/**** Mainmenu with suffix: _menu ****/
+	
+	.module_menu ul.menu li a, .module_menu ul.menu li span.separator {
+		color: #333333;
+		border-bottom:1px dotted #CCCCCC;
+	}
+	.module_menu ul.menu li a:hover, .module_menu ul.menu li a:active, .module_menu ul.menu li a:focus {
+		color: #000000!important;
+	}
+	.module_menu ul.menu li.current a {
+		color: #000000;
+	}
+	.module_menu ul.menu li.current ul li a {
+		color: #000000;
+	}
+
+	/**** Default Tooltips ****/
+
+	.easy-tooltip-default {
+		border: 1px solid #A6A7AB; 
+		background-color: #F2F3F5; 
+		color: #800000;
+	}
+
+
+</style>
+<!-- ADD own dropdown-menu colors -->
+	<style type="text/css">
+
+	/* Dropdown menu colors */
+
+	#topmenu ul.menu {
+		background-color:#062022 !important;
+		border-top:3px double #FFFFFF !important;
+		border-bottom:3px double #FFFFFF !important;
+	}
+	#topmenu ul.menu li {
+		border-right:1px solid #555555 !important;
+	}
+	#topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #222222 !important;
+		border-left:1px solid #000000 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#CCCCCC;
+		background-color:#222222;
+	}
+	#topmenu ul.menu a:hover {
+		color:#FFFFFF;
+	}
+	
+	/** LEVEL 2 **/
+	#topmenu ul.menu ul {
+		border:2px solid #000000 !important;
+		background-color:#222222;
+	}
+	#topmenu ul.menu li ul li a, #topmenu ul.menu li ul li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #333333 !important;
+		border-left:1px solid #333333 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#999999;
+	}
+	#topmenu ul.menu li ul li a:hover {
+		color:#FFFFFF;
+	}
+	#topmenu ul.menu li li {
+		background-color:#171717;
+	}
+	#topmenu ul.menu li li:hover {
+		background-color:#212121;
+	}
+
+</style>
+	<style type="text/css">
+
+	/* Ribbons off */
+	
+	#header, #footer, #wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3 {
+		margin:0;
+	}
+	#header {
+		padding:0;
+}
+	.heckl, .heckr, .feckl, .feckr, .h3eckl, .h3eckr {  
+		display:none;
+	}
+
+</style>
+
+
+
+<!-- math the width of the 3 columns -->
+<style type="text/css">
+	#leftcol {width: 20%;}
+	#rightcol {width: 20%;}
+	#content_outmiddle {width: 58%;}
+	#content_outright {width: 79%;}
+	#content_outleft {width: 79%;}
+</style>
+
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Conference Tours</title>
+  <link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+ 
+</head>
+<body>
+			<div id="wrapper" style="max-width:1180px;">
+							
+		
+			<div id="header_container">
+				
+				<div id="header">
+								
+								
+					<div id="logo">
+										
+							<a class="imglogo" href="http://ecticon2014.ecticon.org/index.php"><img alt="Logo" src="templates/allrounder-j1.6/images/logo/bb17.png"/></a>
+																													</div>	
+								
+					<span class="heckl">&nbsp;</span>
+					<span class="heckr">&nbsp;</span>
+				</div>
+						
+				
+		
+									</div>
+				<div id="container">
+							
+		
+							<div id="leftcol">
+		             	<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Main Menu</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-435"><a href="index.html" ><img src="images/ico1.png" alt="Home" /><span class="image-title">Home</span> </a></li><li class="item-471"><a href="site-map-3.html" ><img src="images/ico1.png" alt="Committee" /><span class="image-title">Committee</span> </a></li><li class="item-476"><a href="keynote-speakers.html" ><img src="images/ico1.png" alt="Keynote Speakers" /><span class="image-title">Keynote Speakers</span> </a></li><li class="item-501"><a href="ecti-workshop.html" ><img src="images/ico1.png" alt="ECTI Workshop" /><span class="image-title">ECTI Workshop</span> </a></li><li class="item-495"><a href="sponsors.html" ><img src="images/ico1.png" alt="Sponsors" /><span class="image-title">Sponsors</span> </a></li><li class="item-473"><a href="site-map-5.html" ><img src="images/ico1.png" alt="Paper Submission" /><span class="image-title">Paper Submission</span> </a></li><li class="item-498"><a href="site-map-7.html" ><img src="images/ico1.png" alt="Special Sessions" /><span class="image-title">Special Sessions</span> </a></li><li class="item-469"><a href="site-map-2.html" ><img src="images/ico1.png" alt="Call For Papers (Closed)" /><span class="image-title">Call For Papers (Closed)</span> </a></li><li class="item-494"><a href="for-special-session-proposals.html" ><img src="images/ico1.png" alt="Call For Special Session Proposals (Closed)" /><span class="image-title">Call For Special Session Proposals (Closed)</span> </a></li><li class="item-472"><a href="site-map-4.html" ><img src="images/ico1.png" alt="Important Dates" /><span class="image-title">Important Dates</span> </a></li><li class="item-496"><a href="student-travel-grants.html" ><img src="images/ico1.png" alt="Student travel grants" /><span class="image-title">Student travel grants</span> </a></li><li class="item-475"><a href="schedule.html" ><img src="images/ico1.png" alt="Schedule" /><span class="image-title">Schedule</span> </a></li><li class="item-474"><a href="registration.html" ><img src="images/ico1.png" alt="Registration &amp; Camera Ready Paper Submission" /><span class="image-title">Registration &amp; Camera Ready Paper Submission</span> </a></li><li class="item-477"><a href="venue-and-accommodation.html" ><img src="images/ico1.png" alt="Venue" /><span class="image-title">Venue</span> </a></li><li class="item-479"><a href="contact.html" ><img src="images/ico1.png" alt="Contact Us" /><span class="image-title">Contact Us</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Travel</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-481"><a href="golf-info.html" ><img src="images/golf2.png" alt="Golf Information" /><span class="image-title">Golf Information</span> </a></li><li class="item-482 current active"><a href="conference-tours.html" ><img src="images/tour1.png" alt="Conference Tours" /><span class="image-title">Conference Tours</span> </a></li><li class="item-483"><a href="travel-information.html" ><img src="images/info3.png" alt="Travel Information" /><span class="image-title">Travel Information</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+					
+		    <div id="content_outmiddle">
+					
+		
+				<div id="maincontent">
+					
+<div id="system-message-container">
+</div>						
+					<div class="item-page">
+
+	<h2 class="contentheading">
+			Conference Tours		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="conference-tours.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-j1.6/images/system/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="http://ecticon2014.ecticon.org/index.php/component/mailto/?tmpl=component&amp;template=allrounder-j1.6&amp;link=0bb08a404c51d887b5afbccb49f9ac6a2a8065d7" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="templates/allrounder-j1.6/images/system/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/EctiCon2014" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"> </div>
+<p> </p>
+<p> </p>
+<p style="text-align: center;"><strong style="color: #555555; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 16.100000381469727px;"><span style="font-size: 13pt; line-height: 19.933334350585938px; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">Conference tour</span></strong></p>
+<p class="MsoNormal"> </p>
+<p class="MsoNormal"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">1 day trip on May 17, 2014</span></strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;"> (click at each trip to see details)</span></p>
+<p class="MsoNormal"><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<table class="MsoTableGrid" style="border-collapse: collapse; border: none; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 5.4pt 0in 5.4pt; mso-border-insideh: none; mso-border-insidev: none;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 207.9pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="277">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><strong><span style="font-size: 13pt; line-height: 115%; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Trips</span></strong></p>
+</td>
+<td style="width: 121.5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="162">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><strong><span style="font-size: 13pt; line-height: 115%; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Price</span></strong></p>
+</td>
+<td style="width: 149.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="199">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 207.9pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="277">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><a href="images/ECTI-CON2014_Trip_A.pdf" target="_blank"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Trip A: Phimai Historical Park</span></a></p>
+</td>
+<td style="width: 121.5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="162">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"> </p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">1,200 Baht /person</span></p>
+</td>
+<td style="width: 149.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="199">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"><a href="images/ECTI-CON2014_Trip_A.pdf" target="_blank"><img src="images/p3.jpg" border="0" width="90" height="60" /></a> </span><span style="font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.3em;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 207.9pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="277">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><a href="images/ECTI-CON2014_Trip_B.pdf" target="_blank"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Trip B: Khao Yai National Park</span></a></p>
+</td>
+<td style="width: 121.5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="162">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">1,600 Baht /person</span></p>
+</td>
+<td style="width: 149.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="199">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"><a href="images/ECTI-CON2014_Trip_B.pdf" target="_blank"><img src="images/p1.jpg" border="0" width="111" height="69" /></a> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 207.9pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="277">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><a href="images/ECTI-CON2014_Trip_C.pdf" target="_blank"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">Trip C: Panom rung Historical Park</span></a></p>
+</td>
+<td style="width: 121.5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="162">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">1,500 Baht /person</span></p>
+</td>
+<td style="width: 149.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="199">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"> </p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; text-align: center;" align="center"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"><a href="images/ECTI-CON2014_Trip_C.pdf" target="_blank"><img src="images/p6.jpg" border="0" width="101" height="51" /></a> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 207.9pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="277">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+</td>
+<td style="width: 121.5pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="162">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"> </span></p>
+</td>
+<td style="width: 149.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="199">
+<p class="MsoNormal" style="margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; font-family: 'Arial','sans-serif';"> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p class="MsoNormal"><strong><span style="font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">Price includes:<span class="apple-converted-space"> </span></span></strong><span style="font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">Transportation, Insurance, Ticket entrance fee, English-speaking guide and Lunch</span></p>
+<p class="MsoNormal"><strong style="line-height: 1.3em;"><span style="font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;">Download:</span></strong><span class="apple-converted-space" style="line-height: 1.3em;"><span style="font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;"> </span></span><a href="images/ECTI-CON2014_Booking%20Form_v2.pdf" target="_blank"><span class="apple-converted-space" style="line-height: 1.3em;"><span style="font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif; color: red; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="apple-converted-space" style="color: #333333; font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.3em;"><span style="line-height: 115%; font-family: Arial, sans-serif; color: red; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span class="apple-converted-space" style="color: #333333; font-family: Tahoma, Helvetica, Arial, sans-serif; line-height: 1.3em;"><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: red; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;">Booking Form for 1 day trip, click here!</span></span><span style="font-size: 12pt; line-height: 115%; background-image: initial; background-attachment: initial; background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; background-repeat: initial;"><span> &gt;&gt;</span></span></span></span></span></span></a><span style="color: black; font-family: Arial, sans-serif; font-size: 12pt; line-height: 115%;"> </span><a href="images/ECTI-CON2014_Booking%20Form_v2.pdf" target="_blank"><span style="font-family: Arial, sans-serif; font-size: medium;"><span style="line-height: 115%;"><img src="images/licence.png" border="0" width="24" height="24" /></span></span></a></p>
+<p class="MsoNormal"> ** Please send the booking form to <span style="line-height: 1.3em;">United Travel Service</span><span style="line-height: 1.3em;"> </span><span style="line-height: 1.3em;">office fax : (+66) 44 213 149,  or  email  
+ <script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy12371 = '&#117;ts.k&#111;r&#97;t' + '&#64;';
+ addy12371 = addy12371 + 'y&#97;h&#111;&#111;' + '&#46;' + 'c&#111;m';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy12371 + '\'>');
+ document.write(addy12371);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script>. This form also can be handed in directly at United Travel Service office conveniently located at the conference venue (on the lobby level of Sima Thani Hotel) <strong>by 12:00h on May 16, 2014</strong>.</span></p>
+<p class="MsoNormal"> </p>
+	
+</div>
+
+				</div>
+				<div class="clr"></div>
+				<span class="shadow-left">&nbsp;</span>
+				<span class="shadow-right">&nbsp;</span>
+					
+		
+			</div>
+							<div id="rightcol">
+		             	<div class="module-outer_menu ct_menu_horizontal">
+					<h3 class="moduleh3"><strong>Web Link</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module_menu ct_menu_horizontal">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-487"><a href="http://www.ecti-thailand.org/" target="_blank" ><img src="images/link.png" alt="ECTI Association" /><span class="image-title">ECTI Association</span> </a></li><li class="item-489"><a href="http://web.sut.ac.th/2012/" target="_blank" ><img src="images/link.png" alt="Suranaree Univ. of Tech." /><span class="image-title">Suranaree Univ. of Tech.</span> </a></li><li class="item-490"><a href="http://eng.sut.ac.th/tce/" target="_blank" ><img src="images/link.png" alt="School of Telecom Eng. " /><span class="image-title">School of Telecom Eng. </span> </a></li><li class="item-488"><a href="http://eng.sut.ac.th/neweng/index.php?page=home" target="_blank" ><img src="images/link.png" alt="Institute of Eng. (SUT)" /><span class="image-title">Institute of Eng. (SUT)</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Facebook Fanpage</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div id="kafbfanbox" class="kafbfanbox "><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="https://www.facebook.com/EctiCon2014" width="225" height="550" show_faces="true" stream="true" header="false" force_wall="true"" ></fb:like-box><div style="clear:left"><small><a href="http://www.khawaib.co.uk/joomla/downloads/item/12-facebook-fanbox.html">KA Facebook Fanbox 1.1</a></small></div><noscript>JavaScript must be enabled in order to use KA Facebook Fanbox. <a href="%22/%22">Refresh Page.</a></noscript></div>					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+				
+			<div class="clr"></div>
+		</div>
+			
+		
+		
+		<div class="clr"></div>
+	</div>
+			<div id="foot_container" style="max-width:1180px;">
+					
+		
+		
+							
+	
+			
+			<div id="subfoot">
+								
+					<div class="copytext">&copy; ECTI-CON 2014</div>
+							</div>
+					
+	
+		<div class="clr"></div>
+			<div id="footer">
+				<div class="footer-inner">
+					<span class="feckl">&nbsp;</span>
+					<span class="feckr">&nbsp;</span>
+					<div id="scroll_up"> <a href="http://ecticon2014.ecticon.org/index.php#" class="lv-tooltip" id="gotop" title="Scroll to top">&uarr;&uarr;&uarr;</a></div>
+										</div>
+				<div class="footer-bottom">
+								  		<span id="copy"><a href="http://www.lernvid.com" title="Joomla Templates" target="_blank">Template designed by LernVid.com</a></span>
+				</div>
+			</div>		
+		<div class="clr"></div>
+	</div>	
+		
+</body>
+</html>

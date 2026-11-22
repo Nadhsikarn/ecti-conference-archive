@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta name="designer" content="Juergen Koller - http://www.lernvid.com" />
+<meta name="licence" content="Creative Commons 3.0" />
+<link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<!--- ADD CSS Files -->
+
+
+
+	<link href="templates/allrounder-j1.6/css/template.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/joomla.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/lvdropdown.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/typo.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/modules.css" rel="stylesheet" type="text/css" media="all" />
+	
+<!--- Older Browser CSS -->
+<!--[if IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+
+<!--- ADD JavaScript Files -->
+
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/lv-dropdown.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-tooltip.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-caption.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.corner.packed.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/reflection.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/effects.js"></script>
+
+
+<!-- Layout parameters -->
+	<style type="text/css">
+
+	/* Template layout parameters */
+	
+
+	#wrapper {
+		margin-top:10px;
+	}
+	#foot_container {
+		margin-bottom:0px;
+	}
+	#topmenu ul.menu, #topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		background-image: url('templates/allrounder-j1.6/images/dropdown-smooth.png');
+	}
+	#topmenu ul.menu li.parent a, #topmenu ul.menu li.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-smooth.png');
+	}
+	#topmenu ul.menu li.parent a:hover, #topmenu ul.menu li.parent span.separator:hover, 
+	#topmenu ul.menu li#current.parent a, #topmenu ul.menu li#current.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-hover-smooth.png');
+	}
+			.contentheading {
+			background-image: url('images/aa5.png');
+		}
+			
+</style>
+<!-- Define fonts -->
+	<style type="text/css">
+
+	/* Template fonts */
+	
+	body {
+		font-size:14px;
+
+					font-family:Arial, Helvetica, Sans-Serif;
+						line-height:1.3em;
+	}
+
+</style>
+<!-- ADD own template colors -->
+	<style type="text/css">
+
+	/* Template colors */
+
+	body {
+		background-color: #FCFCFC;
+		color: #555555;
+	}
+	span#copy a {
+		color: #555555;
+	}
+	a, a:link, a:visited, a:active, a:focus {
+		color: #ED3D3D;
+	}
+
+	#wrapper, #foot_container {
+		background-color: #FCFCFC;
+		border: 1px solid #D2D1D1;
+	}
+
+	
+	#header {
+		background-color: #FFFFFF;
+		border-top:1px solid #F7F7F7;
+		border-left:1px solid #F7F7F7;	
+		border-right:1px solid #F7F7F7;	
+	}
+	.heckl, .heckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#footer {
+		background-color: #1B7EC9;
+		border:1px solid #1F90E6;
+		border-bottom:2px solid #1F90E6;
+	}
+	.feckl, .feckr {  
+		border-bottom: 10px solid #114E7D;
+	}
+	#footer a#gotop {
+		color: #C7ECF7;
+	}
+	#footermodule1234, #footermodule1234 a, #footermodule1234 ul.menu, #footermodule5, #footermodule5 a {
+		color: #C7ECF7;
+	}
+	#subfoot {
+		background-color: #15619C;
+		border-top:1px solid #FFFFFF;
+		border-bottom:1px solid #114E7D;
+	}
+	.copytext {
+		color: #B7D9E3;
+	}
+
+	#maincontent {
+		background-color: #D4D4D4;
+		border: 3px double #F5F5F5;
+	}
+	
+	.item-page, .item, .leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5 {
+		background-color:#FFFFFF;
+		border: 1px solid #F7F7F7;
+	}
+
+	.contentheading, .contentheading a {
+		color: #4F4F4F !important;
+	}
+	div.item-separator {
+		border-bottom:3px double #FFFFFF !important;
+	}
+
+	#wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3	 {
+		background-color: #3D60BA;
+		border-top:	1px solid #12558A;
+		color: #FFFFFF;
+	}
+	#wrapper #leftcol h3.moduleh3	 {
+		border-left: 1px solid #1873BA;
+		border-right: 1px solid #1873BA;
+	}
+	#wrapper #rightcol h3.moduleh3	 {
+		border-right: 1px solid #1873BA;
+		border-left: 1px solid #1873BA;
+	}
+	.h3eckl, .h3eckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#leftcol .module div.lvround-inner, #leftcol .module_menu div.lvround-inner, #leftcol .module_text div.lvround-inner, 
+	#rightcol .module div.lvround-inner, #rightcol .module_menu div.lvround-inner, #rightcol .module_text div.lvround-inner {
+		background-color: #F7F7F7;
+		border: 1px solid #FFFFFF;
+		color: #505050;
+	}
+	#subhead {
+		background-color: #F7F7F7;
+		border: 1px solid #F0F0F0;
+	}
+	.breadcrumbs, .breadcrumbs span {
+		color: #555555;
+	}
+	#leftcol .module div div, #leftcol .module_menu div div, #leftcol .module_text div div, 
+	#rightcol .module div div, #rightcol .module_menu div div, #rightcol .module_text div div {
+		border: 1px solid #E0E0E0;
+	}
+
+	/**** Global Modules ****/
+
+	div.module {
+		color:#505050;
+		background-color:#FFFFFF;
+		border:1px solid #DDDDDD;
+	}
+	div.module h3.moduleh3 {
+		background-color:#EFEFEF;
+		border:1px solid #DDDDDD;
+	}
+
+
+	.input, .inputbox {
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.input:hover, .inputbox:hover {
+		color: #555555;
+		background-color: #F9F9F9;
+	}
+
+	input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+		color: #555;
+		background-color: #efefef;
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	input.button:hover, button.button:hover, button.validate:hover, .pagenav, ul.pagenav li a:hover {
+		color: #000000;
+		background-color: #FFFFFF;
+	}
+
+	/**** Mainmenu with suffix: _menu ****/
+	
+	.module_menu ul.menu li a, .module_menu ul.menu li span.separator {
+		color: #333333;
+		border-bottom:1px dotted #CCCCCC;
+	}
+	.module_menu ul.menu li a:hover, .module_menu ul.menu li a:active, .module_menu ul.menu li a:focus {
+		color: #000000!important;
+	}
+	.module_menu ul.menu li.current a {
+		color: #000000;
+	}
+	.module_menu ul.menu li.current ul li a {
+		color: #000000;
+	}
+
+	/**** Default Tooltips ****/
+
+	.easy-tooltip-default {
+		border: 1px solid #A6A7AB; 
+		background-color: #F2F3F5; 
+		color: #800000;
+	}
+
+
+</style>
+<!-- ADD own dropdown-menu colors -->
+	<style type="text/css">
+
+	/* Dropdown menu colors */
+
+	#topmenu ul.menu {
+		background-color:#062022 !important;
+		border-top:3px double #FFFFFF !important;
+		border-bottom:3px double #FFFFFF !important;
+	}
+	#topmenu ul.menu li {
+		border-right:1px solid #555555 !important;
+	}
+	#topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #222222 !important;
+		border-left:1px solid #000000 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#CCCCCC;
+		background-color:#222222;
+	}
+	#topmenu ul.menu a:hover {
+		color:#FFFFFF;
+	}
+	
+	/** LEVEL 2 **/
+	#topmenu ul.menu ul {
+		border:2px solid #000000 !important;
+		background-color:#222222;
+	}
+	#topmenu ul.menu li ul li a, #topmenu ul.menu li ul li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #333333 !important;
+		border-left:1px solid #333333 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#999999;
+	}
+	#topmenu ul.menu li ul li a:hover {
+		color:#FFFFFF;
+	}
+	#topmenu ul.menu li li {
+		background-color:#171717;
+	}
+	#topmenu ul.menu li li:hover {
+		background-color:#212121;
+	}
+
+</style>
+	<style type="text/css">
+
+	/* Ribbons off */
+	
+	#header, #footer, #wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3 {
+		margin:0;
+	}
+	#header {
+		padding:0;
+}
+	.heckl, .heckr, .feckl, .feckr, .h3eckl, .h3eckr {  
+		display:none;
+	}
+
+</style>
+
+
+
+<!-- math the width of the 3 columns -->
+<style type="text/css">
+	#leftcol {width: 20%;}
+	#rightcol {width: 20%;}
+	#content_outmiddle {width: 58%;}
+	#content_outright {width: 79%;}
+	#content_outleft {width: 79%;}
+</style>
+
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Keynote Speakers</title>
+  <link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+ 
+</head>
+<body>
+			<div id="wrapper" style="max-width:1180px;">
+							
+		
+			<div id="header_container">
+				
+				<div id="header">
+								
+								
+					<div id="logo">
+										
+							<a class="imglogo" href="http://ecticon2014.ecticon.org/index.php"><img alt="Logo" src="templates/allrounder-j1.6/images/logo/bb17.png"/></a>
+																													</div>	
+								
+					<span class="heckl">&nbsp;</span>
+					<span class="heckr">&nbsp;</span>
+				</div>
+						
+				
+		
+									</div>
+				<div id="container">
+							
+		
+							<div id="leftcol">
+		             	<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Main Menu</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-435"><a href="index.html" ><img src="images/ico1.png" alt="Home" /><span class="image-title">Home</span> </a></li><li class="item-471"><a href="site-map-3.html" ><img src="images/ico1.png" alt="Committee" /><span class="image-title">Committee</span> </a></li><li class="item-476 current active"><a href="keynote-speakers.html" ><img src="images/ico1.png" alt="Keynote Speakers" /><span class="image-title">Keynote Speakers</span> </a></li><li class="item-501"><a href="ecti-workshop.html" ><img src="images/ico1.png" alt="ECTI Workshop" /><span class="image-title">ECTI Workshop</span> </a></li><li class="item-495"><a href="sponsors.html" ><img src="images/ico1.png" alt="Sponsors" /><span class="image-title">Sponsors</span> </a></li><li class="item-473"><a href="site-map-5.html" ><img src="images/ico1.png" alt="Paper Submission" /><span class="image-title">Paper Submission</span> </a></li><li class="item-498"><a href="site-map-7.html" ><img src="images/ico1.png" alt="Special Sessions" /><span class="image-title">Special Sessions</span> </a></li><li class="item-469"><a href="site-map-2.html" ><img src="images/ico1.png" alt="Call For Papers (Closed)" /><span class="image-title">Call For Papers (Closed)</span> </a></li><li class="item-494"><a href="for-special-session-proposals.html" ><img src="images/ico1.png" alt="Call For Special Session Proposals (Closed)" /><span class="image-title">Call For Special Session Proposals (Closed)</span> </a></li><li class="item-472"><a href="site-map-4.html" ><img src="images/ico1.png" alt="Important Dates" /><span class="image-title">Important Dates</span> </a></li><li class="item-496"><a href="student-travel-grants.html" ><img src="images/ico1.png" alt="Student travel grants" /><span class="image-title">Student travel grants</span> </a></li><li class="item-475"><a href="schedule.html" ><img src="images/ico1.png" alt="Schedule" /><span class="image-title">Schedule</span> </a></li><li class="item-474"><a href="registration.html" ><img src="images/ico1.png" alt="Registration &amp; Camera Ready Paper Submission" /><span class="image-title">Registration &amp; Camera Ready Paper Submission</span> </a></li><li class="item-477"><a href="venue-and-accommodation.html" ><img src="images/ico1.png" alt="Venue" /><span class="image-title">Venue</span> </a></li><li class="item-479"><a href="contact.html" ><img src="images/ico1.png" alt="Contact Us" /><span class="image-title">Contact Us</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Travel</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-481"><a href="golf-info.html" ><img src="images/golf2.png" alt="Golf Information" /><span class="image-title">Golf Information</span> </a></li><li class="item-482"><a href="conference-tours.html" ><img src="images/tour1.png" alt="Conference Tours" /><span class="image-title">Conference Tours</span> </a></li><li class="item-483"><a href="travel-information.html" ><img src="images/info3.png" alt="Travel Information" /><span class="image-title">Travel Information</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+					
+		    <div id="content_outmiddle">
+					
+		
+				<div id="maincontent">
+					
+<div id="system-message-container">
+</div>						
+					<div class="item-page">
+
+	<h2 class="contentheading">
+			<a href="keynote-speakers.html">
+		Keynote Speakers</a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="keynote-speakers.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-j1.6/images/system/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="http://ecticon2014.ecticon.org/index.php/component/mailto/?tmpl=component&amp;template=allrounder-j1.6&amp;link=0f57dd95f94ef9928ca7360adba225f54ca261a1" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="templates/allrounder-j1.6/images/system/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/EctiCon2014" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"> </div>
+<p><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: black; background-position: initial initial; background-repeat: initial initial;"> </span></p>
+<p class="MsoNormal"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; background-position: initial initial; background-repeat: initial initial;">Paralleled Induction Motors Drive: Modeling, Stability and Application</span></strong></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; margin-bottom: .0001pt; line-height: normal;"><strong style="line-height: normal;"><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;">Prof. Wg. Cdr. Dr. Sarawut Sujitjorn  </span></strong><span style="color: #000000; font-family: Arial, sans-serif; font-size: small;"><span style="line-height: normal;"><strong>(ศาสตราจารย์ นาวาอากาศโท ดร. สราวุฒิ สุจิตจร)</strong></span></span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;">Director of Synchrotron Light Research Institute (Publ. Org.), Thailand</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal;"><strong><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;"> </span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal;"><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black;">  </span><img src="images/Sarawut%20Sujitjorn.jpg" border="0" width="205" height="157" style="font-family: Arial, sans-serif; font-size: 10pt;" /></p>
+<p class="MsoNormal" style="margin-bottom: 0.0001pt; line-height: normal; text-align: justify;"><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif';"><a href="http://www.slri.or.th/en/" target="_blank"><strong><span style="mso-fareast-font-family: 'Times New Roman'; color: blue;">Sarawut Sujitjorn</span></strong></a></span><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';"> was awarded the BSc (Hons) degree in Electrical Engineering from the Royal Thai Air Force Academy, in 1984, and in 1987 the PhD degree in Electronic &amp; Electrical Engineering from the University of Birmingham, UK, where he worked on automated coast-control of rapid transit trains. He is currently the Director of Synchrotron Light Research Institute (Publ. Org.), Thailand. Before joining the Institute in 2012, Prof Sujitjorn was with Suranaree University of Technology (SUT), Thailand, where he founded the School of Electrical Engineering, the Control &amp; Automation Research Group, now the Power Electronics, Machines and Control Research Group, and co-founded the Scientific and Technological Equipment Centre. He is past Head of the EE School, Vice Rector for Academic Affairs and Director of the Research &amp; Development Institute at SUT. He taught postgraduate and undergraduate courses in Electric Circuits and Automatic Control. Before coming to SUT, Korat, he was a lecturer at the Royal Thai Air Force Academy from 1988-1993.</span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; text-align: justify; text-justify: inter-cluster; line-height: normal;"><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman';">Prof Sujitjorn had worked in academia for over 20 years and published over 150 research and technical papers, 17 patents, three books and one monograph. His research interests span the areas of control, electrical machine, power converter and computing, particularly the application of metaheuristics to modelling, identification and control. He also serves the Office of Higher Education Commission of Thailand as a sub-committee member for academic promotion, and the National Research Council of Thailand as a sub-committee member and reader.</span><span style="text-align: center; line-height: 1.3em;"> </span></p>
+<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; text-align: justify; text-justify: inter-cluster; line-height: normal;"><span style="text-align: center; line-height: 1.3em;"> </span></p>
+<hr />
+<p class="MsoNormal" style="margin-bottom: .0001pt;"><strong style="line-height: 1.3em;"><span style="font-size: 12.0pt; mso-bidi-font-size: 16.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-bidi-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">A Future of Cars Driven by Electronics</span></strong></p>
+<p class="MsoNormal" style="text-align: justify;"><strong><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">Prof. Seiichi Shin, Dr. of Engineering</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt;"><strong><span style="font-size: 10.0pt; mso-bidi-font-size: 12.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">President of the Society of Instrument and Control Engineers (SICE), Japan</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';"> </span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt;"> <span style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;"> </span><img src="images/Seiichi3.jpg" border="0" width="180" height="180" style="font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;" /></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;"><strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';">Abstract</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';">Nowadays technology of cars is changing from mechanics to electronics. The cars may be discarding a gasoline engine, which is a heart of them in the 20th Century. They welcome a fuel cell. This means a new future is opened to the cars.</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';">What is the future of cars? One solution is progressing change as a robotization of cars, which gives human beings a comfortable, safe, secure, and clean environment. The future is much more. Change of fuel from coal to petroleum, realized the 20th Century World as motorization life, which is door to door mobility instead of station to station mobility of trains. The age of hydrogen may present us room to room mobility, which is strictly different the cars of the 2oth Century and leads to a new life of the 21st Century.</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';">This talk will present a future of cars along the history of cars. We can only predict a future based on the presence and the past.</span></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify;"><strong style="text-align: justify; line-height: 1.3em;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman';">Biography</span></strong></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="text-align: justify; font-size: 10pt; line-height: 115%; font-family: Arial, sans-serif;">Prof. Dr. Seiichi Shin received his B. E., M. E., and D. E. respectively in 1978, 1980, and 1987 from University of Tokyo. He also received Outstanding Paper Awards from SICE in 1991, 1992, 1993 and 1998 including the Takeda Prize. He is interesting in control theory and its application. He is a president and a fellow of SICE, Councilor of JSIAM, Councilor of MSTC, and Co-chair of Super Distributed Object SIG of OMG. He is also a president of Control System Security Center.</span><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; background-position: initial initial; background-repeat: initial initial;"> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; background-position: initial initial; background-repeat: initial initial;"> </span></strong></p>
+<hr />
+<p class="MsoNormal"><strong style="line-height: 1.3em;"><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; background-position: initial initial; background-repeat: initial initial;">Hard Disk Drive and the Future</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify; line-height: normal;"><strong><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;">Prof. Dr. Apirat Siritaratiwat</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify; line-height: normal;"><strong><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;">KKU-Seagate Cooperation Research Laboratory, Department of Electrical Engineering, Khon Kaen University, Thailand</span></strong></p>
+<p class="MsoNormal" style="margin-bottom: .0001pt; text-align: justify; line-height: normal;"><strong><span style="font-size: 10.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: black; mso-themecolor: text1;"> </span></strong></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: 'Arial','sans-serif'; mso-bidi-font-family: 'Times New Roman'; mso-no-proof: yes;"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75"
+ style='width:122.25pt;height:132.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="file%3A///C%3A/Users/kayor1/AppData/Local/Temp/msohtmlclip1/01/clip_image001.jpg"
+  o:title="" croptop="1562f" cropbottom="13065f" cropleft="1376f" cropright="2064f"/>
+</v:shape><![endif]--><!--[if !vml]--> <img src="images/Prof.%20Dr.%20Apirat%20Siritaratiwat2.jpg" border="0" width="170" height="225" style="border: 0;" /><!--[endif]--></span></p>
+<p class="MsoNormal" style="text-align: justify;"><strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">Abstract </span></strong></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; color: #555555;">Hard Disk Drive is currently known as a dynamic data storage element with power consuming. It started from using electromagnetic-coil technology and has been developed of magnetoresistive films. Since the limitation of current magnetic data storage is the grain size of magnetic media which tends to reduce into a &lt;1 nm grain size, many researches are undergone to solve this constraint. However, new data storage technologies have been proposed with different good points. Some may compare it with a static-data-storage or a so-called-memory-stick. This talk will illustrate current and upcoming-trend hard disk drive, and also, a brief discuss of current static memory elements.  </span></p>
+<p class="MsoNormal"><strong><span style="font-size: 10.0pt; line-height: 115%; font-family: 'Arial','sans-serif';">Biography</span></strong></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="color: #555555; font-family: Arial, sans-serif; font-size: 10pt; line-height: 115%;">Professor Dr. Apirat Siritaratiwat received his B.Eng. (EE) from Khon Kaen University (KKU) and Ph.D. from the University of Manchester, UK, in 1998. He is the pioneer researcher of Thailand on the recording head topics. He has been the Founder and Director of KKU-Seagate Cooperation Research Laboratory. He was the Founder and Director of I/U Cooperation Research Center on HDD Components. He was served as the Department Head, KKU’s Vice President and committee in many Academic Associations. He has published more than 100 research articles and 4 books, and registered 6 pending patents.</span></p>
+<p style="text-align: center;"> </p>
+<hr />
+<p style="text-align: center;"><span style="color: #0070c0; font-family: Arial, sans-serif; font-size: 21px; line-height: 24px; text-align: center;"> </span></p>
+<p style="text-align: center;"><span style="color: #0070c0; font-family: Arial, sans-serif; font-size: 21px; line-height: 24px; text-align: center;"> </span></p> 
+	
+</div>
+
+				</div>
+				<div class="clr"></div>
+				<span class="shadow-left">&nbsp;</span>
+				<span class="shadow-right">&nbsp;</span>
+					
+		
+			</div>
+							<div id="rightcol">
+		             	<div class="module-outer_menu ct_menu_horizontal">
+					<h3 class="moduleh3"><strong>Web Link</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module_menu ct_menu_horizontal">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-487"><a href="http://www.ecti-thailand.org/" target="_blank" ><img src="images/link.png" alt="ECTI Association" /><span class="image-title">ECTI Association</span> </a></li><li class="item-489"><a href="http://web.sut.ac.th/2012/" target="_blank" ><img src="images/link.png" alt="Suranaree Univ. of Tech." /><span class="image-title">Suranaree Univ. of Tech.</span> </a></li><li class="item-490"><a href="http://eng.sut.ac.th/tce/" target="_blank" ><img src="images/link.png" alt="School of Telecom Eng. " /><span class="image-title">School of Telecom Eng. </span> </a></li><li class="item-488"><a href="http://eng.sut.ac.th/neweng/index.php?page=home" target="_blank" ><img src="images/link.png" alt="Institute of Eng. (SUT)" /><span class="image-title">Institute of Eng. (SUT)</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Facebook Fanpage</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div id="kafbfanbox" class="kafbfanbox "><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="https://www.facebook.com/EctiCon2014" width="225" height="550" show_faces="true" stream="true" header="false" force_wall="true"" ></fb:like-box><div style="clear:left"><small><a href="http://www.khawaib.co.uk/joomla/downloads/item/12-facebook-fanbox.html">KA Facebook Fanbox 1.1</a></small></div><noscript>JavaScript must be enabled in order to use KA Facebook Fanbox. <a href="%22/%22">Refresh Page.</a></noscript></div>					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+				
+			<div class="clr"></div>
+		</div>
+			
+		
+		
+		<div class="clr"></div>
+	</div>
+			<div id="foot_container" style="max-width:1180px;">
+					
+		
+		
+							
+	
+			
+			<div id="subfoot">
+								
+					<div class="copytext">&copy; ECTI-CON 2014</div>
+							</div>
+					
+	
+		<div class="clr"></div>
+			<div id="footer">
+				<div class="footer-inner">
+					<span class="feckl">&nbsp;</span>
+					<span class="feckr">&nbsp;</span>
+					<div id="scroll_up"> <a href="http://ecticon2014.ecticon.org/index.php#" class="lv-tooltip" id="gotop" title="Scroll to top">&uarr;&uarr;&uarr;</a></div>
+										</div>
+				<div class="footer-bottom">
+								  		<span id="copy"><a href="http://www.lernvid.com" title="Joomla Templates" target="_blank">Template designed by LernVid.com</a></span>
+				</div>
+			</div>		
+		<div class="clr"></div>
+	</div>	
+		
+</body>
+</html>

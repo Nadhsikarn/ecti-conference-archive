@@ -1,0 +1,37 @@
+/* ::::: http://ecticon2015.org/css/style.css ::::: */
+
+body { margin: 0px; font-family: Arial,Helvetica,sans-serif; line-height: 17px; color: rgb(85, 85, 85); font-size: 12px; background-color: rgb(241, 242, 244); }
+#cssmenu { padding: 0px; margin: 0px; border: 0px none; }
+#cssmenu ul { position: relative; z-index: 597; float: left; }
+#cssmenu ul li { float: left; min-height: 1px; line-height: 1em; vertical-align: middle; border-bottom: 1px solid rgb(223, 223, 223); }
+#cssmenu ul li.hover, #cssmenu ul li:hover { position: relative; z-index: 599; cursor: default; }
+#cssmenu ul li { float: none; }
+#cssmenu { border-radius: 5px; background-clip: padding-box; box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15); width: 200px; float: left; margin-bottom: 20px; }
+#cssmenu span, #cssmenu a { display: inline-block; font-family: Arial,Helvetica,sans-serif; font-size: 12px; text-decoration: none; }
+#cssmenu::after, #cssmenu ul::after { content: ""; display: block; clear: both; }
+#cssmenu > ul > li:first-child { border-radius: 5px 5px 0px 0px; background-clip: padding-box; }
+#cssmenu > ul > li:last-child { border-radius: 0px 0px 5px 5px; background-clip: padding-box; }
+#cssmenu ul, #cssmenu li { width: 100%; }
+#cssmenu li { background-color: rgb(246, 246, 246); }
+#cssmenu li:hover { background: rgb(46, 53, 68) none repeat scroll 0% 0%; }
+#cssmenu ul li.ative { background-color: rgb(46, 53, 68); color: rgb(255, 255, 255) ! important; }
+#cssmenu a { color: rgb(46, 53, 68); line-height: 160%; padding: 11px 28px; width: 144px; }
+#cssmenu a:hover { color: rgb(255, 255, 255); }
+#cssmenu .has-sub::after, #cssmenu .has-sub > ul > .has-sub:hover::after { content: ""; display: block; width: 10px; height: 9px; position: absolute; right: 5px; top: 50%; margin-top: -5px; background-image: url('https://ecticon2015.ecticon.org/undefined'); transform: rotate(360deg); }
+#cssmenu .has-sub > ul > .has-sub::after, #cssmenu .has-sub:hover::after { background-image: url('https://ecticon2015.ecticon.org/undefined'); }
+#header { width: 100%; background-color: rgb(255, 255, 255); height: 185px; margin-bottom: 25px; border-bottom: 72px solid rgb(46, 53, 68); }
+.menu { margin: 0px auto; width: 960px; }
+.content { width: 719px; margin-bottom: 15px; padding: 9px 14px; background-color: rgb(247, 247, 249); border: 1px solid rgb(225, 225, 232); border-radius: 4px; min-height: 150px; float: right; font-family: Arial,Helvetica,sans-serif; line-height: 18px; }
+#footer { width: 100%; clear: both; padding: 0px; background-color: rgb(46, 53, 68); border-top: 40px solid rgb(56, 58, 63); }
+#footer > div > div.onfoot > a:nth-child(2) > img { width: 25px; }
+#footer > div > div.onfoot > a:nth-child(1) > img { width: 142px; }
+.marin { margin: 0px auto; width: 960px; }
+h1 { margin: 0px; padding: 5px 0px 40px; font-size: 26px; font-weight: bold; color: rgb(0, 161, 233); }
+h2 { margin: 0px; padding: 5px 0px 10px; font-size: 14px; font-weight: bold; color: rgb(0, 161, 233); text-transform: uppercase; }
+.detail { margin: 10px 0px 35px; }
+.detail span { margin: 0px; padding: 5px 0px 10px; font-size: 14px; color: rgb(52, 175, 55); }
+.ative span { color: rgb(255, 255, 255); }
+#cssmenu ul { list-style: outside none none; margin: 0px; padding: 0px; }
+.fonthead { margin: -88px auto 0px; width: 980px; line-height: 25px; }
+.fonthead h1 { color: rgb(255, 255, 255); }
+.fonthead h1 span { color: rgb(68, 202, 188); }

@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	<meta name="designer" content="Juergen Koller - http://www.lernvid.com" />
+<meta name="licence" content="Creative Commons 3.0" />
+<link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<!--- ADD CSS Files -->
+
+
+
+	<link href="templates/allrounder-j1.6/css/template.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/joomla.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/colors.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/lvdropdown.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/typo.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="templates/allrounder-j1.6/css/modules.css" rel="stylesheet" type="text/css" media="all" />
+	
+<!--- Older Browser CSS -->
+<!--[if IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+	<link href="templates/allrounder-j1.6/css/ie5x6x.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+
+<!--- ADD JavaScript Files -->
+
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+	</script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/lv-dropdown.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-tooltip.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.easy-caption.min.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/jq.corner.packed.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/reflection.js"></script>
+	<script type="text/javascript" src="templates/allrounder-j1.6/js/effects.js"></script>
+
+
+<!-- Layout parameters -->
+	<style type="text/css">
+
+	/* Template layout parameters */
+	
+
+	#wrapper {
+		margin-top:10px;
+	}
+	#foot_container {
+		margin-bottom:0px;
+	}
+	#topmenu ul.menu, #topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		background-image: url('templates/allrounder-j1.6/images/dropdown-smooth.png');
+	}
+	#topmenu ul.menu li.parent a, #topmenu ul.menu li.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-smooth.png');
+	}
+	#topmenu ul.menu li.parent a:hover, #topmenu ul.menu li.parent span.separator:hover, 
+	#topmenu ul.menu li#current.parent a, #topmenu ul.menu li#current.parent span.separator {
+		background-image: url('templates/allrounder-j1.6/images/menu-parent-hover-smooth.png');
+	}
+			.contentheading {
+			background-image: url('images/aa5.png');
+		}
+			
+</style>
+<!-- Define fonts -->
+	<style type="text/css">
+
+	/* Template fonts */
+	
+	body {
+		font-size:14px;
+
+					font-family:Arial, Helvetica, Sans-Serif;
+						line-height:1.3em;
+	}
+
+</style>
+<!-- ADD own template colors -->
+	<style type="text/css">
+
+	/* Template colors */
+
+	body {
+		background-color: #FCFCFC;
+		color: #555555;
+	}
+	span#copy a {
+		color: #555555;
+	}
+	a, a:link, a:visited, a:active, a:focus {
+		color: #ED3D3D;
+	}
+
+	#wrapper, #foot_container {
+		background-color: #FCFCFC;
+		border: 1px solid #D2D1D1;
+	}
+
+	
+	#header {
+		background-color: #FFFFFF;
+		border-top:1px solid #F7F7F7;
+		border-left:1px solid #F7F7F7;	
+		border-right:1px solid #F7F7F7;	
+	}
+	.heckl, .heckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#footer {
+		background-color: #1B7EC9;
+		border:1px solid #1F90E6;
+		border-bottom:2px solid #1F90E6;
+	}
+	.feckl, .feckr {  
+		border-bottom: 10px solid #114E7D;
+	}
+	#footer a#gotop {
+		color: #C7ECF7;
+	}
+	#footermodule1234, #footermodule1234 a, #footermodule1234 ul.menu, #footermodule5, #footermodule5 a {
+		color: #C7ECF7;
+	}
+	#subfoot {
+		background-color: #15619C;
+		border-top:1px solid #FFFFFF;
+		border-bottom:1px solid #114E7D;
+	}
+	.copytext {
+		color: #B7D9E3;
+	}
+
+	#maincontent {
+		background-color: #D4D4D4;
+		border: 3px double #F5F5F5;
+	}
+	
+	.item-page, .item, .leading-0, .leading-1, .leading-2, .leading-3, .leading-4, .leading-5 {
+		background-color:#FFFFFF;
+		border: 1px solid #F7F7F7;
+	}
+
+	.contentheading, .contentheading a {
+		color: #4F4F4F !important;
+	}
+	div.item-separator {
+		border-bottom:3px double #FFFFFF !important;
+	}
+
+	#wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3	 {
+		background-color: #3D60BA;
+		border-top:	1px solid #12558A;
+		color: #FFFFFF;
+	}
+	#wrapper #leftcol h3.moduleh3	 {
+		border-left: 1px solid #1873BA;
+		border-right: 1px solid #1873BA;
+	}
+	#wrapper #rightcol h3.moduleh3	 {
+		border-right: 1px solid #1873BA;
+		border-left: 1px solid #1873BA;
+	}
+	.h3eckl, .h3eckr {  
+		border-top: 10px solid #114E7D;
+	}
+
+	#leftcol .module div.lvround-inner, #leftcol .module_menu div.lvround-inner, #leftcol .module_text div.lvround-inner, 
+	#rightcol .module div.lvround-inner, #rightcol .module_menu div.lvround-inner, #rightcol .module_text div.lvround-inner {
+		background-color: #F7F7F7;
+		border: 1px solid #FFFFFF;
+		color: #505050;
+	}
+	#subhead {
+		background-color: #F7F7F7;
+		border: 1px solid #F0F0F0;
+	}
+	.breadcrumbs, .breadcrumbs span {
+		color: #555555;
+	}
+	#leftcol .module div div, #leftcol .module_menu div div, #leftcol .module_text div div, 
+	#rightcol .module div div, #rightcol .module_menu div div, #rightcol .module_text div div {
+		border: 1px solid #E0E0E0;
+	}
+
+	/**** Global Modules ****/
+
+	div.module {
+		color:#505050;
+		background-color:#FFFFFF;
+		border:1px solid #DDDDDD;
+	}
+	div.module h3.moduleh3 {
+		background-color:#EFEFEF;
+		border:1px solid #DDDDDD;
+	}
+
+
+	.input, .inputbox {
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	.input:hover, .inputbox:hover {
+		color: #555555;
+		background-color: #F9F9F9;
+	}
+
+	input.button, button.button, button.validate, .pagenav, ul.pagenav li a {
+		color: #555;
+		background-color: #efefef;
+		color: #555555;
+		background-color: #EFEFEF;
+		border-top: 1px solid #CCCCCC;
+		border-left: 1px solid #CCCCCC;
+		border-right: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+	}
+	input.button:hover, button.button:hover, button.validate:hover, .pagenav, ul.pagenav li a:hover {
+		color: #000000;
+		background-color: #FFFFFF;
+	}
+
+	/**** Mainmenu with suffix: _menu ****/
+	
+	.module_menu ul.menu li a, .module_menu ul.menu li span.separator {
+		color: #333333;
+		border-bottom:1px dotted #CCCCCC;
+	}
+	.module_menu ul.menu li a:hover, .module_menu ul.menu li a:active, .module_menu ul.menu li a:focus {
+		color: #000000!important;
+	}
+	.module_menu ul.menu li.current a {
+		color: #000000;
+	}
+	.module_menu ul.menu li.current ul li a {
+		color: #000000;
+	}
+
+	/**** Default Tooltips ****/
+
+	.easy-tooltip-default {
+		border: 1px solid #A6A7AB; 
+		background-color: #F2F3F5; 
+		color: #800000;
+	}
+
+
+</style>
+<!-- ADD own dropdown-menu colors -->
+	<style type="text/css">
+
+	/* Dropdown menu colors */
+
+	#topmenu ul.menu {
+		background-color:#062022 !important;
+		border-top:3px double #FFFFFF !important;
+		border-bottom:3px double #FFFFFF !important;
+	}
+	#topmenu ul.menu li {
+		border-right:1px solid #555555 !important;
+	}
+	#topmenu ul.menu li a, #topmenu ul.menu li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #222222 !important;
+		border-left:1px solid #000000 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#CCCCCC;
+		background-color:#222222;
+	}
+	#topmenu ul.menu a:hover {
+		color:#FFFFFF;
+	}
+	
+	/** LEVEL 2 **/
+	#topmenu ul.menu ul {
+		border:2px solid #000000 !important;
+		background-color:#222222;
+	}
+	#topmenu ul.menu li ul li a, #topmenu ul.menu li ul li span.separator {
+		border-top:1px solid #000000 !important;
+		border-right:1px solid #333333 !important;
+		border-left:1px solid #333333 !important;
+		border-bottom:1px solid #333333 !important;
+		color:#999999;
+	}
+	#topmenu ul.menu li ul li a:hover {
+		color:#FFFFFF;
+	}
+	#topmenu ul.menu li li {
+		background-color:#171717;
+	}
+	#topmenu ul.menu li li:hover {
+		background-color:#212121;
+	}
+
+</style>
+	<style type="text/css">
+
+	/* Ribbons off */
+	
+	#header, #footer, #wrapper #leftcol h3.moduleh3, #wrapper #rightcol h3.moduleh3 {
+		margin:0;
+	}
+	#header {
+		padding:0;
+}
+	.heckl, .heckr, .feckl, .feckr, .h3eckl, .h3eckr {  
+		display:none;
+	}
+
+</style>
+
+
+
+<!-- math the width of the 3 columns -->
+<style type="text/css">
+	#leftcol {width: 20%;}
+	#rightcol {width: 20%;}
+	#content_outmiddle {width: 58%;}
+	#content_outright {width: 79%;}
+	#content_outleft {width: 79%;}
+</style>
+
+	  <base href="" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Super User" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>Sponsors</title>
+  <link href="templates/allrounder-j1.6/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script src="media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="media/system/js/core.js" type="text/javascript"></script>
+  <script src="media/system/js/caption.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+  </script>
+ 
+</head>
+<body>
+			<div id="wrapper" style="max-width:1180px;">
+							
+		
+			<div id="header_container">
+				
+				<div id="header">
+								
+								
+					<div id="logo">
+										
+							<a class="imglogo" href="http://ecticon2014.ecticon.org/index.php"><img alt="Logo" src="templates/allrounder-j1.6/images/logo/bb17.png"/></a>
+																													</div>	
+								
+					<span class="heckl">&nbsp;</span>
+					<span class="heckr">&nbsp;</span>
+				</div>
+						
+				
+		
+									</div>
+				<div id="container">
+							
+		
+							<div id="leftcol">
+		             	<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Main Menu</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-435"><a href="index.html" ><img src="images/ico1.png" alt="Home" /><span class="image-title">Home</span> </a></li><li class="item-471"><a href="site-map-3.html" ><img src="images/ico1.png" alt="Committee" /><span class="image-title">Committee</span> </a></li><li class="item-476"><a href="keynote-speakers.html" ><img src="images/ico1.png" alt="Keynote Speakers" /><span class="image-title">Keynote Speakers</span> </a></li><li class="item-501"><a href="ecti-workshop.html" ><img src="images/ico1.png" alt="ECTI Workshop" /><span class="image-title">ECTI Workshop</span> </a></li><li class="item-495 current active"><a href="sponsors.html" ><img src="images/ico1.png" alt="Sponsors" /><span class="image-title">Sponsors</span> </a></li><li class="item-473"><a href="site-map-5.html" ><img src="images/ico1.png" alt="Paper Submission" /><span class="image-title">Paper Submission</span> </a></li><li class="item-498"><a href="site-map-7.html" ><img src="images/ico1.png" alt="Special Sessions" /><span class="image-title">Special Sessions</span> </a></li><li class="item-469"><a href="site-map-2.html" ><img src="images/ico1.png" alt="Call For Papers (Closed)" /><span class="image-title">Call For Papers (Closed)</span> </a></li><li class="item-494"><a href="for-special-session-proposals.html" ><img src="images/ico1.png" alt="Call For Special Session Proposals (Closed)" /><span class="image-title">Call For Special Session Proposals (Closed)</span> </a></li><li class="item-472"><a href="site-map-4.html" ><img src="images/ico1.png" alt="Important Dates" /><span class="image-title">Important Dates</span> </a></li><li class="item-496"><a href="student-travel-grants.html" ><img src="images/ico1.png" alt="Student travel grants" /><span class="image-title">Student travel grants</span> </a></li><li class="item-475"><a href="schedule.html" ><img src="images/ico1.png" alt="Schedule" /><span class="image-title">Schedule</span> </a></li><li class="item-474"><a href="registration.html" ><img src="images/ico1.png" alt="Registration &amp; Camera Ready Paper Submission" /><span class="image-title">Registration &amp; Camera Ready Paper Submission</span> </a></li><li class="item-477"><a href="venue-and-accommodation.html" ><img src="images/ico1.png" alt="Venue" /><span class="image-title">Venue</span> </a></li><li class="item-479"><a href="contact.html" ><img src="images/ico1.png" alt="Contact Us" /><span class="image-title">Contact Us</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer_menu">
+					<h3 class="moduleh3"><strong>Travel</strong>
+				<span class="h3eckl">&nbsp;</span>
+			</h3>
+				<div class="module_menu">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-481"><a href="golf-info.html" ><img src="images/golf2.png" alt="Golf Information" /><span class="image-title">Golf Information</span> </a></li><li class="item-482"><a href="conference-tours.html" ><img src="images/tour1.png" alt="Conference Tours" /><span class="image-title">Conference Tours</span> </a></li><li class="item-483"><a href="travel-information.html" ><img src="images/info3.png" alt="Travel Information" /><span class="image-title">Travel Information</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+					
+		    <div id="content_outmiddle">
+					
+		
+				<div id="maincontent">
+					
+<div id="system-message-container">
+</div>						
+					<div class="item-page">
+
+	<h2 class="contentheading">
+			<a href="sponsors.html">
+		Sponsors </a>
+		</h2>
+
+	<ul class="actions">
+						<li class="print-icon">
+			<a href="sponsors.html" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="templates/allrounder-j1.6/images/system/printButton.png" alt="Print"  /></a>			</li>
+		
+					<li class="email-icon">
+			<a href="http://ecticon2014.ecticon.org/index.php/component/mailto/?tmpl=component&amp;template=allrounder-j1.6&amp;link=292ccd0f5e4ab3ce983281b08a2ec107c70dacfc" title="Email" onclick="window.open(this.href,'win2','width=400,height=350,menubar=yes,resizable=yes'); return false;"><img src="templates/allrounder-j1.6/images/system/emailButton.png" alt="Email"  /></a>			</li>
+		
+		
+	
+	</ul>
+
+
+
+
+
+
+
+
+<div class="fb-like" data-href="https://www.facebook.com/EctiCon2014" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"> </div>
+<p> </p>
+<p class="MsoNormal" style="text-align: center;"><span style="text-decoration: underline;"><strong><span style="font-size: 12pt; line-height: 115%; font-family: Arial, sans-serif; color: #0070c0; text-decoration: underline;">Sponsors</span></strong></span></p>
+<p><span style="font-size: 10pt; font-family: Arial, sans-serif; color: #0070c0;"> </span></p>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> </span><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span> SHAPE <span
+  style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span><![endif]--><!--[if gte vml 1]><v:rect id="สี่เหลี่ยมผืนผ้า_x0020_8"
+   o:spid="_x0000_s1033" alt="http://www.ecticon2014.org/images/logo_sponser/ECTI_logo.jpg"
+   style='width:112.7pt;height:60.75pt;visibility:visible;mso-wrap-style:square;
+   mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:char;mso-position-vertical:absolute;
+   mso-position-vertical-relative:line;mso-left-percent:-10001;
+   mso-top-percent:-10001;v-text-anchor:top' o:gfxdata="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
+bC5yZWxzUEsFBgAAAAAFAAUAZwEAAMMNAAAAAA==
+" filled="f" stroked="f">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <w:wrap type="none"/>
+   <w:anchorlock/>
+  </v:rect><![endif]--><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+   filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><![endif]--><!--[if mso & !supportInlineShapes & supportFields]><v:shape
+   id="_x0000_i1032" type="#_x0000_t75" style='width:112.7pt;height:60.75pt'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span><![endif]--></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <img src="images/logo_sponser/ECTI_logo2.jpg" border="0" width="150" height="81" /></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.ecti-thailand.org/" target="_blank"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology (ECTI) Association, Thailand</span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> <img src="images/logo_sponser/SUT2.png" border="0" width="75" height="105" style="border: 0;" /></span><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span> SHAPE <span
+  style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span><![endif]--><!--[if gte vml 1]><v:rect id="สี่เหลี่ยมผืนผ้า_x0020_7"
+   o:spid="_x0000_s1032" alt="http://www.ecticon2014.org/images/logo_sponser/SUT.png"
+   style='width:56.35pt;height:78.9pt;visibility:visible;mso-wrap-style:square;
+   mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:char;mso-position-vertical:absolute;
+   mso-position-vertical-relative:line;mso-left-percent:-10001;
+   mso-top-percent:-10001;v-text-anchor:top' o:gfxdata="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
+cmVsc1BLBQYAAAAABQAFAGcBAADBDQAAAAA=
+" filled="f" stroked="f">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <w:wrap type="none"/>
+   <w:anchorlock/>
+  </v:rect><![endif]--><!--[if mso & !supportInlineShapes & supportFields]><v:shape
+   id="_x0000_i1031" type="#_x0000_t75" style='width:56.35pt;height:78.9pt'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span><![endif]--></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://web.sut.ac.th/2012/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;">Suranaree University of Technology (SUT)</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin: 0in 6pt 0.0001pt;"><em><span style="font-size: 7.5pt; font-family: Arial, sans-serif;"> </span></em><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span> SHAPE <span
+  style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span><![endif]--><!--[if gte vml 1]><v:rect id="สี่เหลี่ยมผืนผ้า_x0020_6"
+   o:spid="_x0000_s1031" alt="http://www.ecticon2014.org/images/logo_sponser/IEEE.jpg"
+   style='width:149.65pt;height:67pt;visibility:visible;mso-wrap-style:square;
+   mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:char;mso-position-vertical:absolute;
+   mso-position-vertical-relative:line;mso-left-percent:-10001;
+   mso-top-percent:-10001;v-text-anchor:top' o:gfxdata="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
+ZWxzUEsFBgAAAAAFAAUAZwEAAMANAAAAAA==
+" filled="f" stroked="f">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <w:wrap type="none"/>
+   <w:anchorlock/>
+  </v:rect><![endif]--><!--[if mso & !supportInlineShapes & supportFields]><v:shape
+   id="_x0000_i1030" type="#_x0000_t75" style='width:149.65pt;height:67pt'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span><![endif]--></p>
+<p class="MsoNormal" style="margin: 0in 6pt 0.0001pt;"><em><span style="font-size: 7.5pt; font-family: Verdana, sans-serif;"> <img src="images/logo_sponser/IEEE2.jpg" border="0" width="200" height="89" /></span></em></p>
+<p class="MsoNormal" style="margin: 0in 6pt 0.0001pt;"> </p>
+<p class="MsoNormal" style="margin: 0in 6pt 0.0001pt;"> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin: 0in 6pt 0.0001pt;"><em><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></em><em style="line-height: 1.3em;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></em></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.ieeethailand.org/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;">IEEE Thailand Section</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<h6 class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> <img src="images/logo_sponser/Institute2.jpg" border="0" width="250" height="48" style="font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.3em;" /></h6>
+<p> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://eng.sut.ac.th/neweng/index.php" target="_blank" style="line-height: 1.3em;"><span style="color: #0070c0; font-family: Arial, sans-serif; font-size: 11pt; line-height: 115%;">Institute of Engineering, Suranaree University of Technology</span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319"> </td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> </span><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span> SHAPE <span
+  style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span><![endif]--><!--[if gte vml 1]><v:rect id="สี่เหลี่ยมผืนผ้า_x0020_2"
+   o:spid="_x0000_s1027" alt="http://www.ecticon2014.org/images/logo_sponser/telecom.jpg"
+   style='width:75.15pt;height:67pt;visibility:visible;mso-wrap-style:square;
+   mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
+   mso-position-horizontal-relative:char;mso-position-vertical:absolute;
+   mso-position-vertical-relative:line;mso-left-percent:-10001;
+   mso-top-percent:-10001;v-text-anchor:top' o:gfxdata="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
+cmVsc1BLBQYAAAAABQAFAGcBAADBDQAAAAA=
+" filled="f" stroked="f">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <w:wrap type="none"/>
+   <w:anchorlock/>
+  </v:rect><![endif]--><!--[if mso & !supportInlineShapes & supportFields]><v:shape
+   id="_x0000_i1026" type="#_x0000_t75" style='width:75.15pt;height:67pt'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span><![endif]--></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> <img src="images/logo_sponser/telecom2.jpg" border="0" width="100" height="89" /></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: 'Times New Roman', serif;"> </span></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://eng.sut.ac.th/tce/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;">Telecommunication Engineering, Suranaree University of Technology</span></span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> <img src="images/logo_sponser/ele2.jpg" border="0" width="100" height="93" /></span></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> </p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://eng.sut.ac.th/elec/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;">Electronic Engineering, Suranaree University of Technology</span></span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p> </p>
+<p> <img src="images/logo_sponser/Siam%20Photon2.jpg" border="0" width="150" height="90" style="line-height: 1.3em; font-family: Arial, sans-serif; font-size: 15.555556297302246px; cursor: se-resize !important;" /></p>
+<p> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p> </p>
+<p> </p>
+<p><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;">  </span></span><a href="http://www.slri.or.th/th/" target="_blank"><span style="color: #0070c0; font-family: Arial, sans-serif; font-size: 11pt; line-height: 115%;">Synchrotron Light Research Institute</span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319"> <img src="images/logo_sponser/PEA_mix22.jpg" border="0" width="178" height="92" /></td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.pea.co.th/SitePages/home.aspx" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%; color: #0070c0;">Provincial Electricity Authority (PEA)</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12pt; font-family: Arial, sans-serif;"> <img src="images/logo_sponser/trueinnovation.png" border="0" width="143" height="95" /></span></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;"> </span></span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.trueinnovationawards.com/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;">True innovation</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><img src="images/logo_sponser/PTTEP22.jpg" border="0" width="100" height="100" style="font-family: 'Times New Roman', serif; font-size: 15.555556297302246px; cursor: se-resize !important; border: 0;" /></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"> </span></p>
+<p><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;"> </span></p>
+<p>  <a href="http://www.pttep.com/en/" target="_blank"><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">PTT</span><span style="font-size: 11.0pt; mso-bidi-font-size: 14.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Cordia New'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">-</span><span style="font-size: 11.0pt; line-height: 115%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: TH;">EP</span></a></p>
+</td>
+</tr>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319"> </td>
+</tr>
+</tbody>
+</table>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><img src="images/logo_sponser/MT%20LOGO2.jpg" border="0" width="140" height="70" /></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.mtmetrology.co.th/" target="_blank"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;">MT Metrology CO.,Ltd.</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"><span style="font-size: 11pt; line-height: 115%;"> </span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"> </p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319"> </td>
+</tr>
+</tbody>
+</table>
+<table class="MsoNormalTable" style="border-collapse: collapse; mso-yfti-tbllook: 1184; mso-padding-alt: 0in 0in 0in 0in;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.3em;"> </span><img src="images/logo_sponser/irct_logo.png" border="0" width="111" height="66" style="font-family: Arial, sans-serif; font-size: 12pt; line-height: 1.3em;" /></p>
+</td>
+<td style="width: 239.4pt; padding: 0in 5.4pt 0in 5.4pt;" valign="top" width="319">
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><a href="http://www.irct.co.th/" target="_blank" style="font-size: 10px; line-height: 1.3em;"><span style="font-size: 12pt; font-family: Arial, sans-serif; color: #0070c0; background-position: initial initial; background-repeat: initial initial;"><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif; background-position: initial initial; background-repeat: initial initial;">iRC Technologies </span><span style="font-size: 11pt; line-height: 115%; font-family: Arial, sans-serif;">Ltd.</span></span></a></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;"> </span></p>
+<p class="MsoNormal" style="margin-right: 6pt; margin-left: 6pt; margin-bottom: 0.0001pt;"><span style="font-size: 12.0pt; font-family: 'Arial','sans-serif'; mso-fareast-font-family: 'Times New Roman'; color: #0070c0;" lang="TH"> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p> </p> 
+	
+</div>
+
+				</div>
+				<div class="clr"></div>
+				<span class="shadow-left">&nbsp;</span>
+				<span class="shadow-right">&nbsp;</span>
+					
+		
+			</div>
+							<div id="rightcol">
+		             	<div class="module-outer_menu ct_menu_horizontal">
+					<h3 class="moduleh3"><strong>Web Link</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module_menu ct_menu_horizontal">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						
+<ul class="menu">
+<li class="item-487"><a href="http://www.ecti-thailand.org/" target="_blank" ><img src="images/link.png" alt="ECTI Association" /><span class="image-title">ECTI Association</span> </a></li><li class="item-489"><a href="http://web.sut.ac.th/2012/" target="_blank" ><img src="images/link.png" alt="Suranaree Univ. of Tech." /><span class="image-title">Suranaree Univ. of Tech.</span> </a></li><li class="item-490"><a href="http://eng.sut.ac.th/tce/" target="_blank" ><img src="images/link.png" alt="School of Telecom Eng. " /><span class="image-title">School of Telecom Eng. </span> </a></li><li class="item-488"><a href="http://eng.sut.ac.th/neweng/index.php?page=home" target="_blank" ><img src="images/link.png" alt="Institute of Eng. (SUT)" /><span class="image-title">Institute of Eng. (SUT)</span> </a></li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+		<div class="module-outer">
+					<h3 class="moduleh3"><strong>Facebook Fanpage</strong>
+				<span class="h3eckr">&nbsp;</span>
+			</h3>
+				<div class="module">
+			<div>
+				<div>
+					<div class="lvround-inner">
+						<div id="kafbfanbox" class="kafbfanbox "><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like-box href="https://www.facebook.com/EctiCon2014" width="225" height="550" show_faces="true" stream="true" header="false" force_wall="true"" ></fb:like-box><div style="clear:left"><small><a href="http://www.khawaib.co.uk/joomla/downloads/item/12-facebook-fanbox.html">KA Facebook Fanbox 1.1</a></small></div><noscript>JavaScript must be enabled in order to use KA Facebook Fanbox. <a href="%22/%22">Refresh Page.</a></noscript></div>					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clr"></div>
+		<span class="shadow-left">&nbsp;</span>
+		<span class="shadow-right">&nbsp;</span>
+	</div>
+	
+				</div>
+				
+			<div class="clr"></div>
+		</div>
+			
+		
+		
+		<div class="clr"></div>
+	</div>
+			<div id="foot_container" style="max-width:1180px;">
+					
+		
+		
+							
+	
+			
+			<div id="subfoot">
+								
+					<div class="copytext">&copy; ECTI-CON 2014</div>
+							</div>
+					
+	
+		<div class="clr"></div>
+			<div id="footer">
+				<div class="footer-inner">
+					<span class="feckl">&nbsp;</span>
+					<span class="feckr">&nbsp;</span>
+					<div id="scroll_up"> <a href="http://ecticon2014.ecticon.org/index.php#" class="lv-tooltip" id="gotop" title="Scroll to top">&uarr;&uarr;&uarr;</a></div>
+										</div>
+				<div class="footer-bottom">
+								  		<span id="copy"><a href="http://www.lernvid.com" title="Joomla Templates" target="_blank">Template designed by LernVid.com</a></span>
+				</div>
+			</div>		
+		<div class="clr"></div>
+	</div>	
+		
+</body>
+</html>

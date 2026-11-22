@@ -1,0 +1,648 @@
+<html > 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+ 
+<title>ECTI-CARD 2010  |  The 2nd ECTI-Conference on Application Research and Development</title> 
+ 
+		<meta name="layout" content="main" /> 
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+	<meta http-equiv="imagetoolbar" content="no" /> 
+		<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js" /></script>	
+		<script type="text/javascript"  src="http://code.jquery.com/jquery-1.4.2.min.js"/></script> 
+		<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.2.pack.js" /></script> 
+		<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.1.js" /></script> 
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.1.css" media="screen" /> 
+		
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+			$(window).load(function(){
+			// alert("jQuery Event Onload");	//script
+		       }); //end window load
+			$("a#example1").fancybox({
+				'titleShow'		: false
+			});
+ 
+			$("a#example2").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+ 
+			$("a#example3").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'
+			});
+ 
+			$("a#example4").fancybox();
+ 
+			$("a#example5").fancybox({
+				'titlePosition'	: 'inside'
+			});
+ 
+			$("a#example6").fancybox({
+				'titlePosition'	: 'over'
+			});
+ 
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+ 
+			/*
+			*   Examples - various
+			*/
+ 
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+ 
+			$("#various2").fancybox();
+ 
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '110%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+ 
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script> 
+<style type="text/css"> 
+.kikclass.a {
+	outline: none;	
+}
+ 
+.kikclass{
+	border: 1px solid #BBB;
+	padding: 2px;	
+	margin: 10px 10px 10px 0;
+	vertical-align: top;
+}
+ 
+</style> 
+    
+	
+<style type="text/css"> 
+<!--
+#Layer1 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 89px;
+	top: -200px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:1;
+	left: 16px;
+	top: 286px;
+}
+#Layer3 {
+	position:absolute;
+	width:200px;
+	height:115px;
+	z-index:2;
+	left: 19px;
+	top: 631px;
+}
+#Layer4 {
+	position:absolute;
+	width:49px;
+	height:4px;
+	z-index:3;
+	left: 802px;
+	top: 286px;
+}
+body {
+	
+	background-color: #FFFFFF;
+}
+ 
+.style1 {	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #565553;
+}
+.style2 {font-size: 3px}
+.style5 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #dd8758; }
+.style6 {font-family: Arial, Arial, Arial, Arial;  font-size: 12px;}
+.style7 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 3px; color: #dd8758; }
+.style8 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #CCCCCC; }
+ 
+.style13 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.style14 {font-family: Geneva, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; }
+.style15 {font-size: 11px}
+.style22 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #E6E6E6;
+}
+.style23 {font-family: Georgia, "Times New Roman", Times, serif; font-size: 12px; color: #565553; }
+.style29 {
+	font-family: Arial;
+	color: #606060;
+	font-size: 13px
+}
+.style291 {
+	font-family: Arial;
+	color: #606060;
+	text-align: center;
+	font-size: 13px;
+	
+}
+.style292 {
+	font-family: Arial;
+	color: red;
+	font-weight: bold; 
+	font-size: 13px;
+	
+}
+.style30 {
+	font-family: Arial;
+	color: #606060;
+	font-size: 16px;
+	font-weight: bold;
+}
+ 
+.style34 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #606060; font-size: 13px; }
+.style37 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #606060;
+	font-size: 14px;
+	font-weight: bold;
+}
+ 
+.style39 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #E36D35; font-size: 14px;}
+.style41 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #E36D35; font-weight: bold; font-size: 14px;}
+a:link {
+	color: #0099CC;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #0099CC;
+}
+a:hover {
+	text-decoration: none;
+	color: #9EC46F;
+	font-weight: bold;
+}
+a:active {
+	text-decoration: none;
+	color: #F6CB26;
+}
+/* MESSAGES AND ERRORS */
+ 
+.message {
+    background: #f3f8fc url(http://ecticard2010.ecticard.org/..images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px;
+    font-weight: bold;
+    font-family: Arial;
+	font-size: 13px
+}
+ 
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-family: Arial;
+	font-size: 13px
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;	
+}
+div.errors li {
+	background: url(http://ecticard2010.ecticard.org/..images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+ 
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+ 
+ 
+-->
+</style> 
+ 
+ 
+<script type="text/javascript"> 
+function detectBrowser()
+{
+var browser=navigator.appName;
+var version=parseFloat(navigator.appVersion);
+var x = document.getElementById('table_detect')
+var y = document.getElementById('table_detect1')
+if (browser=="Netscape"&& (version>=4))
+  {
+  
+	x.width=197;
+	y.width = 858;
+  }
+else if(browser=="Microsoft Internet Explorer" && (version>=4))
+  {
+ 	 x.width=190;
+  	y.width = 20;
+  }
+}
+ 
+ 
+</script> 
+ 
+ 
+</head> 
+ 
+<body background="images/bg.jpg" onload="detectBrowser()"> 
+<div align="center"> 
+  <table id="Table_01" width="858"  height="216" border="0" cellpadding="0" cellspacing="0"> 
+    <tr> 
+      <td align="left" colspan="2" > 
+    
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="804" height="245"> 
+          <param name="movie" value="images/ectiheadflash.swf" /> 
+          <param name="quality" value="high" /> 
+	  
+          <embed src="images/ectiheadflash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="804" height="245"></embed></object></td> 
+ 
+      <td> 
+      </td> 
+    </tr> 
+    <tr> 
+    	 <td width="12%" valign="top"><img src="images/bar_ecti_01.jpg" width="648" height="42" /></td> 
+      <td align="left" width="10%"> 
+      <a href="index.php@page=news.html" ><img src="images/bar_ecti_02.jpg" width="156"  border="0"/></a></td> 
+    </tr> 
+   
+    </table> 
+    
+   
+    
+    
+  <table class="table_detect1" width="858"  cellpadding="0" cellspacing="0" background="images/main_navigation_bg.jpg"> 
+  
+    <tr> 
+      <td ><img src="images/content_01.gif" width="183" height="5" alt="" /></td> 
+      <td ><img src="images/content_02.gif" width="14" height="5" alt="" /></td> 
+      <td><img src="images/content_03.gif" width="591" height="5" alt="" /></td> 
+      <td><img src="images/content_04.gif" width="70" height="5" alt="" /></td> 
+    </tr> 
+    <tr> 
+      <td colspan="2" valign="top"><table class="table_detect"  width="197" height="305"  cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+          <td><img src="images/MainNavigation_02.gif"  height="35" alt="" /></td> 
+          <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="52" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_04.gif" width="27" height="17" alt="" /></td> 
+          <td><img src="images/MainNavigation_05.gif"  height="17" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_06.gif" width="27" height="93" alt="" /></td> 
+          <td rowspan="4" bgcolor="#FFFFFF" valign="top"><table width="150" border="0"> 
+            <tr> 
+              <td><br><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><br><span class="style5"><a href="index.php.html">Home</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=callForPaper.html">Call for Paper</a></span></td> 
+            </tr> 
+            
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+             <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=evaluation.html">Evaluation</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=dates.html">Important Dates</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="index.php@page=committee.html">Organizing Committee</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="http://ecticard2010.ecticard.org/submission" target="_blank">Online Paper Submission</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style8"><a href="index.php@page=registration.html">Registration (Transfer)</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=venue.html">Conference Venue</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+            
+           
+            <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=travel.html">Travel Information</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+                        <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=sponsor.html">Sponsors</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+            </tr> 
+            
+                <tr> 
+              <td><img src="images/main_navigation_sign.gif" width="3" height="5" /></td> 
+              <td><span class="style5"><a href="index.php@page=contact.html">Contact Us</a></span></td> 
+            </tr> 
+            <tr> 
+              <td colspan="2"><img src="images/main_navigation_line.gif" width="141" height="1" /></td> 
+              
+            </tr> 
+            
+            </table> 
+         </td> 
+          <td rowspan="5" background="images/MainNavigation_08.gif">&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td background="images/MainNavigation_09.gif"><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> 
+              <p>&nbsp;</p></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+        </tr> 
+        <tr> 
+          <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+          <td><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+        </tr> 
+        </table> 
+        <table id="Table_01" width="197" height="5" border="0" cellpadding="0" cellspacing="0"> 
+          <tr> 
+            <td colspan="3" background="images/main_navigation_bg.jpg"> 
+            
+            <table id="Table_01" width="197" height="305" border="0" cellpadding="0" cellspacing="0"> 
+              <tr> 
+                <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+              <td><img src="images/MainNavigation_02.gif" width="153" height="35" alt="" /></td> 
+              <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="52" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_04.gif" width="27" height="17" alt="" /></td> 
+              <td><img src="images/hostByMUT.png" alt="" width="147" height="16" align="right" /></td> 
+            </tr> 
+           
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_06.gif" width="27" height="93" alt="" /></td> 
+              <td rowspan="4" bgcolor="#FFFFFF" align="center"><p align="center"> 
+              <img src="images/MUTlogo.png" width="122" height="122" /></p> 
+             		<span class="style5"><a href="http://www.mut.ac.th">www.mut.ac.th</a></span> 
+                 </td> 
+              <td rowspan="5" background="images/MainNavigation_08.gif"></td> 
+            </tr> 
+              <tr> 
+                <td background="images/MainNavigation_09.gif"> 
+                  <br /> 
+                 </td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+              <td ><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+            </tr> 
+            
+            
+            <!-- Pattaya  Start Here --> 
+            
+             <tr> 
+                <td><img src="images/MainNavigation_01.gif" width="27" height="35" alt="" /></td> 
+              <td><img src="images/MainNavigation_02.gif" width="153" height="35" alt="" /></td> 
+              <td rowspan="2"><img src="images/MainNavigation_03.gif" width="17" height="20" alt="" /></td> 
+            </tr> 
+              
+           
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_06.gif" width="27" height="20" alt="" /></td> 
+              <td rowspan="4" bgcolor="#FFFFFF" align="center"><p align="center"> 
+          <!--  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="138" height="138">
+          <param name="movie" value="images/pattayaFlash.swf" />
+          <param name="quality" value="high" />
+          <embed src="images/pattayaFlash.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="138" height="138"></embed>
+      </object> 
+      --> 
+                 </td> 
+              <td rowspan="5" background="images/MainNavigation_08.gif"></td> 
+            </tr> 
+              <tr> 
+                <td background="images/MainNavigation_09.gif"> 
+                  <br /> 
+                 </td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_10.gif" width="27" height="85" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td height="18"><img src="images/MainNavigation_11.gif" width="27" height="18" alt="" /></td> 
+            </tr> 
+              <tr> 
+                <td><img src="images/MainNavigation_13.gif" width="27" height="38" alt="" /></td> 
+              <td ><img src="images/MainNavigation_14.gif" width="153" height="38" alt="" /></td> 
+            </tr> 
+            
+            <!-- Pattaya Stop Here --> 
+            
+            
+              </table> 
+            
+           </td> 
+        </tr> 
+      </table>    </td> 
+      <td valign="top" background="images/content_07.gif"> 
+      <br> 
+      
+      <blockquote> 
+        <p align="left"> 
+				﻿<html>
+    <head>
+		<meta name="layout" content="main" />
+    </head>
+    <body>
+    <table width="500" height="33" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+        <tr>
+        	<td><img src="images/columnPic.png" width="24" height="39" /></td>
+        	<td colspan="2"><img src="images/headColumnConferenceVenue.gif"  />
+        	</td>
+        </tr>
+    </table>
+    
+    <table width="500" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+    <tr>
+     	<td><br></td>
+    </tr>
+    	 <tr>
+                <td align="left"><span class="style37">JOMTIEN PALM BEACH PATTAYA</span></td>
+     </tr>
+     <tr>
+     	<td>
+     		<span class="style29">408 Moo 12. <br>Jomtien Beach Road. <br>Pattaya City <br>Chon Buri 20250 <br>Thailand <br>Tel (66 38) 231350-67, Fax (66 38) 231368-9</span>
+     	</td>
+     </tr>
+      <tr>
+             
+                <td colspan="3"><div align="center"><span class="style29"><br>
+                <a href="file/booking.doc" target="_blank">
+               [ คลิ๊กเพื่อดาวน์โหลดแบบฟอร์มการจองห้องพัก วันที่ 10-12 พฤษภาคม 2553 ]
+                </a>
+                <br/>
+                <font color="red">Note: ปิดรับจองห้องพักในวันที่ 30 เมษายน 2553</font>
+                </span></div></td>
+              </tr>
+      
+          <tr>
+     <tr>
+     	<td>
+     	<br>
+     		<img src="images/hotel.jpg" />
+     	</td>
+     </tr>
+     <tr>
+     	<td>
+     	<br>
+     		<img src="images/jomtienpalm-map.jpg" width="402"/>
+     	</td>
+     </tr>
+    </table>
+    </body>
+</html>
+        </p>
+          
+        </blockquote></td>
+      <td background="images/content_08.gif"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><img src="images/main_navigation_bottom.gif" width="197" height="160" /></td>
+      <td background="images/content_11.gif">&nbsp;</td>
+      <td><img src="images/content_14.gif" alt="" width="70" height="160" align="bottom" /></td>
+    </tr>
+    </table>
+  <table id="Table_01" width="858" height="118" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td><img src="images/bottom_edit_01.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_02.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_03.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_04.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_05.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_06.gif" width="42" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_07.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_08.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_09.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_10.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_11.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_12.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_13.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_14.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_15.gif" width="42" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_16.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_17.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_18.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_19.gif" width="43" height="118" alt="" /></td>
+      <td><img src="images/bottom_edit_20.gif" width="43" height="118" alt="" /></td>
+    </tr>
+  </table>
+  <table width="858" border="0">
+    <tr>
+      <td width="10"><p class="style14 style15">&nbsp;</p>    </td>
+      <td width="445" class="style22">Contact address : woraphon@mut.ac.th, http://www.ecticard2010.org<br />
+        For general inquiry, please contact General Co-chair,...  <br />
+      For program inquiry, please contact Technical Program chair,...  </td>
+      <td width="28"><div align="center"><span class="style13"><img src="images/sponsorLine.png" width="2" height="38" /></span></div></td>
+      <td width="340"><img src="images/sponsoMUTlogo.png" width="40" height="39" />&nbsp; <img src="images/sponsoISTlogo.png" width="39" height="39" />&nbsp; 
+      <img src="images/sponsoIEEElogo.png" width="96" height="39" />&nbsp; <img src="images/sponsoECTIlogo.png" width="64" height="36" /> </td>
+    </tr>
+    </table>
+</div>
+<p align="center" class="style13"><br />
+</p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10787282-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body>
+</html>

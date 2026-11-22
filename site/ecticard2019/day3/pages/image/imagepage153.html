@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ECTI-CARD 2019 วันที่ 7 มิถุนายน 2562</title>
+<link href="../../css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript1.1">
+		var playing = 0
+		var timeoutID = 0
+		var slideShowNextLink = "../../pages/image/imagepage154.html"
+		var slideShowDelay = 3000
+
+		// Browser detection	
+		var agt = navigator.userAgent.toLowerCase();
+		var is_ie = (agt.indexOf("msie") != -1);
+
+		if (location.href.indexOf("?") != -1) {
+			urlQuery = location.href.split("?")
+			playing = parseInt(urlQuery[1])
+		}
+		
+		if (playing == 1) {
+			startSlideShow()
+		}
+	
+		function slideShow() {
+			window.location.href = slideShowNextLink + "?" + "1"
+			timeoutID = setInterval("slideShow()", slideShowDelay);
+		}
+
+		function startSlideShow() {
+			clearTimeout(timeoutID)
+			timeoutID = setInterval("slideShow()", slideShowDelay);
+		}
+
+		function stopSlideShow() {
+			clearTimeout(timeoutID)
+			if (is_ie) {
+				fakeTimeoutID = setInterval("redirectDelay()", 0);
+			}
+			else {
+				redirectDelay();
+			}
+		}
+		
+		function redirectDelay() {
+			tempArray = window.location.href.split("?")
+			window.location.href = tempArray[0]
+		}
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="middle">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="middle">
+<div id="wrapper">
+<div id="subhead">
+<div class="infor">
+<div class="xsnazzy">
+<b class="xtop">
+<b class="xb1">	</b>
+<b class="xb2">	</b>
+<b class="xb3">	</b>
+<b class="xb4">	</b>
+</b>
+<div class="xboxcontent">
+<div class="left">
+<div class="pageh1">P-R2 (37).jpg  
+														</div>
+<div class="smalltext">Date: 7/6/2562 0:21:30</div>
+</div>
+<div class="imagenav right">
+<span class="slide">
+<strong>Slideshow:</strong> <a href="javascript:void(0)" name="slideShowControl" onclick="startSlideShow()">Start</a> | <a href="javascript:void(0)" name="slideShowControl" onclick="stopSlideShow()">Stop</a>
+</span>
+<span class="nav">
+<a href="imagepage152.html">Previous</a>  |  
+										 			<a href="../../index.html">Home</a>  |  
+                      		<a href="imagepage154.html">Next</a>
+</span>
+</div>
+<div class="clearer"> </div>
+</div>
+<b class="xbottom">
+<b class="xb4">	</b>
+<b class="xb3">	</b>
+<b class="xb2">	</b>
+<b class="xb1">	</b>
+</b>
+</div>
+</div>
+</div>
+<div id="mainbox" class="infor">
+<div class="xsnazzy">
+<b class="xtop">
+<b class="xb1">	</b>
+<b class="xb2">	</b>
+<b class="xb3">	</b>
+<b class="xb4">	</b>
+</b>
+<div class="xboxcontent">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" valign="middle">
+<div id="mainimage">
+<a href="../../images/fullsize/P-R2&#32;(37).jpg.JPG">
+<img src="../../images/image/P-R2&#32;(37).JPG" width="450" height="253" />
+</a>
+<div class="metabox">
+<table>
+<tr>
+<td width="65%">
+<div class="metaitem">
+<strong>Image Properties</strong>
+</div>
+</td>
+<td>
+<div class="metaitem">4912x2760x24b</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<b class="xbottom">
+<b class="xb4">	</b>
+<b class="xb3">	</b>
+<b class="xb2">	</b>
+<b class="xb1">	</b>
+</b>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

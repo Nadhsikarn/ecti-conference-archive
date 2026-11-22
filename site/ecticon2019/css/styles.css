@@ -1,0 +1,755 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    
+    background-color: #CBDBE0
+    ;
+    font:100%;
+
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 40px;
+    display: none;
+}
+#toggle{
+    display: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li a {
+    display: block;
+    width: 10%;
+    
+}
+@media screen and (max-width: 750px)
+{
+#container{
+    background-color:#ECF1F2;
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+label{
+    display: block;
+    cursor: pointer;
+}
+#menu{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+#menu a{
+    display:block;
+    border-bottom: black;
+    margin: 0;
+}
+#toggle:checked+ #menu{
+    display:  block;
+}
+}
+
+
+
+@media screen and (min-width: 760px) and (max-width: 770px)
+{
+    #container{
+        background-color:#ECF1F2;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+      
+    }
+    }
+  
+
+@media screen and (min-width: 780px)
+{
+#container{
+    background-color:#ECF1F2;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  
+}
+}
+@media screen and (min-width: 780px)
+{
+    #pic1{
+        width: 17%; 
+        padding:0  2% 1%;
+    }
+    #pic2{
+        width: 45%; 
+        padding:0 2% 1%;
+    }
+    #pic3{
+        width: 10%; 
+        padding:0 2% 1%;
+    }
+    #pic4{
+        width: 17%; 
+        padding:0 2% 1%;
+    }
+    #pic5{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic7{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic8{
+        width: 25%;
+        padding:  0 2% 1%;
+    }
+    header{
+        border: none ;
+       
+     }
+     nav{
+        border-bottom: none;
+        
+    }
+}
+@media screen and (max-width: 759px)
+{
+    #pic1{
+        width:20%; 
+        padding:0 2% 1%;
+    }
+    #pic2{
+        width: 40%; 
+        padding:0 2% 1%;
+    }
+    #pic3{
+        width: 13%; 
+        padding:0 2% 1%;
+    }
+    #pic4{
+        width: 20%; 
+        padding:0 2% 1%;
+    }
+    #pic5{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic7{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic8{
+        width: 25%;
+        padding:  0 2% 1%;
+    }
+   
+  
+    header{
+        border: 1px ;
+       
+     }
+     nav{
+        border-bottom: 1px solid #BED2D9;
+        
+    }
+
+}
+@media screen and (min-width: 760px) and (max-width: 770px)
+{
+    #pic1{
+        width:13%; 
+        padding:0 2% 1%;
+    }
+    #pic2{
+        width: 30%; 
+        padding:0 2% 1%;
+    }
+    #pic3{
+        width: 8%; 
+        padding:0 2% 1%;
+    }
+    #pic4{
+        width: 13%; 
+        padding:0 2% 1%;
+    }
+    #pic5{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic7{
+        width: 25%; 
+        padding:0 2% 1%;
+    }
+    #pic8{
+        width: 25%;
+        padding:  0 2% 1%;
+    }
+    header{
+        border: none ;
+       
+     }
+     nav{
+        border-bottom: none;
+        
+    }
+
+}
+
+#menu { padding: 0px; margin: 0px; border: 0px none; }
+#menu ul { position: relative; z-index: 597; float: left; }
+#menu ul li { float: left; min-height: 1px; line-height: 1em; vertical-align: middle; border-bottom: 1px solid rgb(223, 223, 223); }
+#menu ul li.hover, #menu ul li:hover { position: relative; z-index: 599; cursor: default; }
+#menu ul li { float: none; }
+#menu { border-radius: 5px; background-clip: padding-box; box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.15); width: 200px; float: left; margin-bottom: 20px; }
+#menu span, #menu a { display: inline-block; font-family: Arial,CORDIA,sans-serif; font-size: 12px; text-decoration: none; }
+#menu::after, #menu ul::after { content: ""; display: block; clear: both; }
+#menu > ul > li:first-child { border-radius: 5px 5px 0px 0px; background-clip: padding-box; }
+#menu > ul > li:last-child { border-radius: 0px 0px 5px 5px; background-clip: padding-box; }
+#menu ul, #menu li { width: 100%; }
+#menu li { background-color: rgb(246, 246, 246); }
+#menu li:hover { background: #4878A8
+    none repeat scroll 0% 0%; }
+#menu ul li.ative { background-color:#4878A8; color:black ! important; }
+#menu a {font-weight: bold; color:black; line-height: 160%; padding: 11px 28px; width: 200px; }
+#menu a:hover { color: rgb(255, 255, 255); }
+#menu ul { list-style: outside none none; margin: 0px; }
+
+#content{ padding: 0px; margin: 0px; border: 0px none; }
+.flex-content{
+    color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#righttab,#lefttab{
+    background-color:#DCE8EB;
+}
+#lefttab{
+    background-color: #CBDBE0;
+}
+
+#righttab{
+    font-family: 'Oswald', sans-serif;
+   
+}
+
+@media screen and (max-width: 759px){ 
+    .flex-content {
+    display:grid;
+    flex-direction: column;
+    margin: 2% 5% 2% 5%;
+    font-size: 9px;
+   }
+    #lefttab{
+  
+    float: left;
+    width: 19%;
+
+
+    }
+    #righttab{
+    padding-top: 1%;
+    float: right;
+    width: 100%;
+    position: relative;
+    
+    }
+
+}
+@media screen and (min-width: 780px){ 
+    .flex-content {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5% 2% 3%;
+    font-size: 100%;
+    }
+    #lefttab{
+    
+    float: left;
+    width: 19%;
+
+    }  
+    #righttab{
+        padding-top: 1%;
+    float: right;
+    width: 81%;
+}
+} 
+@media screen and (min-width: 760px) and (max-width: 1023px){ 
+    .flex-content {
+            display: flex;
+            flex-direction: column;
+            margin: 2% 5% 2% 3%;
+            font-size: 80%;
+        }
+        #lefttab{
+            
+            float: left;
+            width: 27%;
+        
+        }
+        #righttab{
+            padding-top: 1%;
+            float: right;
+            width: 73%;
+        }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1339px){ 
+            .flex-content {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2% 5% 2% 3%;
+                    font-size: 80%;
+                }
+                #lefttab{
+                    
+                    float: left;
+                    width: 18%;
+                
+                }
+                #righttab{
+                    padding-top: 1%;
+                    float: right;
+                    width: 75%;
+                }
+                }
+.text
+{
+    text-align: justify;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
+
+@media screen and (min-width: 780px){
+
+    .headtopic{
+    margin: 2% 2% 1% 0%;
+    width: 30%;
+    height: auto;
+    
+}
+.topic{
+    color: white;
+    background: #4878A8;
+    text-align: left;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.topiconecolone
+{
+    width: 50%;
+    float: left;
+
+}
+.topiconecoltwo
+{
+    width: 50%;
+    float: right;
+    padding-right: 10%
+    
+}
+ .topiconecolonedown
+    {
+      
+        width: 70%;
+        float: left;
+    
+    }
+    .topiconecoltwodown
+    {
+       
+        width: 30%;
+        float: right;
+       
+        
+    }
+
+
+.commitcolone
+{
+   
+    width: 40%;
+    float: left;
+   
+
+}
+.commitcoltwo
+{
+   
+    width: 50%;
+    float: right;
+}
+ 
+.headcommit
+{
+   
+    margin: 0 ;
+    width: 80%;
+   
+}
+
+.topic2{
+    color: white;
+    background: #4878A8;
+    text-align: left;
+    margin-top: 10%;
+    font-weight: bold;
+
+}
+.topiconecolonedown
+{
+  
+    width: 70%;
+    float: left;
+
+}
+.topiconecoltwodown
+{
+  
+    width: 30%;
+    float: right;
+   
+    
+}
+}
+
+
+@media screen and (max-width: 759px){
+
+
+    .headtopic{
+      
+        margin: 2% 2% 1% 0%;
+        width: 30%;
+        height: auto;
+        
+    }
+    .topic{
+        color: white;
+        background: #4878A8;
+        text-align: left;
+        margin-bottom: 0px;
+        font-weight: bold;
+    }
+    .topiconecolone
+    {
+       
+        width: 50%;
+        float: left;
+    
+    }
+    .topiconecoltwo
+    {
+        width: 45%;
+        float: right;
+        margin-left: 2%;
+        
+    }
+    .topiconecolonedown
+    {
+       
+        width: 70%;
+        float: left;
+    
+    }
+    .topiconecoltwodown
+    {
+       
+        width: 30%;
+        float: right;
+       
+        
+    }
+    
+    
+    .commitcolone
+    {
+       
+        width: 45%;
+        float: left;
+      
+    
+    }
+    .commitcoltwo
+    {
+       
+        width: 50%;
+        float: right;
+    }
+    .headcommit
+    {
+       
+        margin: 0 ;
+        width: 100%;
+       
+    }
+    
+    .topic2{
+        color: white;
+        background: #4878A8;
+        text-align: left;
+        margin-top: 10%;
+        font-weight: bold;
+    
+    }
+    }
+
+    @media screen and (min-width: 760px) and (max-width: 770px){
+
+
+        .headtopic{
+           
+            margin: 2% 2% 1% 0%;
+            width: 30%;
+            height: auto;
+            
+        }
+        .topic{
+            color: white;
+            background: #4878A8;
+            text-align: left;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        .topiconecolone
+        {
+            width: 50%;
+            float: left;
+        
+        }
+        .topiconecoltwo
+        {
+            width: 50%;
+            float: right;
+            padding-right: 10%
+            
+        }
+        .topiconecolonedown
+        {
+          
+            width: 70%;
+            float: left;
+        
+        }
+        .topiconecoltwodown
+        {
+         
+            width: 30%;
+            float: right;
+           
+            
+        }
+       
+        .commitcolone
+        {
+           
+            width: 40%;
+            float: left;
+            margin-left: 5%;
+        
+        }
+        .commitcoltwo
+        {
+           
+            width: 50%;
+            float: right;
+        }
+        .headcommit
+        {
+           
+            margin: 0 ;
+            width: 80%;
+           
+        }
+        
+        .topic2{
+            color: white;
+            background: #4878A8;
+            text-align: left;
+            margin-top: 10%;
+            font-weight: bold;
+        
+        }
+    }
+    @media screen and (min-width: 1600px) and (max-width: 1920px){ 
+        .flex-content {
+                display: flex;
+                flex-direction: column;
+                margin: 2% 5% 2% 3%;
+                font-size: 110%;
+            }
+            #lefttab{
+                
+                float: left;
+                width: 15%;
+            
+            }
+            #righttab{
+                padding-top: 1%;
+                float: right;
+                width: 85%;
+            }
+            }
+            .mySlides {display:none;}
+
+
+@media screen and (max-width: 759px){
+    .headpic{
+        height: 100px;
+    }
+            }
+@media screen and (min-width: 760px) and (max-width: 770px)
+{
+  .headpic{
+      height: 100px;
+  }
+    }
+
+
+@media screen and (min-width: 780px)
+{
+    .headpic{
+        height: 300px;
+    }
+  
+}
+
+
+@media screen and (min-width: 1600px) and (max-width: 1920px){ 
+
+    .headpic{
+        height: 400px;
+    }
+}
+
+.symblo{
+    color: red;
+
+}
+table {
+    width:100%;
+}
+table, tr, td,th {
+    border: 1.5px solid black;
+    border-collapse: collapse;
+}
+.mySlides {display:none;}
+.demo {cursor:pointer}
+
+@media screen and (max-width: 321px){ 
+    .flex-content {
+    display:grid;
+    flex-direction: column;
+    margin: 2% 5% 2% 5%;
+    font-size: 7px;
+   }
+    #lefttab{
+  
+    float: left;
+    width: 19%;
+
+
+    }
+    #righttab{
+    padding-top: 1%;
+    float: right;
+    width: 100%;
+    position: relative;
+    
+    }
+
+}
+#header {
+    width: 100%;
+}
+#header>img{
+    width: 100%;
+    height: 100%;
+    
+}
+#header> .btn{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    border: none;
+    border-radius: 5%;
+    top:20%;
+    background:#99000000 ;
+    color: white;
+    font-size: 20px;
+}
+#header>#btn1:hover{
+    background: #BED2D9;
+}
+#header>#btn1:hover{
+    background: #BED2D9;
+}
+#btn2{
+    position:  relative;
+    float:right;
+}
+
+@media screen and (min-width: 1000px){
+    .topiconecolumonedown
+    {
+      
+        width: 50%;
+        float: left;
+    
+    }
+    .topiconecolumtwodown
+    {
+     
+        width: 50%;
+        float: right;
+       
+        
+    }
+    .imgupdate
+    {
+        width: 30%;
+    }
+}
+
+    @media screen and (min-width: 100px) and (max-width: 1025px){
+        .topiconecolumonedown
+        {
+          
+            width: 55%;
+            float: left;
+        padding: 0;
+        
+        }
+        .topiconecolumtwodown
+        {
+         
+            width: 45%;
+            float: right;
+            padding: 0;
+            
+        }
+        .imgupdate
+    {
+        width: 25%;
+    }
+}
+.imgtran{
+    padding: 0px 5em 0px 8em;
+}
+a img {
+    
+    vertical-align: text-bottom;
+    
+ }
+#pigtest1{
+    width: 25%;
+}
