@@ -71,6 +71,7 @@ li a {{ display:flex; flex-direction:column; padding:12px 14px; background:var(-
 li a:hover, li a:focus-visible {{ border-color:var(--accent); transform:translateY(-1px); outline:none; }}
 .yr {{ font-size:1.35rem; font-weight:600; font-variant-numeric:tabular-nums; }}
 .nm {{ font-size:.85rem; color:var(--muted); }}
+footer a {{ color:var(--accent); }}
 footer {{ border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:.85rem; }}
 @media (prefers-reduced-motion: reduce) {{ li a {{ transition:none; }} li a:hover {{ transform:none; }} }}
 </style>
@@ -83,7 +84,7 @@ footer {{ border-top:1px solid var(--line); padding-top:16px; color:var(--muted)
   <p>Read-only snapshots of past ECTI Association conference websites. Forms, registration and paper submission no longer work.</p>
 </header>
 {chr(10).join(sections)}
-<footer>{total} archived sites · Snapshot taken 2026</footer>
+<footer>{total} archived sites · Snapshot taken 2026 · เว็บสมาคม ECTI (ecti-thailand.org) ฉบับเก็บถาวร: <a href="https://ectipr.github.io/ecti-archive/">ectipr.github.io/ecti-archive</a></footer>
 </main>
 </body>
 </html>
