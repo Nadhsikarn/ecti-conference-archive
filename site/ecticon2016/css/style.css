@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+*{
+	font-family: 'Muli', calibri , sans-serif;
+	/*font-family: calibri;*/
+	font-size: 14px;
+}
+.fontred14b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 14px;
+}
+.fontblue14b{
+	color: #00f;
+	font-weight: bold;
+	font-size: 14px;
+}
+.fontblue22b{
+	color: #00f;
+	font-weight: bold;
+	font-size: 22px;
+}
+.fontblue25b{
+	color: #00f;
+	font-weight: bold;
+	font-size: 25px;
+}
+.fontblue30b{
+	color: #00f;
+	font-weight: bold;
+	font-size: 30px;
+}
+.fontdarkblue22b{
+	color: darkblue;
+	font-weight: bold;
+	font-size: 22px;
+}
+.linkmenus{
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 18px;
+}
+.fontred16b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 16px;
+}
+.fontred18b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 18px;
+}
+.fontred20b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 20px;
+}
+.fontred22b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 22px;
+}
+.fontred25b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 25px;
+}
+.fontred30b{
+	color: #f00;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.underconstruc{
+	color: #000;
+	font-weight: bold;
+	font-size: 40px;
+}
+.footer{
+	/*font-family: Tahoma;*/
+	color: #000;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+a.linkmenus:hover{
+	color: orange;
+}
+
+.linkdl{
+	color: blue;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.headb18u{
+	font-weight:bold;
+	font-size:18px;
+	text-decoration:underline;
+	color:#57b2e4;
+}
+
+.headb18{
+	font-weight:bold;
+	font-size:18px;
+	text-decoration: none;
+	color:#57b2e4;
+}
+
+.headb16u{
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:underline;
+	color:#57b2e4;
+}
+
+.headb16{
+	font-weight:bold;
+	font-size:16px;
+	text-decoration: none;
+	color:#57b2e4;
+}
+.headb14u{
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:underline;
+	color:#57b2e4;
+}
+
+.headb14{
+	font-weight:bold;
+	font-size:14px;
+	text-decoration: none;
+	color:#57b2e4;
+}
+.justify{
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.headb20u{
+	font-weight:bold;
+	font-size:20px;
+	text-decoration:underline;
+	color:#57b2e4;
+}
+
+.headb20{
+	font-weight:bold;
+	font-size:20px;
+	text-decoration: none;
+	color:#57b2e4;
+}
+
+.fontb{
+	font-weight: bold;
+}
+
+.fontu{
+	text-decoration: underline;
+}
+
+.headhilight{
+	color: #000;
+	font-weight:bolder;
+	display: block;
+	width: 100%;
+	font-size: 18px;
+	text-decoration: underline;
+	/*background-color: #66b4f2;*/
+}
+
+.indent50{
+	text-indent: 50px;
+}
+.font14{
+	font-size: 14px;
+}
+
+.font16{
+	font-size: 16px;
+}
+sup{
+	font-size: smaller;
+	text-decoration: none;
+}
+.center{
+	text-align: center;
+}
+
+.datetimebg{
+	background-color: #e5b8b7;
+	font-size: smaller;
+}
+
+.yellowbg{
+	background-color: #ffff00;
+	font-size: smaller;
+}
+.greenbg{
+	background-color: #92d050;
+	font-size: smaller;
+}
+.graybg{
+	background-color: #c4bc96;
+	font-size: smaller;
+}
+.lightbluebg{
+	background-color: #8db3e2;
+	font-size: smaller;
+}
+.skybg{
+	background-color: #00b0f0;
+	font-size: smaller;
+}
+.lightbluebg2{
+	background-color: #b8cce4;
+	font-size: smaller;
+}
+.pinkbg{
+	background-color: #fbd4b4;
+	font-size: smaller;
+}
+.lightpinkbg{
+	background-color: #fde9d9;
+	font-size: smaller;
+}
+.orangebg{
+	background-color: #ffc000;
+	font-size: smaller;
+}
+.dislink{
+	color: #a5a5a5;
+	text-decoration:underline;
+	font-weight: bold;
+}
+.fontsmaller{
+	font-size: smaller;
+}

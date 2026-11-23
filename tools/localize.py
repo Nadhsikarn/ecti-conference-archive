@@ -34,7 +34,16 @@ def local_path(urlpath):
     """URL path -> relative file path inside the mirror, or None for queries/dirs."""
     p = urlpath.replace("\\/", "/").split("#", 1)[0]
     if "?" in p or "&amp;" in p:
-        return None
+        base, _, q = p.partition("?")
+        # a static file with a cache-buster (?ver=1.2) is the same file
+        if pathlib.Path(base).suffix.lower() in STATIC:
+            p = base
+        else:
+            # a page with a query: wget --restrict-file-names=windows saved it as <path>@<query>.html
+            b = urllib.parse.unquote(base).lstrip("/")
+            b = (b + "index.html") if (not b or b.endswith("/")) else b
+            cand = f"{b}@{q.replace('&amp;', '&')}.html"
+            return cand if (site / cand).is_file() else None
     p = urllib.parse.unquote(p).lstrip("/")
     return p or None
 

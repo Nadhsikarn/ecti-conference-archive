@@ -10,10 +10,10 @@ root = pathlib.Path(sys.argv[1])
 
 SERIES = [
     ("ECTI-CARD", "การประชุมวิชาการงานวิจัยและพัฒนาเชิงประยุกต์ (ECTI-CARD)",
-     "ECTI Conference on Application Research and Development", "ecticard", range(2010, 2024)),
+     "ECTI Conference on Application Research and Development", "ecticard", range(2009, 2024)),
     ("ECTI-CON", "การประชุมวิชาการนานาชาติ ECTI-CON",
      "International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology",
-     "ecticon", range(2010, 2024)),
+     "ecticon", range(2009, 2024)),
     ("ICA-SYMP", "ICA-SYMP",
      "ICA-SYMP", "icasymp", range(2023, 2027)),
     ("ISCIT", "International Symposium on Communications and Information Technologies",

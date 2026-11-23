@@ -1,0 +1,16 @@
+.messagebox{
+	background:#FFD9D9;
+	padding:5px;
+	border:#FF9999 3px solid;
+	color: #000;
+}
+.messagebox a:visited, .messagebox a:active, .messagebox a:link{
+	color: #00F;
+	text-decoration: none;
+	font-weight: bold;
+}
+.messagebox a:hover{
+	color: #F00;
+	text-decoration: underline;
+	font-weight: bold;
+}

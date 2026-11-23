@@ -65,7 +65,7 @@ body.page-template-shortcodes-php #content {
 }
 
 .icon-white {
-	background-image: url("http://ecticard2014.ecticard.org/content/wp-content/themes/NewsMagazine/lib/shortcodes/images/glyphicons-halflings-white.png");
+	background-image: url("__ORIGIN__/content/wp-content/themes/NewsMagazine/lib/shortcodes/images/glyphicons-halflings-white.png");
 }
 
 .icon-glass {

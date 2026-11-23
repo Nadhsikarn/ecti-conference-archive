@@ -37,9 +37,17 @@ Some pages contain placeholder tokens that must be filled before publishing:
   (`tools/docker-compose.yml`) and mirrored with wget (`tools/mirror-local.sh`).
 - `tools/postprocess.py`, `tools/localize.py` and `tools/linkcheck.py` make every site self-contained
   and working under a sub-path; missing assets were filled from the backup.
-- ecticard2018, ecticard2020, ecticon2020 and ecticon2021 had no usable backup (blank WordPress,
-  no database) and their servers are gone, so they were rebuilt from the Internet Archive
-  Wayback Machine (`tools/wayback.py`). Wayback kept the pages and PDFs but not the theme CSS or
-  most images, so these four sites show as plain, unstyled pages.
-  เว็บสี่เว็บนี้กู้จาก Wayback Machine ได้เฉพาะเนื้อหาและ PDF ไม่มี CSS/รูป จึงแสดงเป็นหน้าเรียบๆ
+- ecticard2014 (WordPress 3.8) and ecticard2016 (Joomla) need old PHP: they were run from the
+  backup in a local PHP 5.6 container (`tools/php56/Dockerfile`) and mirrored the same way.
+- Sites with no usable backup and no live server were rebuilt from the Internet Archive Wayback
+  Machine (`tools/wayback.py`, `tools/wayback_fill.py`): ecticard2009, ecticard2018, ecticard2020,
+  ecticon2009, ecticon2011 (www.ecti-con2011.org), ecticon2016 (www.ecticon2016.org),
+  ecticon2020, ecticon2021 and ecticon2022 (www.ecti-con2022.org, May 2022 captures only; later
+  captures of that domain are spam). Wayback kept the pages and PDFs but often not the theme CSS
+  or images. For free WordPress themes/plugins/core the exact released versions were taken from
+  wordpress.org (`tools/fill_from_dir.py`), so ecticard2020, ecticon2021 and ecticon2022 have
+  their styling back; the others show as plain pages.
+  เว็บที่ไม่มี backup ใช้ได้ กู้จาก Wayback Machine ได้เนื้อหาและ PDF ส่วน CSS/รูปบางเว็บไม่มี จึงแสดงเป็นหน้าเรียบๆ
+- Never captured anywhere (backup, server, Wayback): ecticard2017, ecticard2021, ecticon2017,
+  ecticon2018 (only hosting placeholders and the paper-submission system, which is excluded).
 - `tools/landing.py` generates `site/index.html`.
