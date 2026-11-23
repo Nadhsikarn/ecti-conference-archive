@@ -9,9 +9,9 @@ import sys, html, pathlib
 root = pathlib.Path(sys.argv[1])
 
 SERIES = [
-    ("ECTI-CARD", "การประชุมวิชาการงานวิจัยและพัฒนาเชิงประยุกต์ (ECTI-CARD)",
+    ("ECTI-CARD", "ECTI-CARD",
      "ECTI Conference on Application Research and Development", "ecticard", range(2009, 2024)),
-    ("ECTI-CON", "การประชุมวิชาการนานาชาติ ECTI-CON",
+    ("ECTI-CON", "ECTI-CON",
      "International Conference on Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology",
      "ecticon", range(2009, 2024)),
     ("ICA-SYMP", "ICA-SYMP",
@@ -41,7 +41,7 @@ for short, th, en, prefix, years in SERIES:
 </section>""")
 
 page = f"""<!doctype html>
-<html lang="th">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,11 +80,10 @@ footer {{ border-top:1px solid var(--line); padding-top:16px; color:var(--muted)
 <main>
 <header>
   <h1>ECTI Conference Archive</h1>
-  <p>คลังเว็บไซต์งานประชุมวิชาการของสมาคม ECTI ที่ปิดไปแล้ว เก็บไว้เป็นสำเนาแบบอ่านอย่างเดียว</p>
   <p>Read-only snapshots of past ECTI Association conference websites. Forms, registration and paper submission no longer work.</p>
 </header>
 {chr(10).join(sections)}
-<footer>{total} archived sites · Snapshot taken 2026 · เว็บสมาคม ECTI (ecti-thailand.org) ฉบับเก็บถาวร: <a href="https://ectipr.github.io/ecti-archive/">ectipr.github.io/ecti-archive</a></footer>
+<footer>{total} archived sites · Snapshot taken 2026 · ECTI Association website (ecti-thailand.org) archive: <a href="https://ectipr.github.io/ecti-archive/">ectipr.github.io/ecti-archive</a></footer>
 </main>
 </body>
 </html>
